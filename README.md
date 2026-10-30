@@ -1,29 +1,43 @@
-# 我的英语单词本 · wordbook-fresh
+# Wordbook Fresh 英语单词本
 
-独立的中文英语学习网页。正式地址：https://houzero1001-hash.github.io/wordbook-fresh/
+现有项目的本地增量升级：待学习 / 间隔复习分开，三按钮判断、两次连续认识通过当前轮次、已掌握管理、双语例句补充与朗读、旧数据保护。
 
-## 开发与测试
+**本次升级已获用户确认发布；实际部署状态请查看仓库 Actions。** 完整改动、默认参数、77项自动测试和真机未验证项目见 [本地交付报告](docs/LOCAL-UPGRADE-2026-10-29.md)。
 
-Node.js 22，执行 `npm ci`、`npm test`、`npm run dev`。
-`npm run build` 生成 dist。首次测试/构建自动校验并还原 resources 内的公开词库和 OCR 运行资源，需系统 tar（macOS/Linux 自带）。资源分卷仅含 ECDICT 和 Tesseract，不含用户词库。
+## 本地运行
 
-GitHub Pages 构建：`VITE_BASE_PATH=/wordbook-fresh/ npm run build`，随后 `npm run test:pages`。
-在仓库 Settings → Pages → Build and deployment → Source 选择 **GitHub Actions**。main 分支每次推送自动测试、构建、部署。发布状态以 Actions 成功记录为准。
+Node.js 22+，项目目录内：
 
-## 添加单词
+```sh
+npm ci
+npm test
+npm run build
+npm run preview
+```
 
-手动输入或粘贴一个或多个英文单词，检查候选后确认收藏；也可上传文档，或选择照片/截图/拍照OCR，提取后人工确认。再次添加同词不重置已有学习状态。跨App快捷指令收藏、分享链接接收及相关教程已按用户要求移除。
+预览默认为 http://127.0.0.1:5188/ 。首次测试/构建会校验并还原 resources 分卷内753个公开词库/OCR文件，需要系统tar（macOS/Linux自带）。不包含用户词库或秘密密钥。
 
-## 数据与成本
+## 使用
 
-用户词库保存在浏览器 IndexedDB，不上传服务器；请定期 JSON 备份。不同网址、浏览器或主屏幕 Web App 的本地存储可能独立，跨环境请导出再导入并保留原备份。
+收藏单词后先进入待学习。首页可设置每日新词5/10/15/25，点击开始学习或去复习。先独立判断，再核对答案；不认识清零，连续两次认识只通过当前单词轮次。不再出现才永久掌握，已掌握可重新学习并保留历史。缺少穿插词时延后判断，保留未完成的单词轮次；复习参数集中在 src/learning.js。
 
-ECDICT 静态词库 MIT 许可，原始出处与许可证在还原后的 public/dict/SOURCE.json、LICENSE.txt。Tesseract.js/核心和英文模型用于浏览器本地 OCR，许可证保存在公开资源中。PDF.js、fflate、idb 等依赖遵循各自许可证。首次下载词库分片、OCR和打开网站需要联网；没有付费 API Key，没有后台 AI 服务。GitHub 公共仓库 Pages 免费方案适用，受 GitHub 服务限制。
+词典卡可补充、编辑、删除双语例句，并朗读完整英文。默认使用已有内容、本地预制学习例句和免费Tatoeba直接配对语料，不存在前端秘密AI Key，也不调用收费AI。语料不能保证每个词义都覆盖，缺失与失败明确显示。系统语音效果依赖设备。
 
-英文例句/译文和搭配覆盖有限，沿用已有来源标记与缺失提示；不把生成内容冒充词典原文。本次移除跨App收藏，保留其他学习功能。
+保留手动多词输入、文档上传（PDF/DOCX/TXT/MD/RTF及RTF内容DOC）、照片/截图/拍照OCR、候选人工确认、去重、JSON备份。可选跨App教程折叠显示；正式网址需部署本次版本后才支持恢复的分享接收。
 
-## 验证范围
+## 数据与来源
 
-自动化测试覆盖手动输入、网址过滤、确认后去重、掌握状态保护、既有复习/备份/文档解析回归与 Pages 子路径检查。iPhone Safari 相机/相册、主屏幕存储与离线行为须真机验证。未经过真机测试的行为不视为验收通过。
+IndexedDB仍使用原数据库，增量迁移保留卡片、用户编辑和历史。支持wordbook-1、wordbook-2备份，重复记录以本机现有数据优先。v2可恢复备份中的未完成轮次到空词库。不同网址/浏览器/PWA存储可能独立，请定期备份。
 
-发布仅包含本项目源码、人工合成测试文件和合法公开资源；不包含个人备份、密钥、node_modules、原始 ECDICT CSV、TapBook 或旧版 V4。
+ECDICT MIT社区词库不是付费权威词典；部分IPA是旧式记法，界面有提示。例句来源、作者、许可逐条显示：本地35条学习句标明AI辅助编写，Tatoeba仅使用直接配对中文译文，许可CC BY 2.0 FR/CC0 1.0。翻译关系不等于全库已语义审校；运行时没有AI生成服务。Tesseract/PDF.js及依赖遵守各自许可。
+
+## GitHub Pages
+
+保留现有Actions配置，正式网址 https://houzero1001-hash.github.io/wordbook-fresh/ 。main 分支推送后自动测试、构建并部署；本次发布已获用户确认。
+
+```sh
+VITE_BASE_PATH=/wordbook-fresh/ BUILD_OUT_DIR=dist-pages npm run build
+BUILD_OUT_DIR=dist-pages npm run test:pages
+```
+
+iPhone实机相机、相册、语音、系统分享与离线需额外验收；自动测试和320px桌面容器不等于真机测试。

@@ -22,10 +22,10 @@ test("首页统计：到期、未来、已掌握与缺失词典均按真实数�
   let words = addWords([], ["study", "book", "run", "frief"], 100);
   words[1] = grade(words[1], false, 100);
   words[2] = grade(words[2], true, 100);
-  assert.deepEqual(statistics(words, 100), { due: 2, total: 4, known: 1 });
+  assert.deepEqual(statistics(words, 100), { due: 0, total: 4, known: 1 });
   assert.deepEqual(statistics([], 100), { due: 0, total: 0, known: 0 });
   assert.deepEqual(statistics(words, 100 + 86400000), {
-    due: 3,
+    due: 1,
     total: 4,
     known: 1,
   });
@@ -91,7 +91,10 @@ test("再次手动添加保留掌握状态和复习记录", () => {
   const out = addWords([w], tokens("study book study"), 300);
   assert.equal(out.length, 2);
   assert.deepEqual(out[0], w);
-  assert.equal(mergeBackup(out, {format:"wordbook-1", words:out})[0].lastReview, 200);
+  assert.equal(
+    mergeBackup(out, { format: "wordbook-1", words: out })[0].lastReview,
+    200,
+  );
 });
 test("输入短语按词处理，弯引号归一，网址排除", () =>
   assert.deepEqual(tokens("study hard; don’t https://example.org/study"), [

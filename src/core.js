@@ -1,3 +1,4 @@
+import { migrateWord, markNew } from "./learning.js";
 export const normalize = (s) => s.trim().toLowerCase();
 export function stripLinks(s) {
   return s
@@ -34,10 +35,18 @@ export function addWords(existing, words, now = Date.now()) {
     map.set(word, {
       word,
       original: raw,
-      status: "learning",
+      id: "word:" + word,
+      schemaVersion: 2,
+      status: "new",
+      history: [],
+      roundStreak: 0,
+      lastLearned: null,
+      knownAt: null,
+      masterySource: null,
+      reviewLevel: 0,
       created: now,
       lastReview: null,
-      due: now,
+      due: null,
       step: 0,
       card: null,
       error: null,
@@ -45,6 +54,7 @@ export function addWords(existing, words, now = Date.now()) {
   }
   return [...map.values()];
 }
+// Legacy compatibility helper only. New UI uses learning.js answerRound/schedule.
 export function grade(w, known, now = Date.now()) {
   return {
     ...w,
@@ -55,14 +65,16 @@ export function grade(w, known, now = Date.now()) {
   };
 }
 export function restart(w, now = Date.now()) {
-  return { ...w, status: "learning", step: 0, due: now };
+  return markNew(w, now);
 }
 export function dueWords(words, now = Date.now()) {
-  return words.filter((w) => w.status === "learning" && w.due <= now);
+  return words.filter(
+    (w) => w.status === "learning" && Number.isFinite(w.due) && w.due <= now,
+  );
 }
 export function mergeBackup(current, input) {
   if (
-    input?.format !== "wordbook-1" ||
+    !["wordbook-1", "wordbook-2"].includes(input?.format) ||
     !Array.isArray(input.words) ||
     input.words.length > 100000
   )
@@ -73,16 +85,39 @@ export function mergeBackup(current, input) {
       !w ||
       typeof w.word !== "string" ||
       !/^[a-z]+(?:['-][a-z]+)*$/.test(w.word) ||
-      !["known", "learning"].includes(w.status) ||
+      !["known", "learning", "new"].includes(w.status) ||
       !Number.isInteger(w.step) ||
       w.step < 0 ||
-      w.step > 5 ||
+      w.step > 100 ||
       !Number.isFinite(w.created) ||
       (w.lastReview !== null && !Number.isFinite(w.lastReview)) ||
       (w.status === "learning" && !Number.isFinite(w.due))
     )
       throw Error("备份包含无效记录，未导入");
-    return { ...w, card: null, error: null };
+    if (
+      w.history !== undefined &&
+      (!Array.isArray(w.history) ||
+        w.history.some((h) => !h || !Number.isFinite(h.at)))
+    )
+      throw Error("备份学习历史无效");
+    if (
+      w.deletedExamples !== undefined &&
+      (!Array.isArray(w.deletedExamples) ||
+        w.deletedExamples.some((x) => typeof x !== "string"))
+    )
+      throw Error("备份例句删除记录无效");
+    if (
+      w.pendingRound &&
+      (!Number.isInteger(w.pendingRound.streak) ||
+        w.pendingRound.streak < 0 ||
+        w.pendingRound.streak > 1 ||
+        !Number.isInteger(w.pendingRound.attempts) ||
+        w.pendingRound.attempts < 1 ||
+        !Number.isFinite(w.pendingRound.resumeAt) ||
+        typeof w.pendingRound.id !== "string")
+    )
+      throw Error("备份延后轮次无效");
+    return migrateWord(w);
   });
   const out = [...current];
   for (const w of current) seen.add(w.word);
@@ -94,6 +129,7 @@ export function mergeBackup(current, input) {
   return out;
 }
 export function senses(text) {
+  if (typeof text !== "string") return [];
   return text
     .split(/\\n|\n/)
     .filter(Boolean)

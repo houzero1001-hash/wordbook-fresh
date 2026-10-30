@@ -20,9 +20,10 @@ test("记住退出、再次收藏不改变状态、手动重学", () => {
   let w = grade(addWords([], ["study"], t)[0], true, t);
   assert.equal(dueWords([w], t).length, 0);
   assert.equal(addWords([w], ["STUDY"])[0].status, "known");
-  assert.equal(dueWords([restart(w, t)], t).length, 1);
+  assert.equal(restart(w, t).status, "new");
+  assert.equal(dueWords([restart(w, t)], t).length, 0);
 });
-test("未记住使用1、2、4、7、14日间隔", () => {
+test("旧版grade兼容函数保留原间隔（新版调度另测）", () => {
   let w = addWords([], ["study"], t)[0];
   for (const days of [1, 2, 4, 7, 14, 14]) {
     w = grade(w, false, t);

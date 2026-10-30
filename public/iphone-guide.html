@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+  <meta charset="UTF-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,viewport-fit=cover"
+  /><title>可选：从其他App收藏</title
+  ><style>
+    body {
+      font: 17px/1.8 system-ui;
+      max-width: 600px;
+      margin: auto;
+      padding: 24px;
+      color: #234f43;
+    }
+    code {
+      overflow-wrap: anywhere;
+    }
+    li {
+      margin: 12px 0;
+    }
+    a {
+      color: inherit;
+    }</style
+  ><a href="./">返回单词本</a>
+  <h1>从其他App收藏（可选）</h1>
+  <p>
+    不需要设置也可以复制文字，在添加页粘贴，或截图OCR。网页不能直接读取其他App选中文字。
+  </p>
+  <ol>
+    <li>
+      在iPhone快捷指令App创建「收藏到英语单词本」，详情中启用「在共享表单中显示」，接收文本、多信息文本、URL。
+    </li>
+    <li>
+      添加「获取输入中的文本」，输入设为快捷指令输入；再「合并文本」，分隔符设为新行。
+    </li>
+    <li>如果没有文本，显示提醒并停止快捷指令。</li>
+    <li>添加「URL编码」，只对合并后的文字进行编码。</li>
+    <li>
+      添加「文本」，内容为下方前缀，然后紧接URL编码结果变量（不加空格/换行）；再添加「URL」和「打开URL」。
+    </li>
+  </ol>
+  <code>https://houzero1001-hash.github.io/wordbook-fresh/#collect?text=</code>
+  <p>
+    Safari长按选中英文 → 选中文字的分享菜单 → 收藏到英语单词本 → 核对候选 →
+    确认。只收到网页链接时不自动提取；多个词去重，已掌握状态保留。不同iOS版本菜单名称可能不同。
+  </p>
+  <p>
+    Safari与主屏幕Web
+    App存储可能独立，建议统一使用入口。URL片段不随HTTP请求发送，但仍可能存在浏览器历史中；长文或敏感内容请直接粘贴。首次离线无法加载网站。
+  </p>
+  <p>
+    尚未在iPhone真机安装验证；没有虚构的一键安装链接。<a
+      href="https://support.apple.com/zh-cn/guide/shortcuts/apd163eb9f95/ios"
+      >Apple说明</a
+    >
+  </p>
+</html>

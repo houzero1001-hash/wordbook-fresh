@@ -340,3 +340,61 @@ header > .muted {
     font-size: 14px;
   }
 }
+.stats > button {
+  background: #edf2e9;
+  min-width: 0;
+  padding: 12px 3px;
+  text-align: center;
+}
+.example {
+  border-top: 1px solid #e2e5da;
+  padding: 14px 0;
+  overflow-wrap: anywhere;
+}
+.example .row p {
+  flex: 1;
+  min-width: 140px;
+  margin: 0;
+}
+.example small {
+  display: block;
+}
+.example .row button {
+  font-size: 13px;
+  padding: 8px 10px;
+}
+#example-form label {
+  display: block;
+  margin: 10px 0;
+}
+#example-form textarea {
+  min-height: 80px;
+}
+.answers {
+  flex-wrap: wrap;
+}
+.answers button {
+  min-width: 80px;
+  padding: 10px 8px;
+}
+@media (max-width: 370px) {
+  h1 {
+    font-size: 27px;
+  }
+  .row > h1 {
+    width: 100%;
+  }
+  .hero,
+  .panel {
+    padding: 16px;
+  }
+}
+.answers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.answers button {
+  min-width: 0;
+  font-size: 15px;
+  padding: 10px 4px;
+}
