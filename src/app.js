@@ -124,6 +124,11 @@ function shell(content) {
 }
 const dateLabel = (n) =>
   Number.isFinite(n) ? new Date(n).toLocaleString("zh-CN") : "暂无";
+function cardSources(examples, supplement) {
+  const safeLink = (url) =>
+    typeof url === "string" && url.startsWith("https://") ? esc(url) : "#";
+  return `<details class="card-sources"><summary>资料来源</summary><p>词典：ECDICT 社区词库 · <a href="${assetURL("dict/LICENSE.txt")}">MIT许可</a>。</p>${supplement ? "<p>常用释义与辅助解释：项目学习整理，非权威词典原文。</p>" : ""}${examples.map((ex, i) => `<p>例句 ${i + 1}：${ex.url ? `<a href="${safeLink(ex.url)}" target="_blank" rel="noopener">${esc(ex.source || "来源")}</a>` : esc(ex.source || "来源未记录")} ${esc(ex.author || "")} ${esc(ex.license || "")}${ex.translationURL ? ` · <a href="${safeLink(ex.translationURL)}" target="_blank" rel="noopener">译文 ${esc(ex.translationAuthor || "")} ${esc(ex.translationLicense || "")}</a>` : ""}</p>`).join("")}</details>`;
+}
 function card(w) {
   const c = w.card;
   if (!c)
@@ -149,7 +154,7 @@ function card(w) {
           .map((x) => `<p>${esc(x.text)}</p>`)
           .join("")}</details>`
       : ""
-  }<h3>英文例句 · 中文对照</h3>${examples.length ? examples.map((ex, i) => `<section class="example"><div class="row spread"><p lang="en">${esc(ex.en)}</p>${btn("▶ 读例句", "speak-example:" + i)}</div><p lang="zh-CN">${esc(ex.zh || "中文翻译暂不可用")}</p><small>${esc([ex.pos, ex.sense].filter((value) => value && value !== "语料用法，具体词义请核对").join(" · "))}<br>${ex.url ? `<a href="${esc(ex.url.startsWith("https://") ? ex.url : "#")}" target="_blank" rel="noopener">${esc(ex.source)}</a>` : esc(ex.source || "来源未记录")} ${esc(ex.author || "")} ${esc(ex.license || "")} ${ex.translationURL ? ` · <a href="${esc(ex.translationURL.startsWith("https://") ? ex.translationURL : "#")}" target="_blank" rel="noopener">译文 ${esc(ex.translationAuthor || "")} ${esc(ex.translationLicense || "")}</a>` : ""}</small>${words.some((x) => x.word === w.word) ? `<div class="row">${btn("编辑", "edit-example:" + i)}${btn("删除", "delete-example:" + i)}</div>` : ""}</section>`).join("") : '<p class="muted">缺少可靠的中英例句，可尝试免费补充或手动填写。</p>'}${["failed", "partial"].includes(w.exampleFetch?.status) ? `<p class="notice">${esc(w.exampleFetch.error)}</p>` : ""}${words.some((x) => x.word === w.word) ? `<details><summary>管理与补充例句</summary><p class="muted">免费Tatoeba社区语料，直接关联译文不等于权威审校；具体词义请人工核对。不调用收费AI。</p>${btn("重新补充例句", "fill-example:" + w.word)}<form id="example-form" data-word="${esc(w.word)}"><label>英文例句<textarea id="example-en" required></textarea></label><label>对应中文翻译<textarea id="example-zh" required></textarea></label><label>词性 / 具体词义<input id="example-sense" placeholder="如 v. 学习"></label><button class="primary" type="submit">保存手动例句</button></form></details>` : ""}<h3>常用搭配</h3>${s ? s.phrases.map(([en, zh]) => `<p>${esc(en)} — ${esc(zh)}</p>`).join("") : '<p class="muted">暂无可靠搭配资料</p>'}${c.lemma ? `<p class="notice">词库关联原形：<b>${esc(c.lemma)}</b>。${btn("查看原形释义", "lemma:" + c.lemma)}原收藏词形 ${esc(w.word)} 保留为独立记录；不会自动合并。${c.isForm ? "本卡展示原形释义。" : ""}</p>` : ""}<p><a href="https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${encodeURIComponent(w.word)}" target="_blank" rel="noopener noreferrer">在剑桥英汉词典核对释义与例句 ↗</a></p><h3>词形变化</h3><p>${esc(
+  }<h3>英文例句 · 中文对照</h3>${examples.length ? examples.map((ex, i) => `<section class="example"><div class="row spread"><p lang="en">${esc(ex.en)}${ex.manual ? '<span class="badge">手动编辑</span>' : ex.status === "local" ? '<span class="badge">AI辅助例句</span>' : ""}</p>${btn("▶ 读例句", "speak-example:" + i)}</div><p lang="zh-CN">${esc(ex.zh || "中文翻译暂不可用")}</p>${[ex.pos, ex.sense].some((value) => value && value !== "语料用法，具体词义请核对") ? `<p class="muted">${esc([ex.pos, ex.sense].filter((value) => value && value !== "语料用法，具体词义请核对").join(" · "))}</p>` : ""}${words.some((x) => x.word === w.word) ? `<div class="row">${btn("编辑", "edit-example:" + i)}${btn("删除", "delete-example:" + i)}</div>` : ""}</section>`).join("") : '<p class="muted">缺少可靠的中英例句，可尝试免费补充或手动填写。</p>'}${["failed", "partial"].includes(w.exampleFetch?.status) ? `<p class="notice">${esc(w.exampleFetch.error)}</p>` : ""}${words.some((x) => x.word === w.word) ? `<details><summary>管理与补充例句</summary><p class="muted">免费Tatoeba社区语料，直接关联译文不等于权威审校；具体词义请人工核对。不调用收费AI。</p>${btn("重新补充例句", "fill-example:" + w.word)}<form id="example-form" data-word="${esc(w.word)}"><label>英文例句<textarea id="example-en" required></textarea></label><label>对应中文翻译<textarea id="example-zh" required></textarea></label><label>词性 / 具体词义<input id="example-sense" placeholder="如 v. 学习"></label><button class="primary" type="submit">保存手动例句</button></form></details>` : ""}<h3>常用搭配</h3>${s ? s.phrases.map(([en, zh]) => `<p>${esc(en)} — ${esc(zh)}</p>`).join("") : '<p class="muted">暂无可靠搭配资料</p>'}${c.lemma ? `<p class="notice">词库关联原形：<b>${esc(c.lemma)}</b>。${btn("查看原形释义", "lemma:" + c.lemma)}原收藏词形 ${esc(w.word)} 保留为独立记录；不会自动合并。${c.isForm ? "本卡展示原形释义。" : ""}</p>` : ""}<p><a href="https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${encodeURIComponent(w.word)}" target="_blank" rel="noopener noreferrer">在剑桥英汉词典核对释义与例句 ↗</a></p><h3>词形变化</h3><p>${esc(
     (c.exchange || "")
       .split("/")
       .filter(Boolean)
@@ -171,20 +176,7 @@ function card(w) {
         );
       })
       .join(" · ") || "暂无词形资料",
-  )}</p>${
-    w.history?.length
-      ? `<details><summary>学习记录（${w.history.length} 条）</summary><p>最近学习：${esc(dateLabel(w.lastLearned))}<br>最近复习：${esc(dateLabel(w.lastReview))}<br>已掌握时间：${esc(dateLabel(w.knownAt))} ${esc(w.masterySource === "manual-not-again" ? "手动：不再出现" : w.masterySource === "legacy" ? "旧版已掌握" : w.masterySource || "")}</p>${w.history
-          .slice(-20)
-          .reverse()
-          .map(
-            (h) =>
-              `<p>${esc(dateLabel(h.at))} · ${esc({ yes: "认识", no: "不认识", master: "不再出现", restart: "重新学习" }[h.choice] || h.result || "记录")} ${esc(h.mode === "review" ? "复习" : h.mode === "learn" ? "学习" : "")}</p>`,
-          )
-          .join(
-            "",
-          )}<small>显示最近20条，完整历史保留在JSON备份。</small></details>`
-      : ""
-  }<small>中文、音标、词形及原始英文释义：ECDICT（MIT，社区词库）。${s ? "本卡常用释义、标准 IPA、英文辅助解释、例句和搭配为原创学习整理；完整原始释义见上方展开项。" : "未使用机器翻译。"} 词形仅展示，不自动合并不同单词。</small></article>`;
+  )}</p>${cardSources(examples, s)}</article>`;
 }
 function render() {
   if (page === "today") {
