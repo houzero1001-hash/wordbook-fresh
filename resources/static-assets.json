@@ -1,0 +1,3849 @@
+{
+  "sha256": "f859a29baf3019d661e43a010d2f0555273c7a1e2045c5a0de5fe754e2686964",
+  "description": "Unmodified public ECDICT shards and Tesseract runtime/model. No user vocabulary or backups.",
+  "files": [
+    {
+      "path": "dict/'h.json",
+      "size": 272,
+      "sha256": "a5f8483b2ec6fada9438de70d83bf395f4ec97a42efb63d92dff8dc3da47cd56"
+    },
+    {
+      "path": "dict/'t.json",
+      "size": 135,
+      "sha256": "db4452335bbd83d4c95120dcf10dee7777f6f2d07ab8aab098411297dae054d5"
+    },
+    {
+      "path": "dict/-a.json",
+      "size": 7002,
+      "sha256": "8ca8bab313923a2a4edc8fee0791d0e14edb9de012c1a7c5cbfa3cb8574eeba8"
+    },
+    {
+      "path": "dict/-b.json",
+      "size": 994,
+      "sha256": "9b90eca90bb19eeccdb7425a43bf289abf24f046f6a707e3a4bda08143c8733c"
+    },
+    {
+      "path": "dict/-c.json",
+      "size": 2685,
+      "sha256": "4e1948820f96bfa18553da302e39b7ee9c396159d79c2d1dcab3184ed7711cc5"
+    },
+    {
+      "path": "dict/-d.json",
+      "size": 1056,
+      "sha256": "87adcd4b36d80c17d3580134a6127c08e0ae08194064ddba6751e3bd75bc074d"
+    },
+    {
+      "path": "dict/-e.json",
+      "size": 4556,
+      "sha256": "e6319fa7beaa4d4bf830fcb05b82dfed837866efa28e794322efc2c464e314c3"
+    },
+    {
+      "path": "dict/-f.json",
+      "size": 2012,
+      "sha256": "e3ce38ec7b791ed5f30ecd9241479014380381553130f436c362677301c6c641"
+    },
+    {
+      "path": "dict/-g.json",
+      "size": 3379,
+      "sha256": "7fc8531c09a97f208749ab5085e7bae4d4a876333740b977e66849f6b630e326"
+    },
+    {
+      "path": "dict/-h.json",
+      "size": 760,
+      "sha256": "4a150dfd5a16f6fc7df73b452678a9d78db3c4cc899605f9f3615ff3af0d4278"
+    },
+    {
+      "path": "dict/-i.json",
+      "size": 7457,
+      "sha256": "57535efe350c4e945059ce24433980f76a3c80377deca64554aaa3b2d2c24892"
+    },
+    {
+      "path": "dict/-k.json",
+      "size": 481,
+      "sha256": "1c7a6e4863f85e8fc412b91b93b5557edfe58d3ececccd97e6bf4d5b2057b26a"
+    },
+    {
+      "path": "dict/-l.json",
+      "size": 3507,
+      "sha256": "67ff35aca52e080ed32d9294fc1e06aa8f13b3658b15efc07cbb757404ccbe8f"
+    },
+    {
+      "path": "dict/-m.json",
+      "size": 3100,
+      "sha256": "43822aede66118f5a9a5edc872165b81076b2d5d8be27547fcfa2407db936277"
+    },
+    {
+      "path": "dict/-n.json",
+      "size": 1457,
+      "sha256": "7ac164da50e2b7e77f08daa65ccd541577f7b5689aa8594e9913fcf29ec1a850"
+    },
+    {
+      "path": "dict/-o.json",
+      "size": 6327,
+      "sha256": "46908e9bb891af6e66184666a9fe66d631ea531d654abdab3044edf4977e50c3"
+    },
+    {
+      "path": "dict/-p.json",
+      "size": 5775,
+      "sha256": "79c7ab011a3fce2dfe4963d4e1d075cc001d47340bb324c793bc9f537e1e703c"
+    },
+    {
+      "path": "dict/-q.json",
+      "size": 113,
+      "sha256": "47fcaa1aba84b57a3cf168298bb6aa22bc498a418553ea509f4dda8a950cafed"
+    },
+    {
+      "path": "dict/-r.json",
+      "size": 893,
+      "sha256": "3dcf2b79fdc402a5edb120ead012f03761cbb6faa090a6ed428d6cbd5d4c184f"
+    },
+    {
+      "path": "dict/-s.json",
+      "size": 3984,
+      "sha256": "ea4f6bd9560cbe268c223c68081c37456ccc0d60b9b4a1f7e078b6f5a89583ef"
+    },
+    {
+      "path": "dict/-t.json",
+      "size": 3189,
+      "sha256": "c817f720003e17983b5ae4708d8c95315ffaeeebf846b9d98a58eaa7f2765358"
+    },
+    {
+      "path": "dict/-u.json",
+      "size": 1021,
+      "sha256": "e99b34469d32c2f20a7234ed27364f15e159dc20d93862e9bbb92d514ab56553"
+    },
+    {
+      "path": "dict/-v.json",
+      "size": 429,
+      "sha256": "0359f905d21544aedbe1f18018d9e7381f238b5c0fc240c19bdac72119ae6166"
+    },
+    {
+      "path": "dict/-w.json",
+      "size": 651,
+      "sha256": "9450babd80b2ac5b4fa75a9e1522b31b3540bef636f10aba9caede433e3e18d4"
+    },
+    {
+      "path": "dict/-x.json",
+      "size": 98,
+      "sha256": "4f99f0188a0c1fd6b6c0ae26c455bb84002431e61d6227919c7a99a89cfb02fb"
+    },
+    {
+      "path": "dict/-y.json",
+      "size": 230,
+      "sha256": "6e7326a6e778717f58c3eb32cc47c2e67bc50cc53db54d81a094328d6613ddef"
+    },
+    {
+      "path": "dict/-z.json",
+      "size": 546,
+      "sha256": "57f6374efcadfbb693112016afe8fb8e1821a831c7f64b42ceb9fd325d084d46"
+    },
+    {
+      "path": "dict/LICENSE.txt",
+      "size": 1063,
+      "sha256": "f8552dd246f61a4e064569eae6194a01c6b3d63b03bf27c6ca863593c549ed0f"
+    },
+    {
+      "path": "dict/SOURCE.json",
+      "size": 176,
+      "sha256": "33828a929cdf78eb6957945ed00944ade99a4debe48e4415ccde05cc8a556d2a"
+    },
+    {
+      "path": "dict/a'.json",
+      "size": 124,
+      "sha256": "6663bdee77e48b19efb83cf54be82809fbe1c15425498f12580cb3203bff6567"
+    },
+    {
+      "path": "dict/a-.json",
+      "size": 16754,
+      "sha256": "40b5e2ecfca25a404fcd13f70b2e742560edd4d71e0ce22fcd8f038c96bb42e8"
+    },
+    {
+      "path": "dict/aa.json",
+      "size": 27658,
+      "sha256": "17f19294e271b07a0ab968b9c63542807ca639c3a23e10db4ab1a285cb6bc74d"
+    },
+    {
+      "path": "dict/ab.json",
+      "size": 230110,
+      "sha256": "d5fe978b49a3e58e82472650fde573c66834f741b54ac4f9f55daa87327aec14"
+    },
+    {
+      "path": "dict/ac.json",
+      "size": 441882,
+      "sha256": "349bba5b3a51fa062777dde2ff2fc80706822cb4ff16c047e12c5c46a0a9a490"
+    },
+    {
+      "path": "dict/ad.json",
+      "size": 281908,
+      "sha256": "76e308c9ef660d9ba12feb3db5efd7efeaa916f6b88fd7a3757e33f804a4b581"
+    },
+    {
+      "path": "dict/ae.json",
+      "size": 115316,
+      "sha256": "1526ee6818e3b9efab3d670ffd096d4a43e200eba0a36781a2c25e0bf0c74a57"
+    },
+    {
+      "path": "dict/af.json",
+      "size": 110437,
+      "sha256": "b33bdfd75713986b63c6761f3fb2e61a52c16e3d2d1db638d9dc51d9ec2caf8b"
+    },
+    {
+      "path": "dict/ag.json",
+      "size": 145872,
+      "sha256": "31d2519e88b54c4f967bbaf3c84d240b586932830806b14c2d8b4c2c104505b6"
+    },
+    {
+      "path": "dict/ah.json",
+      "size": 18712,
+      "sha256": "d9772330a034cb4496580f32068dc08bff8e6c61ef7560f0c481fbbe877370f1"
+    },
+    {
+      "path": "dict/ai.json",
+      "size": 105253,
+      "sha256": "1e6cde7bc5fb2f8ddd4a82d8d68392344be616401d5d782518123cc26a20dd66"
+    },
+    {
+      "path": "dict/aj.json",
+      "size": 7412,
+      "sha256": "9f8ba11ff7819adc00e3e6054abbbd96dd8c228aae61f7e797d5383ff903854d"
+    },
+    {
+      "path": "dict/ak.json",
+      "size": 24871,
+      "sha256": "dcbbf8790971e9024779ac841301ef6296604eb3d438878f270a24ead55feaae"
+    },
+    {
+      "path": "dict/al.json",
+      "size": 539826,
+      "sha256": "2191475cf64a162d1e6c7cb0f2b257d0467075237f8fb9acea5dce74ecb71ef6"
+    },
+    {
+      "path": "dict/am.json",
+      "size": 851,
+      "sha256": "71c22f119b5dce403d88b497d0615cd978301086885a4338f66238d73e2fab98"
+    },
+    {
+      "path": "dict/an.json",
+      "size": 839014,
+      "sha256": "76b81ea68c2e5320863b8c4f975a3e46ba29abab8e1b9636226e805baddbeea8"
+    },
+    {
+      "path": "dict/ao.json",
+      "size": 12094,
+      "sha256": "1cb9641d14ce26d90456f7a976e77a685bf5363271a3ffc02f69279ed1879d8a"
+    },
+    {
+      "path": "dict/ap.json",
+      "size": 269260,
+      "sha256": "2876f16fb45e9ffed8b3e20705287c85247dae91e60cc4bf4f936c3d68c6213f"
+    },
+    {
+      "path": "dict/aq.json",
+      "size": 29064,
+      "sha256": "743fd8707a0fdab69c2338c9dab288fa11de9ee47126b65c5169d51369de31b6"
+    },
+    {
+      "path": "dict/ar.json",
+      "size": 460254,
+      "sha256": "b3ec634844d66ba369750a91a4cab1271a4d518926aebbb5a7504854a644216e"
+    },
+    {
+      "path": "dict/as.json",
+      "size": 302614,
+      "sha256": "65af6c69d8b9f8ea12eed1ec9ba6b5e66ba49302c62142eef73338816ccf95e5"
+    },
+    {
+      "path": "dict/at.json",
+      "size": 177021,
+      "sha256": "75d7e340f6dd7195678cb6f7466d2ef6d12817cefafe1436ed13639890307bdb"
+    },
+    {
+      "path": "dict/au.json",
+      "size": 290073,
+      "sha256": "bf1b87e1ff15f0fc6961fe55c0fb8edea4460dbe5faa99d79eb54cbd12ef461e"
+    },
+    {
+      "path": "dict/av.json",
+      "size": 70210,
+      "sha256": "c07dcb95a660598a9e1594dd6d77b0fa10083bcf0336c303df74c2b447d909e8"
+    },
+    {
+      "path": "dict/aw.json",
+      "size": 23796,
+      "sha256": "a8a9fe54f8d33f4beeeb3d87079c4872e35396d03e652247fcb9c80c57a97f05"
+    },
+    {
+      "path": "dict/ax.json",
+      "size": 28952,
+      "sha256": "c3ceafdeebfa29b875c9f07bd44de83a87db2627f09952d4d8cca156a0070d9b"
+    },
+    {
+      "path": "dict/ay.json",
+      "size": 14968,
+      "sha256": "2c10a051f7543b3c33dd0760f87951b783351322d4fadbbc0f3a466ca079ddfa"
+    },
+    {
+      "path": "dict/az.json",
+      "size": 48638,
+      "sha256": "676b923ed7976b5b92b30aa4e912a18c21cdeedd55e17f9bdeaf15926bdc4ffb"
+    },
+    {
+      "path": "dict/b-.json",
+      "size": 7522,
+      "sha256": "f3ba2166099e7afd648ca24d8c7e4b525aec2a81ba7eb5fbdad74ba557f3b348"
+    },
+    {
+      "path": "dict/ba.json",
+      "size": 803,
+      "sha256": "d18bc7679e74a06ca7701e03b43beb76273793ef2d4e3cd19243f2b9816b4f4b"
+    },
+    {
+      "path": "dict/bb.json",
+      "size": 3206,
+      "sha256": "120595d07925c351c3249547ed287c8cadaefe5a7c469b90a25ad3575687c89b"
+    },
+    {
+      "path": "dict/bc.json",
+      "size": 7461,
+      "sha256": "b0a7cdd2bbea6d5f91860989b1f85b852a9577bf75fb4ad3e06b537f7a788900"
+    },
+    {
+      "path": "dict/bd.json",
+      "size": 5107,
+      "sha256": "948b61c956395b3c0aa7d8d7441dac0007ba248626bb6d1bed666d371403cb64"
+    },
+    {
+      "path": "dict/be.json",
+      "size": 665982,
+      "sha256": "03f95144a779870fce57945e3bb26aeaea99d804c2c9c531bbb4a4cdaabad497"
+    },
+    {
+      "path": "dict/bf.json",
+      "size": 2791,
+      "sha256": "cfa93d6e61522adfc4a29bbcf9d5b88eb3b797e67ce4a12e33fd4ad945712f70"
+    },
+    {
+      "path": "dict/bg.json",
+      "size": 1669,
+      "sha256": "e73c3e6cfa41630d513566d2f9d5de9f28b5c44c86ea403e760dcff79d2c0c25"
+    },
+    {
+      "path": "dict/bh.json",
+      "size": 11294,
+      "sha256": "b72b0bf39fa36e4d5a3a6b06abace70abbd8f529781e0d90f8d294298399b002"
+    },
+    {
+      "path": "dict/bi.json",
+      "size": 493780,
+      "sha256": "9997a69a745b08446a4451475b202b0d91cb9477e1eee700fbfe64daeb449ce4"
+    },
+    {
+      "path": "dict/bj.json",
+      "size": 2707,
+      "sha256": "f924d6288c570b049d9d15b8404944bde93159fa1f94df7ea7e7c09743787247"
+    },
+    {
+      "path": "dict/bk.json",
+      "size": 1273,
+      "sha256": "229d4b705d5dbd4fbe39e0b3d254da84effb3498d8a69d64ab943f1accaf3f7e"
+    },
+    {
+      "path": "dict/bl.json",
+      "size": 367081,
+      "sha256": "2beec2858732219508156eeabe73caa9009223b05b36d69b4446024cbb81516d"
+    },
+    {
+      "path": "dict/bm.json",
+      "size": 5405,
+      "sha256": "531dca97034b621a09f5793b6949a69875da7e235ec2363c01e38e6aed1a7d2f"
+    },
+    {
+      "path": "dict/bn.json",
+      "size": 2709,
+      "sha256": "d722d0eeef93e94161f3b5b08bb297c568bb9f28ec1088cbaa21514640956744"
+    },
+    {
+      "path": "dict/bo.json",
+      "size": 502785,
+      "sha256": "cd7afee5e24e2bfb7004d6824b73e767605b5e0ed97180e392b24e96510a16b0"
+    },
+    {
+      "path": "dict/bp.json",
+      "size": 4321,
+      "sha256": "2e0dddf4e1ddef51c874413cb02c4d06e6e60e89be72931c68818562ae5fa3a9"
+    },
+    {
+      "path": "dict/bq.json",
+      "size": 116,
+      "sha256": "733e7e3eed16fdb85fad0423ea6cf8ae95f3cabd891d0584b8debe7710b6f9b7"
+    },
+    {
+      "path": "dict/br.json",
+      "size": 564293,
+      "sha256": "7220bb768c64e8b06f0c61b67af5a67515f7e97ad19108ee1957ca54c8afb851"
+    },
+    {
+      "path": "dict/bs.json",
+      "size": 7781,
+      "sha256": "3dee26adf6f5883f37f51cd93d4552d65aa104244e38a99b2a4b54ade04c29d1"
+    },
+    {
+      "path": "dict/bt.json",
+      "size": 4301,
+      "sha256": "b440b0e2c2d12b452f9e750e9d71f0a11f1e9d8ffe545d2aee5e2093c4dd9fed"
+    },
+    {
+      "path": "dict/bu.json",
+      "size": 413868,
+      "sha256": "a9a8a46a4516a9cbf3985a7f5c8d50a00c7d764edcc24b9152ad864a2c987fba"
+    },
+    {
+      "path": "dict/bv.json",
+      "size": 1631,
+      "sha256": "50ce4ecf0be578e68871d5566f86d7e2b74b6c47cae0020ce850275c6107a533"
+    },
+    {
+      "path": "dict/bw.json",
+      "size": 2602,
+      "sha256": "3b2af2f9d833e249e77236a4a4d1496a4739b31e889a42d1e2b631c49655d00f"
+    },
+    {
+      "path": "dict/bx.json",
+      "size": 370,
+      "sha256": "1b707ae351189488fa45394766ad4f37977171b5b9851933d038cad5784cc494"
+    },
+    {
+      "path": "dict/by.json",
+      "size": 30839,
+      "sha256": "3fa0577424f104f314731eee27f8f673153ed201a18b03631b149d4ac2983904"
+    },
+    {
+      "path": "dict/bz.json",
+      "size": 923,
+      "sha256": "eaba281308ff52a1eafc52ae481ffa0e9723d0436ace97a1c3d650f9eb9c00c1"
+    },
+    {
+      "path": "dict/c'.json",
+      "size": 237,
+      "sha256": "a394334d3008ffc572fcf5e391192a33738e2132ec027f22616ada69b28f85be"
+    },
+    {
+      "path": "dict/c-.json",
+      "size": 6242,
+      "sha256": "e60d987fa3d6fe354a6bccdeef52169b68b165155d3204f6eeb1487c2d227da9"
+    },
+    {
+      "path": "dict/ca.json",
+      "size": 1270516,
+      "sha256": "b0b0daf8de193894d80b1f778433f576cd40df54e41555c6c20c9c77c83ca481"
+    },
+    {
+      "path": "dict/cb.json",
+      "size": 7919,
+      "sha256": "a3cec561735e5f5175a3377ff4b6fd394b11eadcd4a2625d36883d54eab3b2c7"
+    },
+    {
+      "path": "dict/cc.json",
+      "size": 15505,
+      "sha256": "ddef8556eefc2c42135b08c6ee725b39428504b0ad1cbb6cd28dc41d4792aea9"
+    },
+    {
+      "path": "dict/cd.json",
+      "size": 12257,
+      "sha256": "b22b9e29b11f4e7ab1a36fbeac2d8f85cede340e0ff6e545b6914931c674801f"
+    },
+    {
+      "path": "dict/ce.json",
+      "size": 292310,
+      "sha256": "d62692fe92707aec2767f7a2153892bf1e2182d91f7b01de4f80982a23d1fd68"
+    },
+    {
+      "path": "dict/cf.json",
+      "size": 6319,
+      "sha256": "7a19537cb8fe722de77cbade95b2152e57b12b6cbc88a30044af2957e119ac22"
+    },
+    {
+      "path": "dict/cg.json",
+      "size": 3826,
+      "sha256": "c926992ffea5e72c7ac00dbb4851d7b016e7e07f37ccf974a48172cf0183c91f"
+    },
+    {
+      "path": "dict/ch.json",
+      "size": 305,
+      "sha256": "925375787cdeef69d3349f06ac1822107884e93f1a07ba33db6889d44ce3b31f"
+    },
+    {
+      "path": "dict/ci.json",
+      "size": 211855,
+      "sha256": "133a22a82d67970188e539cd096ae635a9a5f6918cae3c5998df4b3777c4f76c"
+    },
+    {
+      "path": "dict/cj.json",
+      "size": 629,
+      "sha256": "a97961e17fec80465e3654215cd42ef27063b849ed2ea3b6b76f48bd2d0a7a0a"
+    },
+    {
+      "path": "dict/ck.json",
+      "size": 1914,
+      "sha256": "5899526b44eb96420853f58287b4ebc46b749a71c94bb2d4fa9c35b8c12520e4"
+    },
+    {
+      "path": "dict/cl.json",
+      "size": 378003,
+      "sha256": "ab76d1fbfd3cf8ece49b6f8e2c7a997bfd5da3825ae9181e8f3b99a3f0f1d8ea"
+    },
+    {
+      "path": "dict/cm.json",
+      "size": 9602,
+      "sha256": "96e810ab98b60487db11515593bc324545e982067f4ec3f112947bc234c08cc9"
+    },
+    {
+      "path": "dict/cn.json",
+      "size": 11117,
+      "sha256": "2179cc96137afc2f99bbb783751aa42c0dc6e5de041a5d531ff97770a4d5ab1e"
+    },
+    {
+      "path": "dict/co.json",
+      "size": 2043777,
+      "sha256": "cd35b012afc79a6d9d0d426188479c74a55e33c19e65e7dcbbd0227134b642d7"
+    },
+    {
+      "path": "dict/cp.json",
+      "size": 12070,
+      "sha256": "e7b355c20ec037d0f8d84140ff5ab077a1b2aa5fb23c83526c394cc39360eb54"
+    },
+    {
+      "path": "dict/cq.json",
+      "size": 723,
+      "sha256": "d332d95626a0aedd9433a1fa129dd728c0219a067ffefa72eb4f74ec68a11ed9"
+    },
+    {
+      "path": "dict/cr.json",
+      "size": 543755,
+      "sha256": "9e6480b37c0e9906ad9f467b59bec0accaa88f11ede4df164a2b02819ebd3253"
+    },
+    {
+      "path": "dict/cs.json",
+      "size": 14881,
+      "sha256": "8f6e6cd95361570184d73ed62d83ebcf5c5bb9c67e0f045d4091d5112c8a5c8b"
+    },
+    {
+      "path": "dict/ct.json",
+      "size": 12437,
+      "sha256": "6148fd1cfe1c315395b13beaa6faf66a8119b880a79d8932ea3759c7627a97e6"
+    },
+    {
+      "path": "dict/cu.json",
+      "size": 261269,
+      "sha256": "8880fbb312aa2cdb6de6723cec0a3a034221a7cfb34716dbcd24010e4427ff4f"
+    },
+    {
+      "path": "dict/cv.json",
+      "size": 4596,
+      "sha256": "295f28cd01416fa9af61f99991880307993eb2e18e8689a697db00b47600438f"
+    },
+    {
+      "path": "dict/cw.json",
+      "size": 3327,
+      "sha256": "1e71d4b2e3b31e26ac87159dbdb20e382e88ee9450c42e09a3dc87759d7a500f"
+    },
+    {
+      "path": "dict/cx.json",
+      "size": 1849,
+      "sha256": "878f2671f912cf4f6923f279c0ea3fb9621369bdfd86e32928b1f4aeae6cee44"
+    },
+    {
+      "path": "dict/cy.json",
+      "size": 217302,
+      "sha256": "844481cc7abae6a9d75e7bcd05b8bbfef791ff71c52e47c01e6e37e7a506d14c"
+    },
+    {
+      "path": "dict/cz.json",
+      "size": 6082,
+      "sha256": "9a48087c512f6b13ed9791e98fe8912a0f23a096c11ca73f92c83023dd2718ac"
+    },
+    {
+      "path": "dict/d'.json",
+      "size": 142,
+      "sha256": "c460a16b31f4a23c83975671a1d1284edbf6957b4e6690bf60f3ae6f2357ad59"
+    },
+    {
+      "path": "dict/d-.json",
+      "size": 7717,
+      "sha256": "f18eae830d37e7c14aedea2b83e24ec71808481451e67eca371e6dd835ee850e"
+    },
+    {
+      "path": "dict/da.json",
+      "size": 288668,
+      "sha256": "15d19be73d62cec85702f3be719fcc7c1d0cb76787e6bd1a6cc902cd8d6e580d"
+    },
+    {
+      "path": "dict/db.json",
+      "size": 6282,
+      "sha256": "836018fd22c1bd608f015b4488f850ed2ef77be9e65e8bb77b6e4855659e5866"
+    },
+    {
+      "path": "dict/dc.json",
+      "size": 6956,
+      "sha256": "ba3d85deef8d447821ee29d15a12ef3715c980d80a338be90dfb2712c78e0879"
+    },
+    {
+      "path": "dict/dd.json",
+      "size": 5275,
+      "sha256": "c3ea2d421494d01a3bd400560b6a53c7a7f97d49b7b8b0f69902d6bce9799361"
+    },
+    {
+      "path": "dict/de.json",
+      "size": 1274758,
+      "sha256": "a02973b04360ca331f5ab4485fb9db1c8477f889bb998dd4815be196e2535c81"
+    },
+    {
+      "path": "dict/df.json",
+      "size": 4134,
+      "sha256": "dc94d442c216c49d6508e8f020a1a807cba2199c532fcad90f226e6b9b9af16c"
+    },
+    {
+      "path": "dict/dg.json",
+      "size": 2363,
+      "sha256": "a613bacbea3d5d8f7ee21c948603dde2478f04b7d3217b33a2ef5f81f43702fb"
+    },
+    {
+      "path": "dict/dh.json",
+      "size": 9224,
+      "sha256": "6cfa1e30df37acc6f9405e3ca8d45eb4438616a685c52dfe7d4c32bd20e92cd8"
+    },
+    {
+      "path": "dict/di.json",
+      "size": 1162615,
+      "sha256": "f0794b8cb02ee15b432f7ec5db3e2b726825bb21f2b51a2e0dcf0346b3e9035d"
+    },
+    {
+      "path": "dict/dj.json",
+      "size": 7284,
+      "sha256": "b19e4aa0dccca67f7ec6a8dde8b045a460d9278ade4f36410008c57c807b62c7"
+    },
+    {
+      "path": "dict/dk.json",
+      "size": 1635,
+      "sha256": "18e7b793a7c7aa5983df88070fe3a0791f7d6d1f923988cee9647887b5a7d6be"
+    },
+    {
+      "path": "dict/dl.json",
+      "size": 5415,
+      "sha256": "f3ce37716a2d424f8d2dec20cdb4487c6d178f2bc054829e0beec11e17f72241"
+    },
+    {
+      "path": "dict/dm.json",
+      "size": 7457,
+      "sha256": "9a73e878964f73b430b5d13d139e9762534031ecd392c667595d71df7d501afc"
+    },
+    {
+      "path": "dict/dn.json",
+      "size": 6088,
+      "sha256": "59c5323baf3fe52683189a8012440c1b5ef83ca673a66a73e6bc04b200167a80"
+    },
+    {
+      "path": "dict/do.json",
+      "size": 392376,
+      "sha256": "4d321ba742009613aac2e6d45e909457bc8226aa0b9d2f74864264faf9476c05"
+    },
+    {
+      "path": "dict/dp.json",
+      "size": 5386,
+      "sha256": "41d98af96c5c16e0b20baac838e6323189fb9139e6fc64298c6d35676299871e"
+    },
+    {
+      "path": "dict/dq.json",
+      "size": 296,
+      "sha256": "5feae9027cac53a847e2cac595a12d51fa8dc11c491f928a4a4e6a8fa0af33a8"
+    },
+    {
+      "path": "dict/dr.json",
+      "size": 254317,
+      "sha256": "d8bae095da65bbe5e464402f303d7cfa6695d588285577094d3900968f83580f"
+    },
+    {
+      "path": "dict/ds.json",
+      "size": 7843,
+      "sha256": "079d4b954f6df7eaa935b1457dd17f1b6bc84f02f6bb412faa04a2205568fab3"
+    },
+    {
+      "path": "dict/dt.json",
+      "size": 4400,
+      "sha256": "27bc1872d7ea730b8906cff3f563316deab0b5d87ad21ad06bd878dcbd21efe5"
+    },
+    {
+      "path": "dict/du.json",
+      "size": 200843,
+      "sha256": "695fbd36fe0ab2bfa3c892137720b3f509a5665b270f199e030425dd5e7a8d9b"
+    },
+    {
+      "path": "dict/dv.json",
+      "size": 5029,
+      "sha256": "9356c12cfb9b3c3f0fca9f43ce97900d11228c706d07e1aeb96bd28ba5a8e274"
+    },
+    {
+      "path": "dict/dw.json",
+      "size": 12374,
+      "sha256": "61e1ea2f481e5167faf6a4e281cf4a664dab35494d2e7c57cc3036d579d940fd"
+    },
+    {
+      "path": "dict/dx.json",
+      "size": 951,
+      "sha256": "0f0b36a17e0ec0314eb84ea23a4706fdb05007227c77e97230957b6af6943128"
+    },
+    {
+      "path": "dict/dy.json",
+      "size": 84129,
+      "sha256": "9d92ba3b12335ca04de718de1604ada234a2de83d08e515a42cc12cb43f52695"
+    },
+    {
+      "path": "dict/dz.json",
+      "size": 1437,
+      "sha256": "4779a7e9034e7fef16e4f11ab74150b2274bcd8612c68f1421eb01c42e737edb"
+    },
+    {
+      "path": "dict/e'.json",
+      "size": 280,
+      "sha256": "b814fe8ea5570f8b65f4977cf06c7fda495129e4432b579054358e68ba62c7d3"
+    },
+    {
+      "path": "dict/e-.json",
+      "size": 9113,
+      "sha256": "0efffa786840e1233dcfa2c1748c7f89cb1a6c112b7741f5d38e9cf1ca55b706"
+    },
+    {
+      "path": "dict/ea.json",
+      "size": 87055,
+      "sha256": "86808a609592b0c5b7f24545eaab0206f38e1e9784acc5e2f69e3c5eee74b0e3"
+    },
+    {
+      "path": "dict/eb.json",
+      "size": 20742,
+      "sha256": "b0f96c332a6f6bec3fcb321c85ecd55749112675643799cbf6f9bfe2415b7e82"
+    },
+    {
+      "path": "dict/ec.json",
+      "size": 133752,
+      "sha256": "cdc0512ac618b773ed29b4da600b5d686096736ad323f4de3874812fb3696e2c"
+    },
+    {
+      "path": "dict/ed.json",
+      "size": 63965,
+      "sha256": "b35f49e41ff439396adae9931acf3fb6e7ea5eba8709d82fa633132bf3a851e2"
+    },
+    {
+      "path": "dict/ee.json",
+      "size": 12659,
+      "sha256": "a7091942c36e77821a9af89968540b601865e69857e5e416181cff6ab694c15d"
+    },
+    {
+      "path": "dict/ef.json",
+      "size": 33857,
+      "sha256": "5969c871dc1915b4b2ac7c39c6819cad1ae09015c8f65b413930a062730011bc"
+    },
+    {
+      "path": "dict/eg.json",
+      "size": 37435,
+      "sha256": "d5d0e4f0f96d4ae70f99552eb2d41defefd930057f2d228fc197ca9697a1f541"
+    },
+    {
+      "path": "dict/eh.json",
+      "size": 6793,
+      "sha256": "4775a11224412a689bae6e9ace3c5555872b88bbd4e671e01c93cad43919c28b"
+    },
+    {
+      "path": "dict/ei.json",
+      "size": 36135,
+      "sha256": "41e2ea75ea2c57a8b4db9a61c204958cf42ab15b815d74c84341adb5b3377dc0"
+    },
+    {
+      "path": "dict/ej.json",
+      "size": 7961,
+      "sha256": "15c912bcfb55f071b7c76234a04adbb639fbaab14965fdd454bf1d032b32938c"
+    },
+    {
+      "path": "dict/ek.json",
+      "size": 7443,
+      "sha256": "45df199295862f84edb71be38cef259d3c3a1cccc123f123a9a7c037d4489e64"
+    },
+    {
+      "path": "dict/el.json",
+      "size": 270515,
+      "sha256": "9b229b852d5062b9020211796627dd9084198975e6aa907f76fa6eeb1c1dc0eb"
+    },
+    {
+      "path": "dict/em.json",
+      "size": 184347,
+      "sha256": "aa7f4341a5d4f5468c5469879893af850881131caf490dde5aa6f3dfb79582da"
+    },
+    {
+      "path": "dict/en.json",
+      "size": 486268,
+      "sha256": "1b6c514c64022f0056a6508ef6811bff94fe46112daf1e9e93238574b2f9cd7c"
+    },
+    {
+      "path": "dict/eo.json",
+      "size": 15696,
+      "sha256": "0838057994c12bf8120c3abe738b283f88d50bcdea47c0eb4211408aec6f14c1"
+    },
+    {
+      "path": "dict/ep.json",
+      "size": 183758,
+      "sha256": "22f4dd8add55e2ac2a6ba7c3b24bbb872bb426bb315c73811f34119e096d9504"
+    },
+    {
+      "path": "dict/eq.json",
+      "size": 53033,
+      "sha256": "c2d67860ea3ef5d2640f4b5f078c704883232e33651c25f1f9f97ac527632249"
+    },
+    {
+      "path": "dict/er.json",
+      "size": 144856,
+      "sha256": "4009fc0f428b00f887daa5809269c5839f20ae9143306f3822a67511c386a220"
+    },
+    {
+      "path": "dict/es.json",
+      "size": 148222,
+      "sha256": "ee6087dcbdd1c342855a292551d6e0ff00e09192e2f36a8cfc901a5c119ff58b"
+    },
+    {
+      "path": "dict/et.json",
+      "size": 108039,
+      "sha256": "d74fc4fc7847dab5df94f5a0bf3a1636205c5f2659cca682e0ed885d8630296f"
+    },
+    {
+      "path": "dict/eu.json",
+      "size": 1256,
+      "sha256": "e364f002d48abb52694ecb3bb6bc4711c11ea00a05eb21a8ae07c0de7e44d78c"
+    },
+    {
+      "path": "dict/ev.json",
+      "size": 86330,
+      "sha256": "df8fadc5d8c28042f32324888df6b2f864354163f4c00739329dc9ee35d9b7aa"
+    },
+    {
+      "path": "dict/ew.json",
+      "size": 7612,
+      "sha256": "1cd36822d1b082f5a1c97401b4205e28ba37d677c778d34f8e5a593bc28fdd30"
+    },
+    {
+      "path": "dict/ex.json",
+      "size": 459275,
+      "sha256": "2f630f4ab98891b8c7bb77d71cfeb1da2a32c8b25885ee813e084283c46be264"
+    },
+    {
+      "path": "dict/ey.json",
+      "size": 35072,
+      "sha256": "adb0d6115c17d3b418e319a0b3c71e5f3140483d06b64ae6f94c0d56e79fd669"
+    },
+    {
+      "path": "dict/ez.json",
+      "size": 3452,
+      "sha256": "8326eee8e45057dd909f092216d1379d6c44f91aca12fdb6c568e7489ce1919f"
+    },
+    {
+      "path": "dict/f-.json",
+      "size": 2870,
+      "sha256": "56f88fd3cc970f3b5314aa47898a225a47c2863cb9562a5700b65fb8e2f8bd09"
+    },
+    {
+      "path": "dict/fa.json",
+      "size": 368898,
+      "sha256": "e5dd996ef9cb6a07ba64fe5f6a4ca87fc724771c515f059bdf1f8c79356a6b42"
+    },
+    {
+      "path": "dict/fb.json",
+      "size": 2568,
+      "sha256": "66013d8fdbcb79807e12c6322b44e0ef79c0f69e9feda5e408bc2238d61a222a"
+    },
+    {
+      "path": "dict/fc.json",
+      "size": 5348,
+      "sha256": "ecb3e96532c3a55eed6476f61b1a5f89c3ba2cd5f08dc647dd36cfefd0e99b4c"
+    },
+    {
+      "path": "dict/fd.json",
+      "size": 4772,
+      "sha256": "8ea5faee18f84cd77c9336d0bf5f50a4025e6e987451aea7228915f91307518f"
+    },
+    {
+      "path": "dict/fe.json",
+      "size": 293232,
+      "sha256": "fcfa2ced2d651827ac646d928fa53d6d38607ec3a3b5536b86a30ce15c75de55"
+    },
+    {
+      "path": "dict/ff.json",
+      "size": 2809,
+      "sha256": "fded03ce9c59393739f5fe5ea31d608b4198643ab293009525bd2df49871ae0b"
+    },
+    {
+      "path": "dict/fg.json",
+      "size": 1708,
+      "sha256": "c946a6dee5638cb09ce6d5e57cd80e31f04fa9af54b80fcccbf6f6939d4279ef"
+    },
+    {
+      "path": "dict/fh.json",
+      "size": 2336,
+      "sha256": "d77311b129f0c48bd026205ff58774850fa9237f50f18af133e6339a05726555"
+    },
+    {
+      "path": "dict/fi.json",
+      "size": 374937,
+      "sha256": "2ad4a61ebe54ce7b68d7737cddac7b34ada72f9d29ca5aae91b12c9b6ea3627c"
+    },
+    {
+      "path": "dict/fj.json",
+      "size": 1195,
+      "sha256": "772a06e6c064563d5c4929ef5ed5a17a63047e80bed6a2df7ee9f8feb0e2d5a5"
+    },
+    {
+      "path": "dict/fk.json",
+      "size": 105,
+      "sha256": "d35a59d81645cb5af33ab86c2bf25e3aa8032d62ed36c45cda5546d893164050"
+    },
+    {
+      "path": "dict/fl.json",
+      "size": 415641,
+      "sha256": "e236a1e9d888b0b58526d6a87cc312850da7839f85ad00c51c4240c1ff26bf99"
+    },
+    {
+      "path": "dict/fm.json",
+      "size": 4339,
+      "sha256": "aea059ad160c446a421e25e47f7dad3f874dd1bd19ce8e4d8b4dec87d8810ebf"
+    },
+    {
+      "path": "dict/fn.json",
+      "size": 3041,
+      "sha256": "0e4242177cdcb2b9a271c7eccdfc98550301d737d03932dddb2a681c669fcb6d"
+    },
+    {
+      "path": "dict/fo.json",
+      "size": 436448,
+      "sha256": "5b8978917ed58ac6cc0cf6214f94abd3a669a9686b1e6eacb3847c5d37e1ad3f"
+    },
+    {
+      "path": "dict/fp.json",
+      "size": 3233,
+      "sha256": "f794555f8bd99a8ebde77c10948cc53dfd24f90800c2feb7f7b9fd740cddb302"
+    },
+    {
+      "path": "dict/fq.json",
+      "size": 432,
+      "sha256": "789ff6d48a2523134d1abb4ac3d9a0288eac9cf5e46805a0a49d0b0fbc55ee73"
+    },
+    {
+      "path": "dict/fr.json",
+      "size": 1408,
+      "sha256": "b74aec525e128066a34df5075c69663a5d4f6406a75c07c11bb57cb12f8253d2"
+    },
+    {
+      "path": "dict/fs.json",
+      "size": 6962,
+      "sha256": "cf665969926807738501ac2e65ff5ecd18df1bbbe37222f154a7309ec2c8c4d8"
+    },
+    {
+      "path": "dict/ft.json",
+      "size": 6312,
+      "sha256": "315d51515e7e44c7334af90260eb55244519d5bd7bcb7ef5143cbe3a9fb1388b"
+    },
+    {
+      "path": "dict/fu.json",
+      "size": 212152,
+      "sha256": "e7647506ba83aadf809116e49fc1e6a9abe9b73b71f0edd68512589f7cca97c7"
+    },
+    {
+      "path": "dict/fv.json",
+      "size": 789,
+      "sha256": "e9d28615f0c3d8a8ca8b3d9b6f4d9339460e754b88f6072b0dff0f7deb82ae32"
+    },
+    {
+      "path": "dict/fw.json",
+      "size": 1866,
+      "sha256": "d06dae483a6583dfd1b2343612cbef314ba9d7ac0c25849a41929f24c7efe6f4"
+    },
+    {
+      "path": "dict/fx.json",
+      "size": 278,
+      "sha256": "cfd45fa55a21995586bd23d52be22e5bf9583bf64359c853d3280f576e6a842d"
+    },
+    {
+      "path": "dict/fy.json",
+      "size": 4026,
+      "sha256": "90daf11ce88c0743db3113c8571bc8fca84fd556c9ba17c12ef186f3c016508d"
+    },
+    {
+      "path": "dict/fz.json",
+      "size": 235,
+      "sha256": "93d7f000ecf1af890b4c3da28736bf18810c9e9a082115885366c3a8250da2f4"
+    },
+    {
+      "path": "dict/g-.json",
+      "size": 4038,
+      "sha256": "01f305898c6cc5bd84ad95106aac34e8d0341ac5fbf859f200ac25d9cbe11360"
+    },
+    {
+      "path": "dict/ga.json",
+      "size": 451095,
+      "sha256": "44f42e4523cec662a005dcadf824816e6af0fb61a51037dd89771d584b34b866"
+    },
+    {
+      "path": "dict/gb.json",
+      "size": 3506,
+      "sha256": "4e9daf8d792260569fc271bc29d808d30a93fb8d626d4962994e0afa21416bb6"
+    },
+    {
+      "path": "dict/gc.json",
+      "size": 4607,
+      "sha256": "6f0e52fb435a8ea15c27fd7adc7575a2fa70474f87461fc758f00a6667c1730a"
+    },
+    {
+      "path": "dict/gd.json",
+      "size": 4514,
+      "sha256": "d58ef5b50ef9826fd6bf19562e806afbee75adadfd368c25683fab1c86b173b6"
+    },
+    {
+      "path": "dict/ge.json",
+      "size": 301547,
+      "sha256": "140054d4931e334891a128b9919b571ae542769c257edb9562bc6a3de0cffb6c"
+    },
+    {
+      "path": "dict/gf.json",
+      "size": 1794,
+      "sha256": "6de7093f5b1e6ea15be90a9af2038b23fb24a0f077716ebdc8f222248496c16c"
+    },
+    {
+      "path": "dict/gg.json",
+      "size": 1512,
+      "sha256": "636c57aa182983f9deaa181adb20eddeef92010de5fb5e2c327c22be66aa6301"
+    },
+    {
+      "path": "dict/gh.json",
+      "size": 22623,
+      "sha256": "5f4567ad1fe2d88a2d6e1f7fbd95ffc74106092412113d32acd13af980ffc096"
+    },
+    {
+      "path": "dict/gi.json",
+      "size": 150524,
+      "sha256": "5dec7e669327e03a2a532e95de1884dd990e67a055fd124c6387703e3b8c0ef1"
+    },
+    {
+      "path": "dict/gj.json",
+      "size": 841,
+      "sha256": "265ce36afa0803a188db082633fa4daa74809cb4280d604b3cd162a3e05ef1fd"
+    },
+    {
+      "path": "dict/gk.json",
+      "size": 488,
+      "sha256": "9ec12d4994d8bebe43d7797049e68fbb52e1014c9b42c81c4e98124ab9977e8c"
+    },
+    {
+      "path": "dict/gl.json",
+      "size": 273904,
+      "sha256": "e6591cb6a60919bb74c853c555426c175284bd64792a7c8984522d2d8da01434"
+    },
+    {
+      "path": "dict/gm.json",
+      "size": 4254,
+      "sha256": "df4b36633f53ac41209a13886abe0962ad3c8c6d530232a390bff8de90465d20"
+    },
+    {
+      "path": "dict/gn.json",
+      "size": 27332,
+      "sha256": "4b116daaff9c9d6d2f12c65997f7ce7da585b87100492b0e4e30829e8ea7b13e"
+    },
+    {
+      "path": "dict/go.json",
+      "size": 288864,
+      "sha256": "4c00aeea2e6ce0952a3c76ca34e331bb1a36353ceb3ea8f69788e96faa2634ac"
+    },
+    {
+      "path": "dict/gp.json",
+      "size": 5785,
+      "sha256": "df345b882d6871fce4c744b964e1b66474d24aed122280365f2df5d07c5544f6"
+    },
+    {
+      "path": "dict/gq.json",
+      "size": 122,
+      "sha256": "8cc2eec834648ab9d3fca709ad33b0f78e7f77929ee226ce5445ee9d3684d09f"
+    },
+    {
+      "path": "dict/gr.json",
+      "size": 459920,
+      "sha256": "5fd60c4f3ac2a2e61c5529cb31156b5fbf216d9ac077b54bc503c7a92ff3fcaa"
+    },
+    {
+      "path": "dict/gs.json",
+      "size": 7245,
+      "sha256": "e6909a0fd1e4ace7ef50745af3130cb0304c398fa274546d00abcfb51775b638"
+    },
+    {
+      "path": "dict/gt.json",
+      "size": 4333,
+      "sha256": "f49b6b2dcc6b4c90eee97ef4fb8040c58f43b05531860514d89d5e32f942ad13"
+    },
+    {
+      "path": "dict/gu.json",
+      "size": 191599,
+      "sha256": "c483bf5442e04e803be1d5ffa7f210944b558608b3250cd09e5331f9788708cf"
+    },
+    {
+      "path": "dict/gv.json",
+      "size": 919,
+      "sha256": "f2fb832b6b9a92d25be40ebd2d8dc8e9bf895bd26ecabd24f62148f74bb5003d"
+    },
+    {
+      "path": "dict/gw.json",
+      "size": 6079,
+      "sha256": "be3ffb7178e58eadd59526f99a5e4a9623966c7e598f40267a6efe46e845ad82"
+    },
+    {
+      "path": "dict/gx.json",
+      "size": 280,
+      "sha256": "643f55d73da7c4009c449a9487538d9802d061187ccd4745f9f7a5ff80e0ba63"
+    },
+    {
+      "path": "dict/gy.json",
+      "size": 64148,
+      "sha256": "61c7312be412ae5eb5f683f5980acf10e1983359c3751c9471c05b9a50e6822a"
+    },
+    {
+      "path": "dict/gz.json",
+      "size": 406,
+      "sha256": "3fc60d4d1b1c3a26d82331084e78d74846ef10219afd31d1d2a0891c07494f53"
+    },
+    {
+      "path": "dict/h'.json",
+      "size": 91,
+      "sha256": "095610668b6618c42d4492d3734d5d1f9cb6e72c4413afcb5943bad5710a99a2"
+    },
+    {
+      "path": "dict/h-.json",
+      "size": 4226,
+      "sha256": "6fe36a4df424d709c78c79695f3612d699c633e421146b1c4390d04093e0d57a"
+    },
+    {
+      "path": "dict/ha.json",
+      "size": 692778,
+      "sha256": "9626c9ec569b5df5ea2ac5e22554b28113b59e807dad5cfc319e27195a6b24d1"
+    },
+    {
+      "path": "dict/hb.json",
+      "size": 3191,
+      "sha256": "9cbb0d87a4682fe57c42b6dfc52aa3b5edfbcb63434c65e9c3cac2c055188bcf"
+    },
+    {
+      "path": "dict/hc.json",
+      "size": 4473,
+      "sha256": "85c9e480ab8a6d0d9571457e71b0a60afbe2e70ee6b02a0a72c93491fd21c12b"
+    },
+    {
+      "path": "dict/hd.json",
+      "size": 5059,
+      "sha256": "161947b03ba8815150b6845e38360400ab35efec0ac416f1cfd2bb51d9066254"
+    },
+    {
+      "path": "dict/he.json",
+      "size": 772752,
+      "sha256": "85f438ce4435b335dd6a1eb6412846dcc5cafe0fb76f31b020eb4bdddd4dbd68"
+    },
+    {
+      "path": "dict/hf.json",
+      "size": 2258,
+      "sha256": "112ea3838f83d2c35c48d3938716d66715d0e6cbddb4f1e1962d5adad89ce910"
+    },
+    {
+      "path": "dict/hg.json",
+      "size": 1871,
+      "sha256": "d5bd25f85a3df6e67be2588a344d94c6ead6d5c9384c028c476ced901507aff5"
+    },
+    {
+      "path": "dict/hh.json",
+      "size": 1743,
+      "sha256": "95f5c2dc1c1ba9988e3398bffa1d9fd22bc74f7f4dbe1a7ae3bb03bced18ad80"
+    },
+    {
+      "path": "dict/hi.json",
+      "size": 261899,
+      "sha256": "fa40b916ed2346fa2e736ccbcecdf501ceab37f9c95c42987b960a9277c415d0"
+    },
+    {
+      "path": "dict/hj.json",
+      "size": 598,
+      "sha256": "0d1a64d8f20254e4d7fa41f7ce802a41d4c007846344b259d7705fb7d0e46e25"
+    },
+    {
+      "path": "dict/hk.json",
+      "size": 1452,
+      "sha256": "204835f140d40c13df688b1950a7f3db0f2ae060ca186f5f469ef634d469dc54"
+    },
+    {
+      "path": "dict/hl.json",
+      "size": 3096,
+      "sha256": "dc6ac33c9c0031b2c2b957a014cdc3a2aea4a20971f6f7a254bab16f9eaff2f7"
+    },
+    {
+      "path": "dict/hm.json",
+      "size": 5144,
+      "sha256": "b3c916388ba1247f98703c305e2927c6ad9adec3b4681c78460a48ec8967ab8a"
+    },
+    {
+      "path": "dict/hn.json",
+      "size": 1977,
+      "sha256": "f148a59424b3de60639914543374b4dc857c545e8c640bdc5c024185b1b31648"
+    },
+    {
+      "path": "dict/ho.json",
+      "size": 578171,
+      "sha256": "4c02875f36c77232ab231a7daf572698601dd2f00c86a4c81ebf1cf0e446122a"
+    },
+    {
+      "path": "dict/hp.json",
+      "size": 4626,
+      "sha256": "64685c3f149fe0e26ee0e017121bdb009ff682638be037c1341b3f4a6259bf7c"
+    },
+    {
+      "path": "dict/hq.json",
+      "size": 701,
+      "sha256": "8009e3df259c2ef392268c76e33dc5d07625492dcb338708d53b3e16b6aa8f36"
+    },
+    {
+      "path": "dict/hr.json",
+      "size": 5880,
+      "sha256": "1ff63526818c915c109b205c85c76c5cb418b13714880509d0919bf5e3acf588"
+    },
+    {
+      "path": "dict/hs.json",
+      "size": 8537,
+      "sha256": "3c350840a76ed0e50d1af986bf324051db464b7b37bcf8dc1811c2b5959f8c44"
+    },
+    {
+      "path": "dict/ht.json",
+      "size": 4907,
+      "sha256": "33f987c77d6dcd63328b7f526504a7efbcbd5fd77967e0d1d69070a1b2adec71"
+    },
+    {
+      "path": "dict/hu.json",
+      "size": 174196,
+      "sha256": "db4867a564f348185922e7cb848494401b4a939be1aa8a9a0f0ef193ebc8728c"
+    },
+    {
+      "path": "dict/hv.json",
+      "size": 2366,
+      "sha256": "8d7bdeff36f732719000e5996d7ca2a0a493252a5cf292ae0e7a4cb599f2c9fd"
+    },
+    {
+      "path": "dict/hw.json",
+      "size": 1712,
+      "sha256": "8a617ac13a03018083666699b86e93af012b5fb328123ac7410420e1d4342b07"
+    },
+    {
+      "path": "dict/hx.json",
+      "size": 332,
+      "sha256": "76c5e37e27a492a3dfeebfb882a819e45d3bbd457c5d7fd8ce4bedbcfec50c03"
+    },
+    {
+      "path": "dict/hy.json",
+      "size": 602692,
+      "sha256": "a8262d0d0de53ac1a83034f3d018faeb596b2f4bbce63533ed094a395921d727"
+    },
+    {
+      "path": "dict/hz.json",
+      "size": 296,
+      "sha256": "3599a284f0805d649f827c49af7e2ca3b17163445deaf47e4f5494890a0eb4cc"
+    },
+    {
+      "path": "dict/i'.json",
+      "size": 528,
+      "sha256": "cbd52aa74bb2b1e61eabb43e6609bdfe76b67d44261985c76d4800096ac03c5a"
+    },
+    {
+      "path": "dict/i-.json",
+      "size": 3864,
+      "sha256": "5f32cec5aed0e4ba756cddf8bbe7f8eed1e7fdd049fae83abb98887b0bd9bb0d"
+    },
+    {
+      "path": "dict/ia.json",
+      "size": 20116,
+      "sha256": "33630fc137123c4f9722333d73ce41af4459cb7c55f23eb12e52513a901e1bc8"
+    },
+    {
+      "path": "dict/ib.json",
+      "size": 14181,
+      "sha256": "5f4c44c1f27a4bbc364e0f6cbb559592c9b69879bdb7aa08d78ea58e49b6d6d1"
+    },
+    {
+      "path": "dict/ic.json",
+      "size": 71282,
+      "sha256": "35243fbde3847814c0949729b4a67fec02b1c686799932dee5c996ddd47f3d40"
+    },
+    {
+      "path": "dict/id.json",
+      "size": 73261,
+      "sha256": "de2d2244b7144c387ba3f2e38d287b57be7f1f30a607dd13af8ed86397e61119"
+    },
+    {
+      "path": "dict/ie.json",
+      "size": 5973,
+      "sha256": "f7404d4efb65326ca7782b4909f10aa71bfb207108515e0b80891c773c356c8d"
+    },
+    {
+      "path": "dict/if.json",
+      "size": 9731,
+      "sha256": "808a4b3b116bdb69f25e2de3657f21d14c4269f81df2a5f60f82d46b8e507280"
+    },
+    {
+      "path": "dict/ig.json",
+      "size": 23598,
+      "sha256": "c172dcd726acf17b8d45f2e929d3527107ea59093c289d2c981f1cf45f7e0208"
+    },
+    {
+      "path": "dict/ih.json",
+      "size": 4703,
+      "sha256": "284dcccd6f83c6dc5abe82f958c5349520f8fd172e9de8c7acaed188a2474f86"
+    },
+    {
+      "path": "dict/ii.json",
+      "size": 8478,
+      "sha256": "36e48b6bb029eedfcb766fdf1a15df581bfdcab55e6a16551f755d7879274ff4"
+    },
+    {
+      "path": "dict/ij.json",
+      "size": 2131,
+      "sha256": "e6e573e8c3a333f4f4afd2bfa1d29cb43760542636d3adb15ca3a6e411547439"
+    },
+    {
+      "path": "dict/ik.json",
+      "size": 4964,
+      "sha256": "d40c64bcd8dd0dd0d3cac00b4417b90aaee4d2c504eb1b50b588b5a5e7d4e50b"
+    },
+    {
+      "path": "dict/il.json",
+      "size": 77338,
+      "sha256": "63e3aff76778495f2b4b4f96f7dc43296f74c5bb9bca385d4a7621fde490c668"
+    },
+    {
+      "path": "dict/im.json",
+      "size": 288969,
+      "sha256": "e22341543bfe975d584e7f32ebb916bde49e4f3a41e4aad35fd780ca61a5ebf7"
+    },
+    {
+      "path": "dict/in.json",
+      "size": 1280022,
+      "sha256": "3c06630ec74313c54beaa25a4eb263ca7ab90852d1d2dc8a48358217181edfa1"
+    },
+    {
+      "path": "dict/io.json",
+      "size": 51536,
+      "sha256": "ee884909eaa287ff7e4884415667748de7668d1d1ee177fea8be7c87b43b8814"
+    },
+    {
+      "path": "dict/ip.json",
+      "size": 15650,
+      "sha256": "fc32fdec781f156076cd3a39a7d78a64d8a964225e84a7413aef200203bf8953"
+    },
+    {
+      "path": "dict/iq.json",
+      "size": 1626,
+      "sha256": "6d194a0df73c4a07d70cffc71576592b4d233908cbc7a88255d82ba3164d1aaa"
+    },
+    {
+      "path": "dict/ir.json",
+      "size": 108076,
+      "sha256": "b9761863f385d57ca206a7faa8b1781617d93198070f50c3c3fbffc9d82b6444"
+    },
+    {
+      "path": "dict/is.json",
+      "size": 851,
+      "sha256": "974c08457673c96233049e4bcea70ccdd5b6cac8ff23d790e3ae1f811d0763f8"
+    },
+    {
+      "path": "dict/it.json",
+      "size": 35277,
+      "sha256": "553605f27785b7a6aa3f5ddd9d81e1bcf286c5edf6e5b9f8d6a0356a25c8bd3f"
+    },
+    {
+      "path": "dict/iu.json",
+      "size": 3095,
+      "sha256": "5920cabe636bfedbcfce5daf89390e3862d4b71ff8cd5aa3ac22c132b046f364"
+    },
+    {
+      "path": "dict/iv.json",
+      "size": 12002,
+      "sha256": "1cfa3bdaabc88cbd12d74152bef67acee25de558b28029140e0bf25be34ccce0"
+    },
+    {
+      "path": "dict/iw.json",
+      "size": 5235,
+      "sha256": "94e8ed7b216eaab60781d60fa1eac3ee33f35872bc5d211cd93287885880a4de"
+    },
+    {
+      "path": "dict/ix.json",
+      "size": 3705,
+      "sha256": "387cc7ba45e0053f441b04c6e0dad361c1fc8dded39d619e412cbc742188c3d8"
+    },
+    {
+      "path": "dict/iy.json",
+      "size": 1703,
+      "sha256": "add09db8a444c6a5ce0d993db8ca3c44889708705d356ce4dd07ecfe11fa8625"
+    },
+    {
+      "path": "dict/iz.json",
+      "size": 4025,
+      "sha256": "350f1d42f312df94d37d9869247bd972ddd7167b7f073881ad2f39d754992848"
+    },
+    {
+      "path": "dict/j'.json",
+      "size": 124,
+      "sha256": "920d966edf9d7faa8b8852588f86854427035f7e3e88a7a9019f2149ab0d495d"
+    },
+    {
+      "path": "dict/j-.json",
+      "size": 2179,
+      "sha256": "b271ef67fb061372730f412e580caab40cd644f0a31735fd269ad00d27439376"
+    },
+    {
+      "path": "dict/ja.json",
+      "size": 162428,
+      "sha256": "4d833bb5c042b1394f57fa977869f4017b9b88fe9864b90d8881688fed1f640c"
+    },
+    {
+      "path": "dict/jb.json",
+      "size": 1080,
+      "sha256": "d94bba9497c962dee21bedff175c3d263de40a1348848bab47040957f1f6f944"
+    },
+    {
+      "path": "dict/jc.json",
+      "size": 3259,
+      "sha256": "ecb690eb5886aa35023972d0061f735000a9f01693db4570b4a3c2554b177692"
+    },
+    {
+      "path": "dict/jd.json",
+      "size": 2028,
+      "sha256": "e6d695a9d83c2cd2646fd6cfe16f77bb0cac81346b96c56fed71a11966dd8ac7"
+    },
+    {
+      "path": "dict/je.json",
+      "size": 95650,
+      "sha256": "b27389f784eab05f684e56668dbb9bc1410f56544a947b2f023c0f8b9baba296"
+    },
+    {
+      "path": "dict/jf.json",
+      "size": 1105,
+      "sha256": "eee2726de40a3d3e655784418078bee9470186ac9d17ac394c19ff3c6101cce8"
+    },
+    {
+      "path": "dict/jg.json",
+      "size": 106,
+      "sha256": "e9d0ee02e442120aa5a559f832c026f36ce00e7b5a8b5c47cf8b5d1619644758"
+    },
+    {
+      "path": "dict/jh.json",
+      "size": 1474,
+      "sha256": "c1ac9dcff106ae417e051ac4d2d322e67889a26663c5310ccf3ebd3c905d650d"
+    },
+    {
+      "path": "dict/ji.json",
+      "size": 41138,
+      "sha256": "06e63bdc8ffd180fc0749e86e2d1347b9896f79411f5a6aaa615b637588f8a96"
+    },
+    {
+      "path": "dict/jj.json",
+      "size": 400,
+      "sha256": "65736c37f0631712316b6f26bb8b35162bc373520622da359dd2040b4d717fbd"
+    },
+    {
+      "path": "dict/jk.json",
+      "size": 283,
+      "sha256": "dc54e51e42b90637b92e6845f5b0a05e0124cdd32fab61cc3b37fe2d7d7ff785"
+    },
+    {
+      "path": "dict/jl.json",
+      "size": 1151,
+      "sha256": "e6d6c73ac7da2037c1e814fd6854349a094f4bc37f54d71cf83ace12226fdfb9"
+    },
+    {
+      "path": "dict/jm.json",
+      "size": 1909,
+      "sha256": "2ac95950faf2c632b6adbdb213d9ffa27bdc0c7037d36b7282a085770cf68026"
+    },
+    {
+      "path": "dict/jn.json",
+      "size": 1382,
+      "sha256": "834e599385f6dc5a369992d041d9a704696dbd7f1ced442ab8fd9b6530c06bc4"
+    },
+    {
+      "path": "dict/jo.json",
+      "size": 117108,
+      "sha256": "d3e77458b801af4439151ad02285648c02bb9892fd86fe006606d8564d0576c1"
+    },
+    {
+      "path": "dict/jp.json",
+      "size": 2154,
+      "sha256": "422ce43e9a7435a0bba7f8acff96bf8cc736cbdf4b594ea7e3a9e435ce9981d4"
+    },
+    {
+      "path": "dict/jq.json",
+      "size": 120,
+      "sha256": "05856e46b687b6d5a829348499b72d0928fd90e34bf321a43d81661177524824"
+    },
+    {
+      "path": "dict/jr.json",
+      "size": 1579,
+      "sha256": "60093a26014b6e9fbd7418a9739991d401c935f966a0adc38dd950c78ff379be"
+    },
+    {
+      "path": "dict/js.json",
+      "size": 2844,
+      "sha256": "e02ea60eca8cbe7ca94eba34d08af552cf51ae025535cd8243d20d569d060a1e"
+    },
+    {
+      "path": "dict/jt.json",
+      "size": 1894,
+      "sha256": "363daae6ee9f22be5e576a978fcfa7f7853288fdde9b7c506334a29ea881ff3e"
+    },
+    {
+      "path": "dict/ju.json",
+      "size": 122582,
+      "sha256": "412c2106e6561ad173c4fb2f9de56ccb36333fe0423444065efa9d523ab7e697"
+    },
+    {
+      "path": "dict/jv.json",
+      "size": 859,
+      "sha256": "8ff3ded95f6ee7c49ff4879f98eb9d806cd498c7bbc55722778c2bf41a497fb5"
+    },
+    {
+      "path": "dict/jw.json",
+      "size": 555,
+      "sha256": "3f7b87a0da4a44ee66eefdb6648d62fe61d112d915bea452018ea6fe2f4593dd"
+    },
+    {
+      "path": "dict/jx.json",
+      "size": 126,
+      "sha256": "89ed9efc855a23949116e8687f22fe9f8eb026e29c0d6422acdd28af2fc9f303"
+    },
+    {
+      "path": "dict/jy.json",
+      "size": 995,
+      "sha256": "16c3e3d5db95c2e9ac0c02bedb903f2eb13f3565d4baa9f61835a9560e2cadbc"
+    },
+    {
+      "path": "dict/jz.json",
+      "size": 268,
+      "sha256": "341d2871965ae62422994a928cb1bb4ae08c63506be7a73055cf2d4228368ad8"
+    },
+    {
+      "path": "dict/k-.json",
+      "size": 3108,
+      "sha256": "ff9c70b7398c8dcfebb1a5325f7ebd2dd69c0728043489ce596d6497bc7250c5"
+    },
+    {
+      "path": "dict/ka.json",
+      "size": 191363,
+      "sha256": "2d394941c80bf085440d1f879797a6ebafa59cadfa3a4a5acfca596b44706563"
+    },
+    {
+      "path": "dict/kb.json",
+      "size": 2296,
+      "sha256": "2e54721fb82ae94ffca126cd589a671e12cf71210f66865c646c36f824148c18"
+    },
+    {
+      "path": "dict/kc.json",
+      "size": 1401,
+      "sha256": "5ac4f1583c73aec894b3f4a75d4c1e9c7702d1d2c3f20240943b2c7d7c98df53"
+    },
+    {
+      "path": "dict/kd.json",
+      "size": 1270,
+      "sha256": "50083f32860e80056137841991f4fdd86ddcd35507759c9e345f39251f6670b1"
+    },
+    {
+      "path": "dict/ke.json",
+      "size": 181153,
+      "sha256": "85b79aa5caadc2305a55932762d39502389423fca9a35f3279aad0b8ee99ace1"
+    },
+    {
+      "path": "dict/kf.json",
+      "size": 679,
+      "sha256": "c6fc5be83bac50ad2ecfdb6b5be9470d2e2fe765890ac30d5e94be970af7e083"
+    },
+    {
+      "path": "dict/kg.json",
+      "size": 1536,
+      "sha256": "79e51e4fc93153430230319bf4f87b772e551f3c2c7da97242cc73234e43b488"
+    },
+    {
+      "path": "dict/kh.json",
+      "size": 22891,
+      "sha256": "8ecd2f560b18278adc6977ec870331eb7d3dfd5b3779ec384a92d770809a4e2c"
+    },
+    {
+      "path": "dict/ki.json",
+      "size": 206819,
+      "sha256": "2eee808edd421f699d7d446c3ee087192cfcb0f98768c9a5ee41665dac7f03f3"
+    },
+    {
+      "path": "dict/kj.json",
+      "size": 845,
+      "sha256": "3c10ec55cd7716648f790b34cdc653baf6e09c2a75f60322715a6bedb0b7b39c"
+    },
+    {
+      "path": "dict/kk.json",
+      "size": 655,
+      "sha256": "9188dfd1bff16960eec81bf3de491d0c163f0d902d833f611f1d25432ae9989f"
+    },
+    {
+      "path": "dict/kl.json",
+      "size": 35753,
+      "sha256": "5510c45ac846e2972796d8a6c924673bf26a5382f16bbff2a6f4135511e0cc3a"
+    },
+    {
+      "path": "dict/km.json",
+      "size": 1869,
+      "sha256": "f1af3c244295c481187616b30860015f629e3803f3c912bedda1de28caca0e6f"
+    },
+    {
+      "path": "dict/kn.json",
+      "size": 80928,
+      "sha256": "a6f9acee671284eec35e8dbbba7fb309307b368fd9a50f420eb13e8388ad2645"
+    },
+    {
+      "path": "dict/ko.json",
+      "size": 102681,
+      "sha256": "e73f4875995f2b6d3bacc289102a9750e29627cdf030bdeedb2cdf40c56b513d"
+    },
+    {
+      "path": "dict/kp.json",
+      "size": 3363,
+      "sha256": "5cd82e4f037dc2c1fa246ca47054d64c334916d7bdf5adfce12c9c3eb8a07aea"
+    },
+    {
+      "path": "dict/kq.json",
+      "size": 153,
+      "sha256": "378ba829882c2365021e6906c4cd0a4126412af729c6f2cbcb0705793223bce1"
+    },
+    {
+      "path": "dict/kr.json",
+      "size": 53444,
+      "sha256": "4a4a82087781933fd12ffcdd363d661e66255795d8a1b20c5ed3a1bd8ec2cf7e"
+    },
+    {
+      "path": "dict/ks.json",
+      "size": 2925,
+      "sha256": "72816a23873d6d900698350121296d81888929e32f5cfcd2bea6bb001d68d42a"
+    },
+    {
+      "path": "dict/kt.json",
+      "size": 3489,
+      "sha256": "7fbdf7abeaa46e126739d9ea7c6183d8a95b84e699f20428c99b74fa60994e3c"
+    },
+    {
+      "path": "dict/ku.json",
+      "size": 49833,
+      "sha256": "188c26787c42a73894dfdb7a8d3947bfc999f37f5b7efdc17e2dec735458d0f4"
+    },
+    {
+      "path": "dict/kv.json",
+      "size": 3362,
+      "sha256": "0f2c74ea93cd0610f971ddef65a388c2dbda6b8d85fce7de54005217605396c4"
+    },
+    {
+      "path": "dict/kw.json",
+      "size": 8225,
+      "sha256": "b00e9233789fa6c19947d8501dbf93bf343ab5050fe4662d9c6c9e918c6d0afb"
+    },
+    {
+      "path": "dict/kx.json",
+      "size": 242,
+      "sha256": "23ad86970013f856672c8d5c931baa2d7b0566fe981e03cdb3a541a545f09b73"
+    },
+    {
+      "path": "dict/ky.json",
+      "size": 17575,
+      "sha256": "b53374432dee17fd20aa1e7a180f4a92a7bf53b30cf30446c9c11a764440a442"
+    },
+    {
+      "path": "dict/kz.json",
+      "size": 258,
+      "sha256": "6fd1ce1bbecad84517008d073bf78382888ec780cd6f873f66ea285a350d66bb"
+    },
+    {
+      "path": "dict/l'.json",
+      "size": 384,
+      "sha256": "43d30510b875f026980047417a2ec0cf1efe0775cf6bea56dcd2ec13fc5fa320"
+    },
+    {
+      "path": "dict/l-.json",
+      "size": 5754,
+      "sha256": "0dc82050c4069e20cd46913d81e5cd7255523eba5f5f48ef6943877e55d83266"
+    },
+    {
+      "path": "dict/la.json",
+      "size": 604121,
+      "sha256": "4538ac8f985539cff41a2f7e0a605c03b61e370afee13ff167a196b36151bbc5"
+    },
+    {
+      "path": "dict/lb.json",
+      "size": 4235,
+      "sha256": "7fd1f26073e81b7f07290a235517463d8c189945e900ab5725e36241c9eabf68"
+    },
+    {
+      "path": "dict/lc.json",
+      "size": 4906,
+      "sha256": "52c9d6630d7e8cf1edc2f862fadd1d8888b88960de2685b303f6fe59c2d3d07a"
+    },
+    {
+      "path": "dict/ld.json",
+      "size": 4656,
+      "sha256": "28e7765d606d98522437f7b6af4c60e58f7130a391e478750bb63832d8704b91"
+    },
+    {
+      "path": "dict/le.json",
+      "size": 441280,
+      "sha256": "28f6fb4ae1214a50edb4dc1cd7f3cd4d2779096f56a2eedf17c9a5cb25c709dc"
+    },
+    {
+      "path": "dict/lf.json",
+      "size": 1963,
+      "sha256": "ba24dfc2de1cb0a06c97d850d20a9b726e8999bd6cf7b6d123f8af7bb79c1116"
+    },
+    {
+      "path": "dict/lg.json",
+      "size": 2956,
+      "sha256": "333228ded7dba8eaa81318bc8309d2331395bf82f8e2a8e04f60994b4d1ebbef"
+    },
+    {
+      "path": "dict/lh.json",
+      "size": 2984,
+      "sha256": "bd0880aed605d7a2d7cd8b32f36aef1a02eb5ce3f63640502eb87b7f7ea70614"
+    },
+    {
+      "path": "dict/li.json",
+      "size": 522568,
+      "sha256": "bde2655fce253cac61b9384ae5426e5f1720cd30dff8dc33baba101b94e617d9"
+    },
+    {
+      "path": "dict/lj.json",
+      "size": 839,
+      "sha256": "2e68dd450d41705538fcc1bc0fecb24b06973a95814a77ed87221cf377fd057a"
+    },
+    {
+      "path": "dict/lk.json",
+      "size": 348,
+      "sha256": "5f8662e441b353320e7ffd013e26ce62f9c695f0ddbbcfcc68ef37eaf6404ecc"
+    },
+    {
+      "path": "dict/ll.json",
+      "size": 7867,
+      "sha256": "134fe586aa9ca5340da1b6d977894527a283061be91b3a398d1c9910cdbdddf3"
+    },
+    {
+      "path": "dict/lm.json",
+      "size": 3505,
+      "sha256": "37deb5f3c44e3d44bab80862e654d68a679de5a27bd2341a0ec524643c06fae6"
+    },
+    {
+      "path": "dict/ln.json",
+      "size": 2699,
+      "sha256": "af6713dda2ac97e6ab7e1e535f48179bf9754da6ef0be819bc5fa4f114bc6507"
+    },
+    {
+      "path": "dict/lo.json",
+      "size": 380954,
+      "sha256": "e2e7540588bf1ec20423b464ee025bfd7f1de65df3878664070766ac529237c3"
+    },
+    {
+      "path": "dict/lp.json",
+      "size": 3328,
+      "sha256": "d418a80107a4867ed5ffae792198ef12c991ff0f3e037c4773c891b081d881a4"
+    },
+    {
+      "path": "dict/lq.json",
+      "size": 1031,
+      "sha256": "a1d3d5f62891e10cf9f99d6fe6079efc9fe4087f5732a85bbc973e7b217a7a31"
+    },
+    {
+      "path": "dict/lr.json",
+      "size": 2964,
+      "sha256": "54ec024e0bd0ac2af7695d914a5fcfd65a1cd83925313c18d46822c76b696e64"
+    },
+    {
+      "path": "dict/ls.json",
+      "size": 5581,
+      "sha256": "ffb2ec37ca3dea9290e1fc2b3c1c65a43695b3ebdb73f4d3ab5020b31db4c6ad"
+    },
+    {
+      "path": "dict/lt.json",
+      "size": 4046,
+      "sha256": "9f1b0c1fb2c6ec9a5d75122fc1ae273fe15200fbb503b6e4dba43a36b367288d"
+    },
+    {
+      "path": "dict/lu.json",
+      "size": 181703,
+      "sha256": "46a5dea3c1bc8e4bcbe19dc492d81d92a23a7f133c6e765816be24c742884c0b"
+    },
+    {
+      "path": "dict/lv.json",
+      "size": 3681,
+      "sha256": "ba43ebf7fb9112968e603bae27c6012378b07ebbf67395152ee8ed31fff324d1"
+    },
+    {
+      "path": "dict/lw.json",
+      "size": 1934,
+      "sha256": "d40031ecf304455563b7a46c3211cf6cf37d964f8f3513761a84a0cd7b98d54d"
+    },
+    {
+      "path": "dict/lx.json",
+      "size": 1956,
+      "sha256": "ccc46d840da1d7d086fa029d6aed65bb9b5e621e47ef8cd6475f86e6ef7591e9"
+    },
+    {
+      "path": "dict/ly.json",
+      "size": 94341,
+      "sha256": "fa41119a66820c94cb0e78661aba5dc8a02eb51711769bbaa827cdc07473e827"
+    },
+    {
+      "path": "dict/lz.json",
+      "size": 347,
+      "sha256": "4c6126a79a975af3d44efa99eb1b354aaf6cd45b02f34b192a6e752a00f88759"
+    },
+    {
+      "path": "dict/m'.json",
+      "size": 121,
+      "sha256": "55b7a7bcdc910b5661c53e3e8874efd51c001fd97da50a4621c55c03fd620698"
+    },
+    {
+      "path": "dict/m-.json",
+      "size": 5121,
+      "sha256": "dc805ad74b8cbcc6804cddcd1b41c77eec2705fab346840877fec766097fe823"
+    },
+    {
+      "path": "dict/ma.json",
+      "size": 1179180,
+      "sha256": "4625f9858196a71f316c008af2081cd7f81ab9c0013525bc63ebd4d7b6750764"
+    },
+    {
+      "path": "dict/mb.json",
+      "size": 10025,
+      "sha256": "e3ce1849122eab05931c458e42bf746621b0894e210202886cacbb4644b10358"
+    },
+    {
+      "path": "dict/mc.json",
+      "size": 109104,
+      "sha256": "3d766c05d449e06703418fee0ce0d3814cbdd31540d910d82badcca81e25affd"
+    },
+    {
+      "path": "dict/md.json",
+      "size": 6831,
+      "sha256": "e24ec3dd15773629befe772e581b3a210339b593d8f26db0cc9ece438934d68c"
+    },
+    {
+      "path": "dict/me.json",
+      "size": 906701,
+      "sha256": "ddc71a282b84538eceaa0bc8546cd42fabf86ad21ad9c9717703b9c83c292c02"
+    },
+    {
+      "path": "dict/mf.json",
+      "size": 4835,
+      "sha256": "d9b541c7924d3f607d7cef91e3acc8547c232accbc9b98be3e1ee82b25c17bab"
+    },
+    {
+      "path": "dict/mg.json",
+      "size": 3968,
+      "sha256": "644889c31a8622f8bad493a62575d74da9f38d0997baf07e45e4f51305cf68fb"
+    },
+    {
+      "path": "dict/mh.json",
+      "size": 2389,
+      "sha256": "3ff4012f0e4f64a08d7789814f52b5495f4720220274402772184d3ad1d78933"
+    },
+    {
+      "path": "dict/mi.json",
+      "size": 840681,
+      "sha256": "94f1d7b99bc955228c324b48a6c56b53a599d0026d0ee7b39863e94f25f6ef5b"
+    },
+    {
+      "path": "dict/mj.json",
+      "size": 1041,
+      "sha256": "6e2e3c98ecaf32b948a5b4e6e5c1f825277b170307fc0924f282ffa7ab3d18f0"
+    },
+    {
+      "path": "dict/mk.json",
+      "size": 1571,
+      "sha256": "ab449b3b19747249328fff2fbbdd62a8639c2871933bb879892a262449cd1ec0"
+    },
+    {
+      "path": "dict/ml.json",
+      "size": 6094,
+      "sha256": "ded298cbc78b37f7ace75f52bf287f4a0892deefa645a29b1f0df69d16bed375"
+    },
+    {
+      "path": "dict/mm.json",
+      "size": 6998,
+      "sha256": "5202a05e4a6a789498447ddbf570e480610778d53eee8f2ff38426aebd7ee59b"
+    },
+    {
+      "path": "dict/mn.json",
+      "size": 5734,
+      "sha256": "80502c091c5e0334bc6b1776294c798ef69d621844d8513ae0ac4731a8151b8d"
+    },
+    {
+      "path": "dict/mo.json",
+      "size": 743501,
+      "sha256": "f0ebae1f0638c893c2884b4f91f215d27f74910bca60b3296d7fafe5b97dfe34"
+    },
+    {
+      "path": "dict/mp.json",
+      "size": 7454,
+      "sha256": "071f4c0f0bb56aa10a7e6fcec6acd431e3a93994066736fe6a93dc895ee90258"
+    },
+    {
+      "path": "dict/mq.json",
+      "size": 514,
+      "sha256": "197008d1725d9985c577eee08f809721d5299b6750d041d613cf7cea4a78dcb1"
+    },
+    {
+      "path": "dict/mr.json",
+      "size": 8122,
+      "sha256": "b82f77d97a54f1078281e5c58e77fc2cb61426159413344edb84e96c54b4045a"
+    },
+    {
+      "path": "dict/ms.json",
+      "size": 13782,
+      "sha256": "99c98ecc9509fb7ae2ccf2fcd7fcfb6b616f6b1a4b0c340018fafd43122f468c"
+    },
+    {
+      "path": "dict/mt.json",
+      "size": 8414,
+      "sha256": "60a936b87c8deda049d58f33229f3a789f38724297abcaa45e5ee346074a2e52"
+    },
+    {
+      "path": "dict/mu.json",
+      "size": 387499,
+      "sha256": "436a60c3f6899d8530c6e8477b0cf8afb35fed0ff2c8f97dfc25ba40c86b81fd"
+    },
+    {
+      "path": "dict/mv.json",
+      "size": 2995,
+      "sha256": "3d713c4c8f26589d1125fbe79dad7bc22a6ab3b2ac03dee435d0faa47737d261"
+    },
+    {
+      "path": "dict/mw.json",
+      "size": 4327,
+      "sha256": "6a27a4c24937f96d6a594df6286c94eae49985386d6812f95ebf4d2174c88029"
+    },
+    {
+      "path": "dict/mx.json",
+      "size": 379,
+      "sha256": "09fb039445eae6caecdb9fae10d4896aa2b877df512754df78b4f2f078b7ec84"
+    },
+    {
+      "path": "dict/my.json",
+      "size": 177856,
+      "sha256": "a0eb5926fce2642c1b8e9819a97fd5fa93b881ced4f56d64dda4cfff62b1f01a"
+    },
+    {
+      "path": "dict/mz.json",
+      "size": 576,
+      "sha256": "46e966d6b8f00915f261f53c3c7ec97993240f584617008365eb6972138d3541"
+    },
+    {
+      "path": "dict/n'.json",
+      "size": 797,
+      "sha256": "5b3c6ec9983e0e0c4283df62a620d17c2a417213d7323b3c9d348be0808de4d3"
+    },
+    {
+      "path": "dict/n-.json",
+      "size": 18637,
+      "sha256": "1c3fe3898451ca9d7a765d797e39af9324ea085f4cf3918a40665e1b54e27e0b"
+    },
+    {
+      "path": "dict/na.json",
+      "size": 241,
+      "sha256": "c51fbfd4f01f4ed37015205242865d0570d57e555ab2c8c5266abebae5df19f3"
+    },
+    {
+      "path": "dict/nb.json",
+      "size": 5316,
+      "sha256": "3bdd06bb0319d333ac67ee1e28202a56cc2ea126fa49b01a833143db1708020a"
+    },
+    {
+      "path": "dict/nc.json",
+      "size": 17012,
+      "sha256": "25e265b98624419db058cf18d47e6caf7f7e1a40faca194a0538190e64ec3527"
+    },
+    {
+      "path": "dict/nd.json",
+      "size": 5220,
+      "sha256": "3c8dc936927a3e9c68ef9dd576bd7c1fc1fd7a45a26ef6daada1cd584c9623e3"
+    },
+    {
+      "path": "dict/ne.json",
+      "size": 494521,
+      "sha256": "5f47672fd950f722e13254f9b7b1bfd82d6e48f71fa56f906904c400ed64abfe"
+    },
+    {
+      "path": "dict/nf.json",
+      "size": 5449,
+      "sha256": "cb15be5e543c9154daabc5c878c836e10a55ca89d39914de4d574d99034d33fc"
+    },
+    {
+      "path": "dict/ng.json",
+      "size": 8472,
+      "sha256": "df871d4a29fb4678459859b49b25bdb732c1d389da048f85c61817c05fa062fc"
+    },
+    {
+      "path": "dict/nh.json",
+      "size": 4343,
+      "sha256": "99226b09e1a3d369f8586c005740d6ffbf7a40732e78bc2f0051e82f0954adef"
+    },
+    {
+      "path": "dict/ni.json",
+      "size": 244240,
+      "sha256": "74cc1bdef55428a0c06eeb7e6114b777c3e68d8bf848623ea7c625ab0befe914"
+    },
+    {
+      "path": "dict/nj.json",
+      "size": 1445,
+      "sha256": "4665b5a46c917ce7ef2e0129ab7aaa79f5e56d8373dbc4ee5b77e7f23e8d6741"
+    },
+    {
+      "path": "dict/nk.json",
+      "size": 1745,
+      "sha256": "d4d19c1825abcd69af9729600cbd086fd816af2c82beb6dc6f4a992e49fd41c4"
+    },
+    {
+      "path": "dict/nl.json",
+      "size": 4233,
+      "sha256": "5431c7e03475bde3adc7296cd54f35451df38943643d66d8f71b384d8fb26109"
+    },
+    {
+      "path": "dict/nm.json",
+      "size": 5218,
+      "sha256": "7e822825eb342a76bf46121c2424a37cb28687822f59190cfb8157a65be7514c"
+    },
+    {
+      "path": "dict/nn.json",
+      "size": 3797,
+      "sha256": "09a64d8388e83f27a534a4794212b68b151f4712d19a459eb794e20c460f5c00"
+    },
+    {
+      "path": "dict/no.json",
+      "size": 567087,
+      "sha256": "0c6fb3e71347a022e95c081e4d9cbb966491748652db991900a0531cff446a60"
+    },
+    {
+      "path": "dict/np.json",
+      "size": 7834,
+      "sha256": "6e2fb707df2c854124825548c57b3076d22396bd56acd8b611fc6b21e570a962"
+    },
+    {
+      "path": "dict/nr.json",
+      "size": 6450,
+      "sha256": "c5aa53f96b415cc249204712ce57b9070253dfee4c670c515e1bf7f34d7ba940"
+    },
+    {
+      "path": "dict/ns.json",
+      "size": 13426,
+      "sha256": "cbf16c354fec418bef25ab50ccc6f3a7fe406ba8e68a2de8c61847ecb9b4266d"
+    },
+    {
+      "path": "dict/nt.json",
+      "size": 5335,
+      "sha256": "33c2751c05c691fc8ac829eaeccf35e63827c6857181c74578d15e77c54b1ec5"
+    },
+    {
+      "path": "dict/nu.json",
+      "size": 122751,
+      "sha256": "86c9171e87f08394c3a81109a3282672cee94f40d4c5aed6d1fae1279a21292e"
+    },
+    {
+      "path": "dict/nv.json",
+      "size": 2710,
+      "sha256": "1fceb7a2f0be5385853d006c5030735606b94aa2a1189ef7f8bf5e5b7e263e92"
+    },
+    {
+      "path": "dict/nw.json",
+      "size": 3723,
+      "sha256": "a0d40236d9593a4d4be213f5d430c14c9e279d75be0056c940ad0e5a5b9d7f0d"
+    },
+    {
+      "path": "dict/nx.json",
+      "size": 278,
+      "sha256": "7a64558b21ed1e956dbe0370e66050442453cb1a3eab479a921e152c8b8da2b1"
+    },
+    {
+      "path": "dict/ny.json",
+      "size": 29702,
+      "sha256": "f2b06770d3f6ee2adbe169dd0bdba410783d7473e7d33e841b2663ea58c72bf7"
+    },
+    {
+      "path": "dict/nz.json",
+      "size": 524,
+      "sha256": "213d2fa4cb7fda9f3bfcab991e0cfbb8fc0c4e8d767983a8bc1b4cde9d537acd"
+    },
+    {
+      "path": "dict/o'.json",
+      "size": 2147,
+      "sha256": "aef441c262d0fc1bfd3d57075f36e82f3bbf49a8a685a4e602f1744f5e4bf3be"
+    },
+    {
+      "path": "dict/o-.json",
+      "size": 7617,
+      "sha256": "bcd4dcb2c3197bfb550b10afcfb0b00d6d121e8255cf86256a53b5e599e2202a"
+    },
+    {
+      "path": "dict/oa.json",
+      "size": 19786,
+      "sha256": "66690853e109ebb28d2cfe84cc2403fc8c8e8925b7ad10ab7658104c7ed2f99b"
+    },
+    {
+      "path": "dict/ob.json",
+      "size": 113746,
+      "sha256": "0c6de02b2dfeb18e16fc0d360ae011a88e82d2560b6469838bf6f61d3c43b919"
+    },
+    {
+      "path": "dict/oc.json",
+      "size": 830,
+      "sha256": "871577001ef29ddc235eed9d31d12a46e1540fabd0e9259f82d300c367e0bc95"
+    },
+    {
+      "path": "dict/od.json",
+      "size": 46377,
+      "sha256": "00c5c9f9feea6cf0e67fea5ace4f24c231379eadbc2b42916c86e1a17373458e"
+    },
+    {
+      "path": "dict/oe.json",
+      "size": 19791,
+      "sha256": "ee8e3eedd38ddea626915add5486abf53319a02da30d8f5e62853b39e5c0bb50"
+    },
+    {
+      "path": "dict/of.json",
+      "size": 68675,
+      "sha256": "b25f483d460abd1635389126b126e2d497a6a3d1823ccdd56885db3c3a439bc3"
+    },
+    {
+      "path": "dict/og.json",
+      "size": 10961,
+      "sha256": "aa3a86d2a673eb58487c9b0939aa4d910ba1927547ebefc152d591127b9aa3e5"
+    },
+    {
+      "path": "dict/oh.json",
+      "size": 8248,
+      "sha256": "2b5c9b156da854b75c6f471c3b8a501093af0421afa61200469b5aa54bbe78a9"
+    },
+    {
+      "path": "dict/oi.json",
+      "size": 27546,
+      "sha256": "32dd88e28f52283e6b74f2db2377905b87f5efbaf3b4ae731077928128ba4b0a"
+    },
+    {
+      "path": "dict/oj.json",
+      "size": 2264,
+      "sha256": "f2afc770963fd3d6d9f32f15b54c4fab430065dd0e7dfee68b72b768a5723ef9"
+    },
+    {
+      "path": "dict/ok.json",
+      "size": 12257,
+      "sha256": "78aaafd1782007b9fc20c9d7ee5d01165a6d04c18570c11d670502b355880106"
+    },
+    {
+      "path": "dict/ol.json",
+      "size": 87585,
+      "sha256": "666692b66701ec3f1e3e14cca9245cea08ba77a17197e5b53d9cc247ab77aef9"
+    },
+    {
+      "path": "dict/om.json",
+      "size": 46493,
+      "sha256": "7b82c9720a914efc28fc49e8916cfe79c00ed8a58472d0852cc81c3bd22b5122"
+    },
+    {
+      "path": "dict/on.json",
+      "size": 84807,
+      "sha256": "2fe7caea668557100d51e2a77cef74e6cdae26a5d969292d11a5b7ebb9041e2d"
+    },
+    {
+      "path": "dict/oo.json",
+      "size": 31800,
+      "sha256": "2fa10b685a0250646c1349b6276a70e196827b707791b64e40be117c4895ed05"
+    },
+    {
+      "path": "dict/op.json",
+      "size": 147012,
+      "sha256": "2b5d61d49695538125ce6c0e6180c7b04f04226e7b030514549f541f2164dccc"
+    },
+    {
+      "path": "dict/oq.json",
+      "size": 638,
+      "sha256": "a1e0ddc0777c244b9652da92e68a3455f5347003d50f029e099d69866286aaf9"
+    },
+    {
+      "path": "dict/or.json",
+      "size": 255794,
+      "sha256": "f2538d8762423dc79eecf5188bb741d9c935be6f08dfe86d39ec78a0fad6736a"
+    },
+    {
+      "path": "dict/os.json",
+      "size": 118538,
+      "sha256": "dd077bcf5e367fdba4981fad98f312d6df443abf724e7ffaf518e1b3ab5bc4bb"
+    },
+    {
+      "path": "dict/ot.json",
+      "size": 37913,
+      "sha256": "7bbaff408bdf0a1c57996a1d97f99ac83aee52eff70f18c5f3695f1830825374"
+    },
+    {
+      "path": "dict/ou.json",
+      "size": 177885,
+      "sha256": "632e52bbd8b7ed50610d0f12dd65d3776e944b80b43c466619a2c6eddd1a8a66"
+    },
+    {
+      "path": "dict/ov.json",
+      "size": 362028,
+      "sha256": "0584fd4dae70a2fffbfa674ccce2908e1b710a8901dd7200c353c3f7d8c070a3"
+    },
+    {
+      "path": "dict/ow.json",
+      "size": 16011,
+      "sha256": "e5fb78ad66df34e10f0c6c0f224e6f0ac80f54a61c41b4fd482ef8c86c6489e0"
+    },
+    {
+      "path": "dict/ox.json",
+      "size": 97206,
+      "sha256": "06db60bacc0da17831a6c6d9c73130e01faf3e373b37017df6a21f9d4068d63e"
+    },
+    {
+      "path": "dict/oy.json",
+      "size": 5655,
+      "sha256": "bddfd7f739c431995c28377af3c7a82838b8d84c97860e3cafe65451c8dc06c0"
+    },
+    {
+      "path": "dict/oz.json",
+      "size": 10838,
+      "sha256": "1d1f358792f97b167099c1bf7d5e83c621074d79a1b86a34f9c23c04998121e8"
+    },
+    {
+      "path": "dict/p-.json",
+      "size": 15968,
+      "sha256": "03d9d6e8cbaef04895dc050949ce7b6fce51a0ed083831229f45528a61d6279e"
+    },
+    {
+      "path": "dict/pa.json",
+      "size": 1058129,
+      "sha256": "1bfe2f00c5ee14c9eb5beda71d38e29b36fa266ed1f9fb32f7df0a68980e5e26"
+    },
+    {
+      "path": "dict/pb.json",
+      "size": 6060,
+      "sha256": "6d3d2962639a476704421ad8d3594ec6c1d31691daf9513cb77cb36188241382"
+    },
+    {
+      "path": "dict/pc.json",
+      "size": 10605,
+      "sha256": "d2463f2900271d305eac72a97f93a5a0130ec99dcff8c4b43e788f5ccbe268da"
+    },
+    {
+      "path": "dict/pd.json",
+      "size": 5697,
+      "sha256": "253fdc69499a026ba82629e72ddb2e40d413f5aba5354c69e0885d2291f5d6ed"
+    },
+    {
+      "path": "dict/pe.json",
+      "size": 810358,
+      "sha256": "ccf4bec5f4b7ab08c8ac3eb092bcec7044bf33b7174f3cac13e81875129a2a40"
+    },
+    {
+      "path": "dict/pf.json",
+      "size": 9261,
+      "sha256": "76b2325a97d0c9a4f6ca59dcd122faf78fbda7313f4cd24c590bf68f501ac222"
+    },
+    {
+      "path": "dict/pg.json",
+      "size": 3627,
+      "sha256": "a38c8c97872c7d935d180398e350eec3acdfd5a96a0684c644971e3fe316e5d4"
+    },
+    {
+      "path": "dict/ph.json",
+      "size": 591400,
+      "sha256": "935b28684b80b78a10e6ca20826a6db1c8db36ed912b0483f47711aa7f60feb2"
+    },
+    {
+      "path": "dict/pi.json",
+      "size": 413628,
+      "sha256": "b73e5c5a9cd08a250e2dace782439fb9dbb733152f0d482188acfd760b64e7d3"
+    },
+    {
+      "path": "dict/pj.json",
+      "size": 906,
+      "sha256": "0441115579705ff75f8ba51e95297181915dce815821af9ebdfbc5d612987950"
+    },
+    {
+      "path": "dict/pk.json",
+      "size": 2662,
+      "sha256": "f6a268179457f6d9f931bdac4179f44c488dc3b35eb0270032747d2d412fd8a5"
+    },
+    {
+      "path": "dict/pl.json",
+      "size": 426209,
+      "sha256": "6c08b5c537146eddf66fd8a8e8ed1270a5ce7b77bebbfc99ffe75f39105ba061"
+    },
+    {
+      "path": "dict/pm.json",
+      "size": 6093,
+      "sha256": "bccdea6efe4ac28b273fa7aeb95e18ed11d66093d14117e58f691937ff3def8d"
+    },
+    {
+      "path": "dict/pn.json",
+      "size": 47174,
+      "sha256": "a4233a87b86930755b234a4a48b5e4aa45f51b1bb99073f393618770aaec243a"
+    },
+    {
+      "path": "dict/po.json",
+      "size": 817612,
+      "sha256": "2b9f49833aff1097fb7cbbb64c6e7ffc5f245e7d7bb00316e86b73bcc109643b"
+    },
+    {
+      "path": "dict/pp.json",
+      "size": 6906,
+      "sha256": "2ef9adfdf2bc598862fb922c30e3ae6da45bffb463e34e78cf4338578df7f147"
+    },
+    {
+      "path": "dict/pq.json",
+      "size": 617,
+      "sha256": "fc9db52607afb000feaa8f853d7a66e252ad6690e6c8e7a2cd5bd093502d6d78"
+    },
+    {
+      "path": "dict/pr.json",
+      "size": 1230186,
+      "sha256": "771b468313d5638e161a3f9c42626a9103003e6e8187aa4add19a500b6bf85cc"
+    },
+    {
+      "path": "dict/ps.json",
+      "size": 219273,
+      "sha256": "41ba2dcc237ab91c7e7d90003d0003c6a58bd6c5f2dbf4791d165f489a69a846"
+    },
+    {
+      "path": "dict/pt.json",
+      "size": 43016,
+      "sha256": "88461e94f81c149d95f869e91c2aa2ad1195f8014920dd1bb927333b7deff183"
+    },
+    {
+      "path": "dict/pu.json",
+      "size": 300996,
+      "sha256": "3524959f1582d85c6034b37533f193a2112664bf03dd57ae4f93b29b952ffb37"
+    },
+    {
+      "path": "dict/pv.json",
+      "size": 3885,
+      "sha256": "d21faa6cd145eed1ef0915bd6cd0f7f9dc14632bbd48c6fac23f4e5b61b70266"
+    },
+    {
+      "path": "dict/pw.json",
+      "size": 4218,
+      "sha256": "5b082282683fbefb0b8ea9756efaa31909525f8c76500ac825d08b7900618641"
+    },
+    {
+      "path": "dict/px.json",
+      "size": 635,
+      "sha256": "fbe9f9132b700800e10be461b78478156d2fb1564d715079df8ea179b80f07d7"
+    },
+    {
+      "path": "dict/py.json",
+      "size": 143052,
+      "sha256": "52b8ec0703d06f997f1169e0b888b2e80417325c0690a5c1bca37a21e6d6b5a8"
+    },
+    {
+      "path": "dict/pz.json",
+      "size": 412,
+      "sha256": "7179f93579300457cd52c06c67f08e5d3569eade23537222e87da16a4ac2a7c5"
+    },
+    {
+      "path": "dict/q-.json",
+      "size": 3230,
+      "sha256": "92c78f157105e21147e19f6dfd3be41a407a06404de9ee6d5cb84f0f9c784ef6"
+    },
+    {
+      "path": "dict/qa.json",
+      "size": 6521,
+      "sha256": "47d2571e0f41a04fd002729bc30c59129544e9b82ada7c2dab43d6bd011757be"
+    },
+    {
+      "path": "dict/qb.json",
+      "size": 771,
+      "sha256": "280670c9b5519ca982a0aa75631131038c0efa61ca39082df286c611e5220006"
+    },
+    {
+      "path": "dict/qc.json",
+      "size": 1678,
+      "sha256": "33cd5d1d4c2b2c69decfb9989c6244942484a2bf3c9813d6bf253d87e3483a42"
+    },
+    {
+      "path": "dict/qd.json",
+      "size": 956,
+      "sha256": "da3b8a34a4271e8a466e86a9675335015122291de633c42c74037ba03713368a"
+    },
+    {
+      "path": "dict/qe.json",
+      "size": 1274,
+      "sha256": "bef8dc87287e524a67a72fa8590acf512ce0300e0ba45a1c55ed354fd5045718"
+    },
+    {
+      "path": "dict/qf.json",
+      "size": 1356,
+      "sha256": "6a67086fb7eaaacbb8c0cfb79c1bd9fce19169935d132c4b0d0fd40690598849"
+    },
+    {
+      "path": "dict/qg.json",
+      "size": 139,
+      "sha256": "a3c636a48066a19c033fb377aaaf11bc98ccceb8460ea7cf0fd16c57e6fbe584"
+    },
+    {
+      "path": "dict/qh.json",
+      "size": 117,
+      "sha256": "c2b62cc035bb41a00f159418e2a5172bef4b5f3d13ee07e5fff5d0334a09e322"
+    },
+    {
+      "path": "dict/qi.json",
+      "size": 4950,
+      "sha256": "f9d5ed4f0e40586672399f5c29df41be6c264d982116fb693588e4d84a4c81eb"
+    },
+    {
+      "path": "dict/qj.json",
+      "size": 163,
+      "sha256": "c45e3d4c9590587b19ccc0f9bc7185cc7b54cb5b463aa905f8cf506f113bdbc8"
+    },
+    {
+      "path": "dict/qk.json",
+      "size": 96,
+      "sha256": "29c214a5ea49e1e2bc78e65389280e3cb0691bc6dc4785db783c218b83198edc"
+    },
+    {
+      "path": "dict/ql.json",
+      "size": 811,
+      "sha256": "61802f2cf625989ca1e247fc3cc155fec967efa6a1973def21908cbf0a2ccdb3"
+    },
+    {
+      "path": "dict/qm.json",
+      "size": 1046,
+      "sha256": "adb690765247de40bab9352485e222f857e371cff6a2c9908524f47cc3cd6d91"
+    },
+    {
+      "path": "dict/qn.json",
+      "size": 649,
+      "sha256": "ed223c9221386abd0719db672fef9561f4a84144de570a952e604cb2571816e5"
+    },
+    {
+      "path": "dict/qo.json",
+      "size": 1227,
+      "sha256": "aa49d4ebf448a900443d9287afef13170a7afe422b513c48a61bef07afcfc6e8"
+    },
+    {
+      "path": "dict/qp.json",
+      "size": 1907,
+      "sha256": "6b2b1766d07c1d8ee3d6b51e9e952990d76c1a3e20f761b6f4d53b0b6aba6a94"
+    },
+    {
+      "path": "dict/qq.json",
+      "size": 476,
+      "sha256": "99cfaf5c5bce29d2908943ebc951f789615819dba1de4656d8d72443ec1309c6"
+    },
+    {
+      "path": "dict/qr.json",
+      "size": 661,
+      "sha256": "f12918217c8135aa76e6c7b9a1390527c012696dc2a22131aad8168960eb5eb4"
+    },
+    {
+      "path": "dict/qs.json",
+      "size": 1242,
+      "sha256": "8d0c4676536c3661a4c156570ae0cc6cd678f745a7e44f0016758869edd8c877"
+    },
+    {
+      "path": "dict/qt.json",
+      "size": 1178,
+      "sha256": "01134ca46002e97bff9483701c250adb252c980e4fde9dcd4afbe90fde140c3d"
+    },
+    {
+      "path": "dict/qu.json",
+      "size": 310645,
+      "sha256": "2c64b17b47e8ea0c91c5d45a1c15321bc986d1ac64ae4edcb4017cad193a1777"
+    },
+    {
+      "path": "dict/qv.json",
+      "size": 608,
+      "sha256": "a9a42f5aa969ba35e8972736c256e08ffc92910dc0da6a041d24a590ac0bd88d"
+    },
+    {
+      "path": "dict/qw.json",
+      "size": 833,
+      "sha256": "3ed423ea6728181269f300733e4134cbec9c0e61f09062c3afb1c85d8e5db369"
+    },
+    {
+      "path": "dict/qx.json",
+      "size": 193,
+      "sha256": "9cf022aa67c72fedb8fe9d3de60e0a46433be45a6fbb4265dac85e5ca02e6299"
+    },
+    {
+      "path": "dict/qy.json",
+      "size": 197,
+      "sha256": "bf6185b94c0f276a3e0c085b0cd8df563405cd9f21a2848996da10a22adbe1e5"
+    },
+    {
+      "path": "dict/qz.json",
+      "size": 93,
+      "sha256": "9cee22129c47f30f47a15f78a2b5014aae28a875a8be96f18b641bc9df3d569d"
+    },
+    {
+      "path": "dict/r-.json",
+      "size": 1952,
+      "sha256": "6b9cc7ee1dfa58acbd7ddd91538ef2136311350fe455876d212f0b1e38980f4c"
+    },
+    {
+      "path": "dict/ra.json",
+      "size": 487935,
+      "sha256": "d1510e4d6644b2e2e593d744b99c65f2619134f88cce79da8627e65388f90400"
+    },
+    {
+      "path": "dict/rb.json",
+      "size": 3910,
+      "sha256": "73e13d45f95a48a302de445884ab7df1baaf4bfc092f9e7d73540645d6e4b125"
+    },
+    {
+      "path": "dict/rc.json",
+      "size": 5482,
+      "sha256": "0f3b85d7f4077adf5495cb93190fdeaa713fd485abbb7264ca7f58d75421826d"
+    },
+    {
+      "path": "dict/rd.json",
+      "size": 3162,
+      "sha256": "9ca7b451cd2861e395ed2188b967d5c11816e1cc472e0237f2f6f68077988eef"
+    },
+    {
+      "path": "dict/re.json",
+      "size": 1710537,
+      "sha256": "710d3f16e58aaba3056ce15a6d1031e6efc6440fad32961dfcd8ccf2243d747d"
+    },
+    {
+      "path": "dict/rf.json",
+      "size": 4558,
+      "sha256": "555e60792ff2065adb188f74474989f994cb1c03969b730512667369bc346b9e"
+    },
+    {
+      "path": "dict/rg.json",
+      "size": 1715,
+      "sha256": "fce2b1287c35bbef02223088173f2f6fdb767c6aa2239ae480cfae2287e47717"
+    },
+    {
+      "path": "dict/rh.json",
+      "size": 145251,
+      "sha256": "13add1e4d2187f06df703b6ed53e04f454a6b37c1d624911eefad5f34d56c5f8"
+    },
+    {
+      "path": "dict/ri.json",
+      "size": 237411,
+      "sha256": "b35ded3979b9d66080088a1526323a96876c86609bf5c3a44493426a4854e940"
+    },
+    {
+      "path": "dict/rj.json",
+      "size": 641,
+      "sha256": "9bd94dc5ad1f4b37144faaf31630dc2ccb5aa26449c0629f3d69eb69aad96dfb"
+    },
+    {
+      "path": "dict/rk.json",
+      "size": 1049,
+      "sha256": "0158f743d25b9824ca3bd4dcf372a918f901f79d3f5726cb96bc45f8d725abc5"
+    },
+    {
+      "path": "dict/rl.json",
+      "size": 3063,
+      "sha256": "e8088baebc4c86217831358157dbc470de16c590c6c833b5a34db76ca4e2b529"
+    },
+    {
+      "path": "dict/rm.json",
+      "size": 4169,
+      "sha256": "a31587f68ab0fdd100dfe813ad158e856d87098aaa8795c6e258cbfca37ce1d3"
+    },
+    {
+      "path": "dict/rn.json",
+      "size": 3849,
+      "sha256": "630d038df30816e013994cba87da86530fb64bd9b65b706cd503f130b1a84c7a"
+    },
+    {
+      "path": "dict/ro.json",
+      "size": 416501,
+      "sha256": "27c0a0228d0f4064d1fb53cc6682f65bc80a5c8c750e4254b2dac13d2bffab06"
+    },
+    {
+      "path": "dict/rp.json",
+      "size": 4219,
+      "sha256": "8f462cf479007cde5aae22058a205585bac4fddc4973b62371b712c2a38d8deb"
+    },
+    {
+      "path": "dict/rq.json",
+      "size": 91,
+      "sha256": "944d81b1551bb08ef70de5497de4bb027de0a82e6315ee497c36183752f57c95"
+    },
+    {
+      "path": "dict/rr.json",
+      "size": 2729,
+      "sha256": "b0a8d00448a922d106a74e36e4fc7f338de7c825cc27d5b5f734b191ff19e0a1"
+    },
+    {
+      "path": "dict/rs.json",
+      "size": 5763,
+      "sha256": "d7a99d9c76c69f87cc0681886a7319de2dff79ec3cbc198c664eaf653688d68c"
+    },
+    {
+      "path": "dict/rt.json",
+      "size": 7394,
+      "sha256": "50b2815a481f25dd0d5127d7e316505366cc71f8761b1b1ba12a7533947d2164"
+    },
+    {
+      "path": "dict/ru.json",
+      "size": 206336,
+      "sha256": "377c3f89f8e31fda903d4c2bbff543b5f8a411859d3c532bd5896c8fa977dbdb"
+    },
+    {
+      "path": "dict/rv.json",
+      "size": 1075,
+      "sha256": "ca137102123421da829cb71759113363d443fe095fee03bf923695b8fb8d9160"
+    },
+    {
+      "path": "dict/rw.json",
+      "size": 3128,
+      "sha256": "2f51db7c9c90ed46af5d7c2e1cd7ee7860edb40b18ca2a7860c19abb769279f3"
+    },
+    {
+      "path": "dict/rx.json",
+      "size": 396,
+      "sha256": "72ec2476950c055da923f6b6d812ce12737a70bd8ae9718c414df8404092b860"
+    },
+    {
+      "path": "dict/ry.json",
+      "size": 12199,
+      "sha256": "cc2d514a67f55933094d53881b7a591e048dc70c54e6f77daf61d82129af7c9e"
+    },
+    {
+      "path": "dict/rz.json",
+      "size": 519,
+      "sha256": "dd5829b3e11af3892e3166d654daeb7163c374d152145ed6570041088ef5c1c3"
+    },
+    {
+      "path": "dict/s-.json",
+      "size": 5902,
+      "sha256": "471d566d9f48822d2b003b3c77889ae27fa52b1dafa568f18a5285dcd7293b3d"
+    },
+    {
+      "path": "dict/sa.json",
+      "size": 653837,
+      "sha256": "754e472a2f64317c4d75c1046063033a0a4e122cec9613bb48ff07b2668999ee"
+    },
+    {
+      "path": "dict/sb.json",
+      "size": 5468,
+      "sha256": "83d2994ef51fc102ddbcf89f8337109613e23f327f3c8600dc5563ed5dda38e4"
+    },
+    {
+      "path": "dict/sc.json",
+      "size": 570575,
+      "sha256": "147aceee3cff19482f4796d74c8aa9429ffd233d7755d45780c35514d3cb95eb"
+    },
+    {
+      "path": "dict/sd.json",
+      "size": 6898,
+      "sha256": "0b59b702f592e46b8a68dff2c9eec62eac433ea8d47147a9dd252b01ec3e6687"
+    },
+    {
+      "path": "dict/se.json",
+      "size": 855132,
+      "sha256": "5796f78cb7aae6917aa5e23ef43019a14467cf7fde45e9f85fdd69e2aa5670e7"
+    },
+    {
+      "path": "dict/sf.json",
+      "size": 7272,
+      "sha256": "a54b9722a8f288f4ad9dbc2a7df3be885bde3ff4f9fdc0bb6510605d604b1885"
+    },
+    {
+      "path": "dict/sg.json",
+      "size": 3192,
+      "sha256": "c82357c301b9ecb61f109aef0d1fbd84cbcfc82996d34df0cc133e165d85c5c0"
+    },
+    {
+      "path": "dict/sh.json",
+      "size": 512232,
+      "sha256": "7a322d82d440fab3baf5962ba47a5921c3d68d83c4467ad707f2b293ccd2520d"
+    },
+    {
+      "path": "dict/si.json",
+      "size": 454073,
+      "sha256": "68577b54f40b7ff3df9199a41cc9ca62debd2eca43248a52f33934619443e038"
+    },
+    {
+      "path": "dict/sj.json",
+      "size": 2283,
+      "sha256": "02f3360741003a9c18342c8321add97e463e05572a02bbb1d570a24e6d05ca00"
+    },
+    {
+      "path": "dict/sk.json",
+      "size": 124201,
+      "sha256": "9e3e6e6084c855e45b3811d21261f507ebce504dcbbe5b18f271ad4f5d2f9883"
+    },
+    {
+      "path": "dict/sl.json",
+      "size": 212330,
+      "sha256": "b5aff15e93d337cadb5b167fef2a2cfeb202b2b4e3dd9fd5333108f12641d6ef"
+    },
+    {
+      "path": "dict/sm.json",
+      "size": 116258,
+      "sha256": "0b8f1b846c283e8b87f20f61bde6d2151cd1cedd2a3c0832535f846bd278706a"
+    },
+    {
+      "path": "dict/sn.json",
+      "size": 143080,
+      "sha256": "7f9526bb469370244399a23e8368fb2667c7afd4e0716a1b9fde36a9b3f61489"
+    },
+    {
+      "path": "dict/so.json",
+      "size": 420698,
+      "sha256": "b75c149ecd6727ef1ec4e7b6e517e8f6a57a698f199e3c6178acce880b6b359a"
+    },
+    {
+      "path": "dict/sp.json",
+      "size": 652623,
+      "sha256": "59cfc1ef7c344ab3a10fcc89d26da801f4281132a9213bc551f2aca43b80de24"
+    },
+    {
+      "path": "dict/sq.json",
+      "size": 76128,
+      "sha256": "e784ac42349d6c17624437db8e46ee757e01818f8a22d8ba6471918fe328a6a3"
+    },
+    {
+      "path": "dict/sr.json",
+      "size": 9616,
+      "sha256": "efc47bb5fe73cd376bc0339cde5a6e610f5feb9c532e8f09f83fc95406e87e79"
+    },
+    {
+      "path": "dict/ss.json",
+      "size": 13496,
+      "sha256": "5adcc5252a14f204268fd4d6c9690810e7befe5b4c46382dea5afbe3994bf9ee"
+    },
+    {
+      "path": "dict/st.json",
+      "size": 1055597,
+      "sha256": "6b13a2801813b3f9846e8b29a5d702556d72307e82f1ac22a2168e3f3c7b2f01"
+    },
+    {
+      "path": "dict/su.json",
+      "size": 947703,
+      "sha256": "153b516e39468237e98ba9e668ea857c51de7506d4bcc2fddc625073155c21c3"
+    },
+    {
+      "path": "dict/sv.json",
+      "size": 8209,
+      "sha256": "ed082d17729d6ecce27dd0cc07893d4525d6dd2ce5e3e54eda48e7c58cb21cb1"
+    },
+    {
+      "path": "dict/sw.json",
+      "size": 164914,
+      "sha256": "46d8d53963acbda69c7016246f64c69e01da48730ae60ba7da8a074cad3a006c"
+    },
+    {
+      "path": "dict/sx.json",
+      "size": 802,
+      "sha256": "65d56a65421d0e059a9d3403c334be52f90b7f99d11c77a17bade619c595955a"
+    },
+    {
+      "path": "dict/sy.json",
+      "size": 244998,
+      "sha256": "97bb5bfb3b1d2f971cb3b24d98bdd0e4fec2e7fd8c032f21cd832ecb88e6baff"
+    },
+    {
+      "path": "dict/sz.json",
+      "size": 3143,
+      "sha256": "6ae18a8ab56947ae16bdce1826c33c26c5a166aefc3fbb8ca51013b67fd64a71"
+    },
+    {
+      "path": "dict/t'.json",
+      "size": 109,
+      "sha256": "d3b838ca5d2a8e68b3ecb7ce01366d94fcd30007295071376a6cb5e93fb620f3"
+    },
+    {
+      "path": "dict/t-.json",
+      "size": 9280,
+      "sha256": "e039dd57c83456fe3aa13fe3e199ea942c6dac5ea69a5379d62b5c99f4c0f386"
+    },
+    {
+      "path": "dict/ta.json",
+      "size": 460948,
+      "sha256": "8f10418451d73e72703def1ca7f12376fbc2c37f36bd2e76868304d0f2c09dcf"
+    },
+    {
+      "path": "dict/tb.json",
+      "size": 6493,
+      "sha256": "daedc3c8684b0177130d96de841a6db76dc36916c41e065354a19998a3c8ace6"
+    },
+    {
+      "path": "dict/tc.json",
+      "size": 7734,
+      "sha256": "dcd2c8c4bc5af4e0b94e3fdea21f54f36b482fbdfd2d908e9e303fec3bfc75f7"
+    },
+    {
+      "path": "dict/td.json",
+      "size": 3741,
+      "sha256": "f41c757b01b2d6215f23355f637f9a76c10f9d5f1668dbfefa4e962895e6d59f"
+    },
+    {
+      "path": "dict/te.json",
+      "size": 599425,
+      "sha256": "52cd158c7c2f6b8850156aad443440c7f20177e76aade91656ad812e16fea180"
+    },
+    {
+      "path": "dict/tf.json",
+      "size": 2382,
+      "sha256": "7d88b01cff34fbfeb50393d033cf498be27ea033b3ba70689c0fa35110c1c55c"
+    },
+    {
+      "path": "dict/tg.json",
+      "size": 2093,
+      "sha256": "ae2f4215332657ceae67583de3a8b326c81d3ba390fd6d7548cd4c7408f2a604"
+    },
+    {
+      "path": "dict/th.json",
+      "size": 548621,
+      "sha256": "4b338ef30f5c0f92635440cd6f512126623b91ee9a92220f9d2ac5af4ff47464"
+    },
+    {
+      "path": "dict/ti.json",
+      "size": 254914,
+      "sha256": "9814382499c5e726934f1dad31b8eca047c9a905d29be80c781a1e6486e9ce6a"
+    },
+    {
+      "path": "dict/tj.json",
+      "size": 2074,
+      "sha256": "740b940acd117c8728a61da4bfecbcb49880b6b76cb9702f4d06390cac4d82bf"
+    },
+    {
+      "path": "dict/tk.json",
+      "size": 1731,
+      "sha256": "bf16039f7cda20aaa6aaa3873be6084799a9294b87e1482bb9a96fd1d41ad5d4"
+    },
+    {
+      "path": "dict/tl.json",
+      "size": 4738,
+      "sha256": "b93d2c9268f57b68ca5e9b8d0b1acd2697782c1d2beb05aa1188ffbea17d5fc3"
+    },
+    {
+      "path": "dict/tm.json",
+      "size": 5181,
+      "sha256": "a7cf3cf959665ad8bcc84c8bf7867be1243adee536466e4290887de6d32c979a"
+    },
+    {
+      "path": "dict/tn.json",
+      "size": 3238,
+      "sha256": "b30eacc72604d8e0f9a461dcc38fea3e4baff70e5f530053c773dfaa20114181"
+    },
+    {
+      "path": "dict/to.json",
+      "size": 420712,
+      "sha256": "68fc0fe96d7be2505227bd155e040635ad65cd8531c6107f4eb99bfee84047dd"
+    },
+    {
+      "path": "dict/tp.json",
+      "size": 5241,
+      "sha256": "99ab78b08612ff445b209836da219c9af437df7d94c4b159f7bfdaa4ad773888"
+    },
+    {
+      "path": "dict/tq.json",
+      "size": 531,
+      "sha256": "d82d349a0037bd94e06c8608f187d1ef7755a46cef398d3cf78538910b98e86b"
+    },
+    {
+      "path": "dict/tr.json",
+      "size": 949835,
+      "sha256": "0b57eb403ba319b65c602137a02a3e297a100f8dfd1c6cac3df2caf5a6645e14"
+    },
+    {
+      "path": "dict/ts.json",
+      "size": 21001,
+      "sha256": "2c6dfb96cc2708be6357299f15661cebe3737ea884d767d12d0001f3f0c4fb46"
+    },
+    {
+      "path": "dict/tt.json",
+      "size": 4295,
+      "sha256": "ff5ce321bb27cb849c9caf79a34cb65df0bf2dd20de4f038e2b2d180d388d40a"
+    },
+    {
+      "path": "dict/tu.json",
+      "size": 231621,
+      "sha256": "655222f3100586cd7354637667716ca5d282088210b26df7fc21be760032279a"
+    },
+    {
+      "path": "dict/tv.json",
+      "size": 4869,
+      "sha256": "c906fbf1e582a5a33b01dd7461460057a2c94cc570131d82af39561348a10d7e"
+    },
+    {
+      "path": "dict/tw.json",
+      "size": 91025,
+      "sha256": "2905e5985de37641f3177dbefb64858bedd2b2b243a2c0cecb3116dd478a4a16"
+    },
+    {
+      "path": "dict/tx.json",
+      "size": 853,
+      "sha256": "fb73e9014e098fdab1971d76f128128a0f4f3527825f0c7c3f8b2c324c462532"
+    },
+    {
+      "path": "dict/ty.json",
+      "size": 77049,
+      "sha256": "430129f1a9fbec1a1f261815a0dc3a220f72b12583afa2c6979141b3df989f6f"
+    },
+    {
+      "path": "dict/tz.json",
+      "size": 2944,
+      "sha256": "d74d79530ebb32a4b6cc3e1c152ddaa80836a6d3df01581c08cc4c028502d6aa"
+    },
+    {
+      "path": "dict/u-.json",
+      "size": 2906,
+      "sha256": "ed05ba161c62dd80b094e718af5e34ef104fd8b313526c13fcbe9e30d263b80e"
+    },
+    {
+      "path": "dict/ua.json",
+      "size": 4163,
+      "sha256": "d774419df982d77f0584cf1bf7c7315bab7c09ab6680b30de6ddcffe5fdd2fde"
+    },
+    {
+      "path": "dict/ub.json",
+      "size": 6731,
+      "sha256": "85a8066797fafc042b9d050ca67ce92a35371e078edbf6ccd5ab1759bb3f69a7"
+    },
+    {
+      "path": "dict/uc.json",
+      "size": 6273,
+      "sha256": "ceb1095382e1e3b53be0a18b18cce2b81adda2c79abe2bc2dfffd406e42df539"
+    },
+    {
+      "path": "dict/ud.json",
+      "size": 7769,
+      "sha256": "c1ca2d0d2a42e41eaf53ae0ea617e2afcb45926ec2f911d268d24ec94e21d5d4"
+    },
+    {
+      "path": "dict/ue.json",
+      "size": 2136,
+      "sha256": "07f15ea8d9783f285aef6cfb80d29a02585bb10b70ca99dd0fb41a5ea2bb63fe"
+    },
+    {
+      "path": "dict/uf.json",
+      "size": 4427,
+      "sha256": "7f3d528c9bb2682c3f7e0453302d416770f7659d6b32aef3850c4ae146a0afd7"
+    },
+    {
+      "path": "dict/ug.json",
+      "size": 9911,
+      "sha256": "9a5b866590f3b4e8fef219835502a2fdb69ab7fbac42d9fe90cddf448bf7244c"
+    },
+    {
+      "path": "dict/uh.json",
+      "size": 4408,
+      "sha256": "9fc771a6d8a6d2f0971eb4c4b51c04799f34a9e5177294e3b2839d0ce97cfb07"
+    },
+    {
+      "path": "dict/ui.json",
+      "size": 4098,
+      "sha256": "ee6cbbb1c50d9c5688060013aee618efea04cbeecf03b074e38788dc4ff3c389"
+    },
+    {
+      "path": "dict/uj.json",
+      "size": 905,
+      "sha256": "f39d2a47609409912a430b7f1be427d00c9822384788479c8a3abc4bc3121388"
+    },
+    {
+      "path": "dict/uk.json",
+      "size": 4388,
+      "sha256": "8fd1d58ce343eadf63e4015f974842e207065a07adc5e5533b72cdaf26668f47"
+    },
+    {
+      "path": "dict/ul.json",
+      "size": 73628,
+      "sha256": "6c6f37a8f93ded8dd9283bdcf8ce62bea03f8d96121777666222c3fdcb22b597"
+    },
+    {
+      "path": "dict/um.json",
+      "size": 28994,
+      "sha256": "8ef5ad21400645fb81dd1ba90855f703fd0e1e9a7ccf8dcc77a9cdb3b24551da"
+    },
+    {
+      "path": "dict/un.json",
+      "size": 979564,
+      "sha256": "a6a53f212e6932bcbe0f9992c30a8f6f7ea03b9a3828d9aa4ae612a13f029baa"
+    },
+    {
+      "path": "dict/uo.json",
+      "size": 1264,
+      "sha256": "9532cc1d2a6b92fcb77e97ce8389b7fbfd6340f3b8a6498199a1ffd4d09dc3be"
+    },
+    {
+      "path": "dict/up.json",
+      "size": 89478,
+      "sha256": "295f1095d6cb29a7e7138586f42a49eb81082365f48eb6a07eda4ec57f54c36e"
+    },
+    {
+      "path": "dict/uq.json",
+      "size": 166,
+      "sha256": "b1ac3dac1f73a60191a530709848f48ba3b13563e7230680bf53fe7355b953a2"
+    },
+    {
+      "path": "dict/ur.json",
+      "size": 128313,
+      "sha256": "c28a360586e655436293af52234ed972d84293f6b56be57525bda896b92a375d"
+    },
+    {
+      "path": "dict/us.json",
+      "size": 42098,
+      "sha256": "9cfa8969014fcf622057ddc66f4b7d93410f51becf80065943aa24fbca646b85"
+    },
+    {
+      "path": "dict/ut.json",
+      "size": 33381,
+      "sha256": "6ab511ace7660c6012b032619e767047a32ac1db321cbad38d6d5b36b634f094"
+    },
+    {
+      "path": "dict/uu.json",
+      "size": 1960,
+      "sha256": "1ecf5de6aad97e9786b6baa38440db45f71923096abf3f5399cfdfc72b851f5c"
+    },
+    {
+      "path": "dict/uv.json",
+      "size": 8095,
+      "sha256": "384905cf0092c7889696870d61d9fe257f54492804fbd2280843a68297cbdb8d"
+    },
+    {
+      "path": "dict/uw.json",
+      "size": 1686,
+      "sha256": "ba14cd4f15db848c9e9aab266025e1f1c24173635f945c313fd2c0f6ed56f68a"
+    },
+    {
+      "path": "dict/ux.json",
+      "size": 2112,
+      "sha256": "8b2563f82f7ef752e9fd132e9823e3838e3c15ba141ff595a3799b4b9204c93a"
+    },
+    {
+      "path": "dict/uy.json",
+      "size": 1164,
+      "sha256": "0ab63decae73206b49866a64098ef6a67e7227a862cb889c9bb1639fd04f1b3a"
+    },
+    {
+      "path": "dict/uz.json",
+      "size": 2357,
+      "sha256": "1ec3a996317c6e60f02e0c238f3417e65e7d1497508e2bb09a9ed275571b8bd9"
+    },
+    {
+      "path": "dict/v-.json",
+      "size": 3499,
+      "sha256": "201c6c47aa973e6cafbfc0e75b5b332e2dfd3338da5ea4d31d0e6d30e4b80e82"
+    },
+    {
+      "path": "dict/va.json",
+      "size": 262513,
+      "sha256": "77ba8471f91019a4768fc96b235c5961ee0e68d13dfc3bd95446d4443b8a892e"
+    },
+    {
+      "path": "dict/vb.json",
+      "size": 1336,
+      "sha256": "defddaa94bba0f53d5adea28df0a8d41215dcc9f16e4de2668bc102c7292af7c"
+    },
+    {
+      "path": "dict/vc.json",
+      "size": 2892,
+      "sha256": "c6594a9c427d89eb0a20f6b69f15cf23248e3024dfca8df14753e91deba065c9"
+    },
+    {
+      "path": "dict/vd.json",
+      "size": 2389,
+      "sha256": "b62c426268cd07953dfa2b1693cca3a35d4ba54dfd9a09cd7d19ff3c512c1b81"
+    },
+    {
+      "path": "dict/ve.json",
+      "size": 268284,
+      "sha256": "a526831d3b09cec7157b77bc23f6af76824ec968201cbc058f6ff3a5ead8d125"
+    },
+    {
+      "path": "dict/vf.json",
+      "size": 2320,
+      "sha256": "3fecf41e970978b56737ada5ca273c0af5e4385991489cfe90a7a9c8efbf559e"
+    },
+    {
+      "path": "dict/vg.json",
+      "size": 384,
+      "sha256": "2f657397f205f31d30774a3f4ad273be5339682e2469c48fa14cef6a1f6c7242"
+    },
+    {
+      "path": "dict/vh.json",
+      "size": 1409,
+      "sha256": "09c7b5dd30effb62f7943a7798f6ae8a957431d7d7e26a7d1477b73a788ec4e3"
+    },
+    {
+      "path": "dict/vi.json",
+      "size": 316406,
+      "sha256": "99f3ce4c4a4ee8cf2d049f7954e7726657a4b7b60e676cf1bf9465222a8d8a61"
+    },
+    {
+      "path": "dict/vj.json",
+      "size": 127,
+      "sha256": "0332718ec374989790b9a14fd9d6f321c63e32a0e9b561b3aa055acfacd85e3e"
+    },
+    {
+      "path": "dict/vk.json",
+      "size": 107,
+      "sha256": "7a420cc20468160c8e075c2fe4b17deb687755b5b62bf475e962db2a522a504f"
+    },
+    {
+      "path": "dict/vl.json",
+      "size": 6053,
+      "sha256": "58d91956f664656c34b5e694bcb52b86a5f373efc204f12c7031310faec298d8"
+    },
+    {
+      "path": "dict/vm.json",
+      "size": 2298,
+      "sha256": "3f3b8f10fca92c2e698ce0e869b32328d01620e2c38488d2fe10b678b6646bcc"
+    },
+    {
+      "path": "dict/vn.json",
+      "size": 927,
+      "sha256": "37ad489bc0e6ff9cb044d5bddf1f6d299ecf7b82d10801980066db4ee1183fbf"
+    },
+    {
+      "path": "dict/vo.json",
+      "size": 120153,
+      "sha256": "bd4cd0c8856c8bc7e79682ca9f8c1b231364fe644c2c6c9549768b81593d1280"
+    },
+    {
+      "path": "dict/vp.json",
+      "size": 1619,
+      "sha256": "d2876125c3dd4c5c15b7bfae54fa5c6c5ebc380a9c604a420b5131ff22fdbfcc"
+    },
+    {
+      "path": "dict/vq.json",
+      "size": 139,
+      "sha256": "e1e3a4956e9a5eade04cee50546e2c6b479de7f576b218677abab88c24188995"
+    },
+    {
+      "path": "dict/vr.json",
+      "size": 5875,
+      "sha256": "478668abd7c70bef7e3d4512ef36c612be29adcc846f27a69ca8eb365ec849a2"
+    },
+    {
+      "path": "dict/vs.json",
+      "size": 4550,
+      "sha256": "35e8cb7ea10324c90dee0848662370e73ddf36c09db1a22d97e0b902a8288a10"
+    },
+    {
+      "path": "dict/vt.json",
+      "size": 2700,
+      "sha256": "7ba932cf931605a5eb84261ba03f8b1160d331af2d8e8e88836c12e5ac9a3450"
+    },
+    {
+      "path": "dict/vu.json",
+      "size": 22482,
+      "sha256": "b5e37d3fe7ecb5917225d20153641a14c93a08d0d136e4cd8a13ada3aa2435a8"
+    },
+    {
+      "path": "dict/vv.json",
+      "size": 1415,
+      "sha256": "537d3fb4df3a8fdc6f27568ac729e8705ff022bc5e265ddbca82c2666683c0e0"
+    },
+    {
+      "path": "dict/vw.json",
+      "size": 462,
+      "sha256": "b536df84783eb1be12ce5cccfe6c4e884343ecdc3688ee485f9fa0a6516ca828"
+    },
+    {
+      "path": "dict/vx.json",
+      "size": 106,
+      "sha256": "e026d8ca6fd6efb520dc52af01411f0a9654f28d0b6224042379f9f9cc06c3ab"
+    },
+    {
+      "path": "dict/vy.json",
+      "size": 1851,
+      "sha256": "496bc5ea1171c4bfb48034fba68afea08d7e48028f862bf9781c63e42c239f34"
+    },
+    {
+      "path": "dict/vz.json",
+      "size": 236,
+      "sha256": "b6ed2b8e8abd379a5c911323ab81e5648f3a440fde2e123ef3ca26cd93105977"
+    },
+    {
+      "path": "dict/w-.json",
+      "size": 763,
+      "sha256": "8889f1b343569b20068eb4b215dd15d7edeefccb154a333825ee834299fff75f"
+    },
+    {
+      "path": "dict/wa.json",
+      "size": 392623,
+      "sha256": "cb0c4ef4ea22002f25179446ba2ece9955b5854f4c44582c5f161c236f5d6c83"
+    },
+    {
+      "path": "dict/wb.json",
+      "size": 2225,
+      "sha256": "2d4ab01d0d9b84866b729c327b2ec768a86cd689bcc5cb307676e723ead5aac7"
+    },
+    {
+      "path": "dict/wc.json",
+      "size": 3942,
+      "sha256": "24866d7213a60e6aaf1170ccaed3fa221c3c49f86905ca451695d8a2d61f8fa5"
+    },
+    {
+      "path": "dict/wd.json",
+      "size": 1199,
+      "sha256": "c7899831d0bda97a96c8213639e4f01d1d70739f736f13a84e4d2c966eb000c8"
+    },
+    {
+      "path": "dict/we.json",
+      "size": 230561,
+      "sha256": "b0e59ded1cc0fcb807ce0799af2cf97fd2ea90b4fff6ea0d85257bc00adc3241"
+    },
+    {
+      "path": "dict/wf.json",
+      "size": 2340,
+      "sha256": "1c11619351e600f11b5a28f2f1542d619aa1cbaf2c05558823290da5a95b9fa4"
+    },
+    {
+      "path": "dict/wg.json",
+      "size": 1002,
+      "sha256": "7b6ec32d72d838dda68a6af373d105fc26827fd59bf0be785a1c002adcb6edb7"
+    },
+    {
+      "path": "dict/wh.json",
+      "size": 200762,
+      "sha256": "df739176f23e9814fe7066728ca4621ed4ba6b069abec169fe4f311c049ab233"
+    },
+    {
+      "path": "dict/wi.json",
+      "size": 275079,
+      "sha256": "7bd8be0c647f6be541af4b3d282f6d28ca4a096058c65402fa27a3664d8c9af6"
+    },
+    {
+      "path": "dict/wj.json",
+      "size": 321,
+      "sha256": "b32389154f025aa7afbdfe27839dbca124ec4acff94c64796ae43387ad732ad3"
+    },
+    {
+      "path": "dict/wk.json",
+      "size": 1148,
+      "sha256": "79df66f91588003764c21f5dcca619e0582cc071b9bfd4bc22af7ddd2a6b929a"
+    },
+    {
+      "path": "dict/wl.json",
+      "size": 2060,
+      "sha256": "5fda32b20d2fc449bb845c84330a52a7473d306387b14f33bb5436a214022069"
+    },
+    {
+      "path": "dict/wm.json",
+      "size": 3348,
+      "sha256": "fb0766373201f7644d75d6624f404104a16063c3905d2c38427bec04c14a92c7"
+    },
+    {
+      "path": "dict/wn.json",
+      "size": 1829,
+      "sha256": "7fd6526e12406e158aeab8922bb09353a62470cafde5c1cc7f270b85dc57457f"
+    },
+    {
+      "path": "dict/wo.json",
+      "size": 208677,
+      "sha256": "e26d3362cc8ca51ddef4013c8691431d4df478e8894d844d14d069b389a9b5d1"
+    },
+    {
+      "path": "dict/wp.json",
+      "size": 3607,
+      "sha256": "4899d088711dd6a08969c35698393bc1b6fa50b56e87b807686e8c1dc655cb60"
+    },
+    {
+      "path": "dict/wq.json",
+      "size": 174,
+      "sha256": "c88ea8368a8ad5d9bf2a095546b8134e6d7a3f683429a15fa009cd4911034c18"
+    },
+    {
+      "path": "dict/wr.json",
+      "size": 66535,
+      "sha256": "1c600c39bc775b5a6cc2884889611bd2f6ab2733a7dc23c77373c9a691011a7d"
+    },
+    {
+      "path": "dict/ws.json",
+      "size": 4724,
+      "sha256": "3df484d69ab20dea15a50cff70d8ad31e0be8065a88f8605a2964cd6e5122134"
+    },
+    {
+      "path": "dict/wt.json",
+      "size": 2534,
+      "sha256": "83aedf79833abf98b9b84323fae0481f4895ad7e5b2ce9ac19c5801a9ba5ab6b"
+    },
+    {
+      "path": "dict/wu.json",
+      "size": 9079,
+      "sha256": "9760ef78f7916dba5058e346946ac64c79a9b4d9fc87168611aeed839e54fb9a"
+    },
+    {
+      "path": "dict/wv.json",
+      "size": 854,
+      "sha256": "eb9f6e64395996e10a7c9c0b25517d1b6698fe92a2375e67577e4d974c55b1c0"
+    },
+    {
+      "path": "dict/ww.json",
+      "size": 2490,
+      "sha256": "9184faae3c75624cce32180d329ff67f738b0334e48534c6539315bb1737ff2b"
+    },
+    {
+      "path": "dict/wx.json",
+      "size": 276,
+      "sha256": "1b0d8d0d04c3190febd2ff3bfa4751ab936bdd1186141ec60c5091a9e055b47e"
+    },
+    {
+      "path": "dict/wy.json",
+      "size": 13185,
+      "sha256": "23c8d3809b6eb2d6f1ee104ce0ab6142acb7d881183125f4aa6528c6745ba8a9"
+    },
+    {
+      "path": "dict/wz.json",
+      "size": 246,
+      "sha256": "1ef281a09e506a99f4e907d1bf17549632774f5343c13290cd64c168fe8be87c"
+    },
+    {
+      "path": "dict/x'.json",
+      "size": 169,
+      "sha256": "2193200d776bf25ddbf9de6213355c7d406496752a3388f151cbc6b6ce2d49bf"
+    },
+    {
+      "path": "dict/x-.json",
+      "size": 9440,
+      "sha256": "a73c147ebb5b18bf871b787b7a5989370a967b6bb26a842dbb6a1af2e5e3507d"
+    },
+    {
+      "path": "dict/xa.json",
+      "size": 33341,
+      "sha256": "ca1e9d2dbf31020f6df3293fc34af6dd9556b495497a509b08781f6310d5947c"
+    },
+    {
+      "path": "dict/xb.json",
+      "size": 1945,
+      "sha256": "2aafc48bf19bc1a72096ec1750df4f62186645eae72885ab938621e5559e9a75"
+    },
+    {
+      "path": "dict/xc.json",
+      "size": 2560,
+      "sha256": "d9cb01d50ffde08fbcd5024b9b13f0de85c295501b084a6fd81fa8931ce6c68c"
+    },
+    {
+      "path": "dict/xd.json",
+      "size": 1165,
+      "sha256": "0428f4dea4f7b249bbcbe31dd19d6a9ade4b3f08eda4ab60f97c3b85569caf9d"
+    },
+    {
+      "path": "dict/xe.json",
+      "size": 39582,
+      "sha256": "dfa9b2df4a966c76a5750aedd0c2e6284d0daae0bd626bd76d758ef3e37465e8"
+    },
+    {
+      "path": "dict/xf.json",
+      "size": 1266,
+      "sha256": "525a3ae0e2b214a313d942340a004769e95a70be5bd7fb9fc04fec0ced3ecac0"
+    },
+    {
+      "path": "dict/xg.json",
+      "size": 226,
+      "sha256": "ec15642dae167cdd2a35461a4e6c6ee3570512439c3ecbfc95aab62fe853e05a"
+    },
+    {
+      "path": "dict/xh.json",
+      "size": 1102,
+      "sha256": "19cf5313da3ea30324ef6d72b2f624812c00bb4f716ef6ad64151422dd918f5c"
+    },
+    {
+      "path": "dict/xi.json",
+      "size": 9891,
+      "sha256": "f538b7e50304c57ca27426dea17cf2adde1a9864a03d74953036c2cffb22b8ea"
+    },
+    {
+      "path": "dict/xj.json",
+      "size": 193,
+      "sha256": "5f7ed601866ae49da22c6b3a1641961043813bd41584e3d51f3a83d27d593bea"
+    },
+    {
+      "path": "dict/xk.json",
+      "size": 567,
+      "sha256": "97ae11e233bd7e01b3c040f9b8832c7f8d7130dc07eefd6f0aae933a375a042a"
+    },
+    {
+      "path": "dict/xl.json",
+      "size": 2083,
+      "sha256": "32d193f66efffcbb8c8b2a0bc6efc0f1b923a692b71beebfc3326f3dfbebc584"
+    },
+    {
+      "path": "dict/xm.json",
+      "size": 1518,
+      "sha256": "d26ee6f94b66e13041fe9573c000f7ec86c9939bd5c8c3120a88ed897cfba5e7"
+    },
+    {
+      "path": "dict/xn.json",
+      "size": 475,
+      "sha256": "60473ccd2d34ba60bde18d68b3bf4a92842c56895e5ae37ec98dc22dc9e4a639"
+    },
+    {
+      "path": "dict/xo.json",
+      "size": 3357,
+      "sha256": "cfb4e50653fbd5b9e93facd4727d971fbf51dd8a48c1cc823025e09cd12b3d31"
+    },
+    {
+      "path": "dict/xp.json",
+      "size": 730,
+      "sha256": "caad2bb574e8c911670ad4e697614316feebe2e20ab32bd0a76f10cfaea53916"
+    },
+    {
+      "path": "dict/xq.json",
+      "size": 128,
+      "sha256": "2f058f203f9b0471fc79e50ee77433790e56bd7b4400c5b19a30aa754f11189d"
+    },
+    {
+      "path": "dict/xr.json",
+      "size": 1280,
+      "sha256": "30edfcef1a54044de8db56ec17d456a30e240f2a973114071f95574af5e23a46"
+    },
+    {
+      "path": "dict/xs.json",
+      "size": 1444,
+      "sha256": "9d5facb252a9ed3842d5b671b945c5dbcf2dcae857b451484805e79c445d8b6f"
+    },
+    {
+      "path": "dict/xt.json",
+      "size": 2260,
+      "sha256": "6e3e657914e5d4cc329fbbe645661ff56772727206300b6e71d406a019c47359"
+    },
+    {
+      "path": "dict/xu.json",
+      "size": 928,
+      "sha256": "e3f554a76b4d836f61b6844c22381d61bc437ce486149660c10373a5393d0f41"
+    },
+    {
+      "path": "dict/xv.json",
+      "size": 1606,
+      "sha256": "131f8903b12e579a90d2f7cd7b01863b121bad7a2774924f9b083dfbafcecf09"
+    },
+    {
+      "path": "dict/xw.json",
+      "size": 227,
+      "sha256": "e02ad7e9dc8121bddba8e26f8ca96a0167176b4c95548aaf2f3c0b10637366d0"
+    },
+    {
+      "path": "dict/xx.json",
+      "size": 3976,
+      "sha256": "fe5e30906f669c86f16be4d7b751a616273f9c89c8b088f2ec01aff159cbbb10"
+    },
+    {
+      "path": "dict/xy.json",
+      "size": 22788,
+      "sha256": "048d66d88bcffe9c78168ea9c91c677714e2a1b77f9ab28813f713a4bbe3b13b"
+    },
+    {
+      "path": "dict/xz.json",
+      "size": 264,
+      "sha256": "f2c79c519e8d073037e34ebdcb21de0d36f1cc959a9746531c107461fe23f758"
+    },
+    {
+      "path": "dict/y'.json",
+      "size": 155,
+      "sha256": "d1c4c0e62abf7616aa663bcb8e7c934859c0043c18fa98f7dfebb234ae751ee7"
+    },
+    {
+      "path": "dict/y-.json",
+      "size": 3161,
+      "sha256": "7fe293e769154529231091578c6bb588868cbb7acde1ac012859f5097c612e0a"
+    },
+    {
+      "path": "dict/ya.json",
+      "size": 75885,
+      "sha256": "828c4cdd95776ae264b46b5af8891dd910bd6152e341ecd9d764bc43627c2712"
+    },
+    {
+      "path": "dict/yb.json",
+      "size": 1041,
+      "sha256": "a8f9ca7606761818ce831b52800e4afb93038401066673503dd16e87818f0697"
+    },
+    {
+      "path": "dict/yc.json",
+      "size": 855,
+      "sha256": "3fd22b99905d347adfebbfaf29e38705ad59d9c76d48942fd903869de286c021"
+    },
+    {
+      "path": "dict/yd.json",
+      "size": 816,
+      "sha256": "5277cd1001574f8605eb3412beff92989d9a0c3b39ae57daafb24da3968a6840"
+    },
+    {
+      "path": "dict/ye.json",
+      "size": 56796,
+      "sha256": "3e90a3c358ead8c43ebb180a0656938ed18be731c0904bac3e70180434d8d3c3"
+    },
+    {
+      "path": "dict/yf.json",
+      "size": 447,
+      "sha256": "d1645eb5cc4753f8efa33769845e0c9376719973a63a05509396609cc8a12d76"
+    },
+    {
+      "path": "dict/yg.json",
+      "size": 1012,
+      "sha256": "b9843828ea114218ff82cecba3104d06c56bb580b053899135badb288c73b313"
+    },
+    {
+      "path": "dict/yh.json",
+      "size": 768,
+      "sha256": "3e533cf3985e7fe5b534fe062f84744917f7525a2ed2a3ad075709e89ac4f857"
+    },
+    {
+      "path": "dict/yi.json",
+      "size": 10720,
+      "sha256": "03dd0416e20f2b0a34a894600ba4fefa8d8200032a003b775d6ffbfc8534f7d6"
+    },
+    {
+      "path": "dict/yj.json",
+      "size": 138,
+      "sha256": "7df6155255ab177a6c42d2eb6fb2fe0f1120499276c9af2d19598cf76e5d6213"
+    },
+    {
+      "path": "dict/yk.json",
+      "size": 210,
+      "sha256": "210de63cb267c3b51899be70bb0a99097a7b2abf83e9592b092bf575e15fc6e8"
+    },
+    {
+      "path": "dict/yl.json",
+      "size": 1566,
+      "sha256": "a6fe1d328c3054d4ef2311848360e55e3311e387868429a89eb42fd45f050d94"
+    },
+    {
+      "path": "dict/ym.json",
+      "size": 1634,
+      "sha256": "d2ae04c69db8abf1ceefc7e1facc5df5a58f710130c103b705f2a04cd2e3909e"
+    },
+    {
+      "path": "dict/yn.json",
+      "size": 792,
+      "sha256": "02e9918666a538de2b60cad654874a371239765cf48c1a58b5ffc5ea571a6a12"
+    },
+    {
+      "path": "dict/yo.json",
+      "size": 52133,
+      "sha256": "7edd79de353968c6b5cf59808a0327dbcd21703c29406b95684b1a296ba7575c"
+    },
+    {
+      "path": "dict/yp.json",
+      "size": 2063,
+      "sha256": "ae3ce401a580e04c77519ea3660efc4e69d354b570e835290ba6bd58384f67be"
+    },
+    {
+      "path": "dict/yq.json",
+      "size": 144,
+      "sha256": "087afaa25da7051286807b9c0463f2f132b5464ab79708d1997d8e418c36810a"
+    },
+    {
+      "path": "dict/yr.json",
+      "size": 1371,
+      "sha256": "721daf02f9bcba4da3245f70d54a45d53f654aa259b9b47baafaba5e93a7a345"
+    },
+    {
+      "path": "dict/ys.json",
+      "size": 1975,
+      "sha256": "6fcdca8deb905901479a23685a34d5facd053b19dba108162dcef1a6b1d49340"
+    },
+    {
+      "path": "dict/yt.json",
+      "size": 4747,
+      "sha256": "b3169d4cb9caec6f8a97ad8f448c7b45c3d54a6ee71febdfd78b4329c8ce990b"
+    },
+    {
+      "path": "dict/yu.json",
+      "size": 23293,
+      "sha256": "44fc5cd1951cff790c7eb97dcedab107c5f9480eb123fb6a5793072835e52da9"
+    },
+    {
+      "path": "dict/yv.json",
+      "size": 1005,
+      "sha256": "dd6d64ee7f0087ce2fdbfc32fa583f31d948d54f101b696c07dc63d441f92f57"
+    },
+    {
+      "path": "dict/yw.json",
+      "size": 1117,
+      "sha256": "1324522a5fe75827378756e169d05d92338c4f136d5dc02584aad15400a9acaf"
+    },
+    {
+      "path": "dict/yx.json",
+      "size": 114,
+      "sha256": "5b44f56103803b4f97e7778e809222eb96fe3fb4126b1f194b73c49ba8d1d54a"
+    },
+    {
+      "path": "dict/yy.json",
+      "size": 285,
+      "sha256": "83b0d979cd62cfe6571077f28440d59bd29a1ad667b346ecec5e1278ec09f825"
+    },
+    {
+      "path": "dict/yz.json",
+      "size": 603,
+      "sha256": "9165bc9097e7ec46714c065806c08bf562a1f8832341e96554a841d94cb54357"
+    },
+    {
+      "path": "dict/z-.json",
+      "size": 2490,
+      "sha256": "2ab6d30bc36adcb238cd2e0adc797a59007b16753062d77e82e67735ec43713b"
+    },
+    {
+      "path": "dict/za.json",
+      "size": 48663,
+      "sha256": "fc8affbfda2b0c3aed518778c01975c31fe631c447b377ab3365211f5e0f5dc1"
+    },
+    {
+      "path": "dict/zb.json",
+      "size": 821,
+      "sha256": "2191e2515419e0626e05dcec95dea1c1f1e9455a7ababcd2af9cca1652816533"
+    },
+    {
+      "path": "dict/zc.json",
+      "size": 361,
+      "sha256": "26b32f4c5200fecb495ff5885d9ada4a6bdf6d744b2f3eef3c9d4a5418221188"
+    },
+    {
+      "path": "dict/zd.json",
+      "size": 556,
+      "sha256": "3547d3309b5cef384e6c746912d4c8afff855d08cb81f6d99d5bce5877c72965"
+    },
+    {
+      "path": "dict/ze.json",
+      "size": 56516,
+      "sha256": "6eea692adc93fe24b47a34faf6e66243531513c2240acf45c7f8d01a57099d42"
+    },
+    {
+      "path": "dict/zf.json",
+      "size": 111,
+      "sha256": "e6d14d9faba8d8fe33ab76aaf124e54af2284905b30ff9791501f2b511d98d16"
+    },
+    {
+      "path": "dict/zg.json",
+      "size": 144,
+      "sha256": "901e66cc629d03b74f6f50ae2bc9506f10108d5633e863f2b5cc48bdaa225655"
+    },
+    {
+      "path": "dict/zh.json",
+      "size": 5420,
+      "sha256": "f167808e708e8e2795c9134f53cd5657a085e02d416313c8ce1dbff9c74fdf43"
+    },
+    {
+      "path": "dict/zi.json",
+      "size": 51507,
+      "sha256": "eaf6cb6668acdaaf9c335bb7dfa72b3bb24f81f1b38eb605b957e18ce478ecb6"
+    },
+    {
+      "path": "dict/zj.json",
+      "size": 206,
+      "sha256": "b17c846a1f0a4401c7270607d37c330b9c2ed8d65b88e5a40b5574e9317c99e5"
+    },
+    {
+      "path": "dict/zk.json",
+      "size": 119,
+      "sha256": "63010c16196f6f559b511dbb3be5315ecf6550cda9cac0f8f2e8b39d0c849936"
+    },
+    {
+      "path": "dict/zl.json",
+      "size": 1084,
+      "sha256": "7fb43025e87b54351406016089fbf66838f55337862d5f74b0bd131ec25b7c0b"
+    },
+    {
+      "path": "dict/zm.json",
+      "size": 676,
+      "sha256": "5217600a95129ae461702ce9530e90e624dc21e092e3669e4e42d83320ca8996"
+    },
+    {
+      "path": "dict/zn.json",
+      "size": 475,
+      "sha256": "deadb9311658fb0bc66f0f55dc800d0b674ca8f3b5ab8bdc3e1be394eb428027"
+    },
+    {
+      "path": "dict/zo.json",
+      "size": 76624,
+      "sha256": "af5fec123f8182ca5b755ea49efb48356777e894d494ac54eb1bd6e166bf6ff7"
+    },
+    {
+      "path": "dict/zp.json",
+      "size": 853,
+      "sha256": "bab8b68ee9e73fd9590d9f3295ce270d2e300ba0ace447e6734003cdf9c6e2e0"
+    },
+    {
+      "path": "dict/zr.json",
+      "size": 483,
+      "sha256": "869a4392ff3ca758985cb0a01f8dda7dca9f6e667ce4425c3938c670dbcd449e"
+    },
+    {
+      "path": "dict/zs.json",
+      "size": 789,
+      "sha256": "1b78992ecf96aeb59541333e68c10c89b4088c9a8937cc95e585fe94f749476d"
+    },
+    {
+      "path": "dict/zt.json",
+      "size": 487,
+      "sha256": "45abb8edd707dd971495d9897b630da4558d0319b28b139e1bb2701cd955bb89"
+    },
+    {
+      "path": "dict/zu.json",
+      "size": 15147,
+      "sha256": "4dd561bff329a85d82bee957df0cfc75b20adc53108093e34183fc87a3e8a11d"
+    },
+    {
+      "path": "dict/zv.json",
+      "size": 490,
+      "sha256": "96c748325200694d02434049929fcf5b201bb638629274d37ef955a56d830d89"
+    },
+    {
+      "path": "dict/zw.json",
+      "size": 3744,
+      "sha256": "ae717e28d8b965121c03c289449594d89302a70e870e46c53b637b1dfd2e857e"
+    },
+    {
+      "path": "dict/zx.json",
+      "size": 665,
+      "sha256": "3d41d1f55c1c12ba9317f2bca11ebb7a28dd6bd327623f52fd9361dc61a8f4c1"
+    },
+    {
+      "path": "dict/zy.json",
+      "size": 29348,
+      "sha256": "abd2e8c9fe45805fd527763e92306af835852b7cbbe272b5c755b3cdb09b2922"
+    },
+    {
+      "path": "dict/zz.json",
+      "size": 206,
+      "sha256": "ef3df530eeafea9e8b56d623a53ce0968af33cbebdd97a6a96dc6c18121bc4d0"
+    },
+    {
+      "path": "ocr/core/tesseract-core-lstm.wasm",
+      "size": 2871085,
+      "sha256": "220e2e87551edccb85519796a170469f8ab2a8055216789e3b8b1ada18b7bc2b"
+    },
+    {
+      "path": "ocr/core/tesseract-core-lstm.wasm.js",
+      "size": 3954181,
+      "sha256": "775a35df6f2ae100e02609443e6bd5cafcd07983dd6175454ca4a432a7730687"
+    },
+    {
+      "path": "ocr/core/tesseract-core-simd-lstm.wasm",
+      "size": 2871377,
+      "sha256": "187d76742dfc0d8929f0b49a619f145bb6370730776c7bd0d3e20c6b2098808d"
+    },
+    {
+      "path": "ocr/core/tesseract-core-simd-lstm.wasm.js",
+      "size": 3954569,
+      "sha256": "9d7c43fb206dc9f48475228b46bf35f888fa9e6259da2e67d5a75c77049f2dc7"
+    },
+    {
+      "path": "ocr/core/tesseract-core-simd.wasm",
+      "size": 3469078,
+      "sha256": "ca11ee92a02023e4f5083eefd0966fb83b297416da54e997b9f6ce445f719c9b"
+    },
+    {
+      "path": "ocr/core/tesseract-core-simd.wasm.js",
+      "size": 4751193,
+      "sha256": "3b0678c47a8dea6abb931b214171c08b742a5b9a9fcbbb1a028a08d5de6e9d4c"
+    },
+    {
+      "path": "ocr/core/tesseract-core.wasm",
+      "size": 3468788,
+      "sha256": "740f7e466a2f026e1f1e54a2e0d9957e386d8166110d1290224abd3d08986106"
+    },
+    {
+      "path": "ocr/core/tesseract-core.wasm.js",
+      "size": 4750805,
+      "sha256": "e66872f6a76f5ad414d73d21512245df0de3060ad4871a97c47efceaab27b955"
+    },
+    {
+      "path": "ocr/lang/eng.traineddata.gz",
+      "size": 10923060,
+      "sha256": "ed350f3752f81ee8f38769edc14d92d997dababe23b565c59879372cc46a2468"
+    },
+    {
+      "path": "ocr/worker.min.js",
+      "size": 111162,
+      "sha256": "38645599043239c0eb6db08a6504a92dcdc292200535f3e9339cd77c4443b842"
+    }
+  ],
+  "parts": [
+    {
+      "name": "static-assets.part-000",
+      "sha256": "4456ca50ccbb23fa4c269f8f3201badd7c422086e2840ce050e370533323e491"
+    },
+    {
+      "name": "static-assets.part-001",
+      "sha256": "10c8cdf50688b876e3309755bd8157f641b3acc0a022b370bb13a4069a36609a"
+    },
+    {
+      "name": "static-assets.part-002",
+      "sha256": "f279f029a378c3dd8b5490bbb5bd2321e0ba4ca0ec6270c01bc3810bd4041e4b"
+    },
+    {
+      "name": "static-assets.part-003",
+      "sha256": "499817b45b409c0b572a1bab5a58a61bcc4351172bf7edc5c628eef422170f3f"
+    },
+    {
+      "name": "static-assets.part-004",
+      "sha256": "c8a70f66bb31a862d07bbfad6546a54acd7535e62751e1b0bb83990efa7a1055"
+    },
+    {
+      "name": "static-assets.part-005",
+      "sha256": "66094003dc05a008ca050422d3d8420b5364e241e34ca839234fec4159811b9f"
+    },
+    {
+      "name": "static-assets.part-006",
+      "sha256": "cf7f72fddd25932098318ce2b0686bbdd8be3b2787a8a67c82abd382cc882e02"
+    },
+    {
+      "name": "static-assets.part-007",
+      "sha256": "0f37fb9be65dcaa1e0e27339d53cf56ba2b05252b671180a11eea15936d0a20f"
+    },
+    {
+      "name": "static-assets.part-008",
+      "sha256": "c02b2da6fd1a2308f6d6c4fcfc66688aca50c2191db0a3d909a34ecfa7b1be78"
+    },
+    {
+      "name": "static-assets.part-009",
+      "sha256": "5ef9812c51ec4094c468f9f2e780ef1b102ee09c985ff71ac93e5e26b80bf39a"
+    },
+    {
+      "name": "static-assets.part-010",
+      "sha256": "98efcd6de84cbcfdbc3696be352a799e394db52e4b22f6a772821bb62ecb4124"
+    },
+    {
+      "name": "static-assets.part-011",
+      "sha256": "549b9b86a64e0797d12fbff06dde1a2228a663df30ad458e5f10e2d5caaa38ee"
+    },
+    {
+      "name": "static-assets.part-012",
+      "sha256": "b2be457ad0ccaf5e2fac876f619336611fef03fa28e25eb45f883f7b5feded87"
+    },
+    {
+      "name": "static-assets.part-013",
+      "sha256": "52c874a0298f359cc57b78b379c7115c931cef2c5ce06b577949aa05dc1b7f5a"
+    },
+    {
+      "name": "static-assets.part-014",
+      "sha256": "73b5be59a025b3abc5fe59a39154b0d67846fae3deb0afe5c36f67048b13d01d"
+    },
+    {
+      "name": "static-assets.part-015",
+      "sha256": "ef5f5b3cb9c359d9e36e31337dfb75b35e744c48f381c3c345ecc6763b9e046b"
+    },
+    {
+      "name": "static-assets.part-016",
+      "sha256": "e51f10be7b65fe61a6612cc73efd9a55cd1cb2154a253c7b75c9cfb85a01179b"
+    },
+    {
+      "name": "static-assets.part-017",
+      "sha256": "417d8d291307329ca2c125c180c855520d7d599660f927d2b910a87ee378124c"
+    },
+    {
+      "name": "static-assets.part-018",
+      "sha256": "228669433797e1692cdd00496e521244c6f9e684f8151688ee8e0ceb83ad4170"
+    }
+  ]
+}

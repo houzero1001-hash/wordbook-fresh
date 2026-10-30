@@ -1,0 +1,41 @@
+# Generated dependencies, releases, caches and local test output
+node_modules/
+dist/
+delivery/
+reports/
+.netlify/
+.wrangler/
+.DS_Store
+*.log
+*.zip
+*.tar
+*.tgz
+coverage/
+# User/private files must not be published
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+backups/
+backup/
+*备份*
+wordbook-20*.json
+vocab-*.json
+# Raw source corpus is not required to build; deploy reviewed static shards only
+data/
+# Local screenshots and test output
+tests/latest-test-output.txt
+tests/preview.png
+public/dict/
+public/ocr/
+resources/static-assets.tar.gz
+.asset-cache/
+dist-pages/
+.preview-root/
+TEST-RESULTS.md
+UPDATE.md

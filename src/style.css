@@ -1,0 +1,366 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #203d34;
+  background: #f6f5ef;
+  line-height: 1.65;
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button,
+.file {
+  cursor: pointer;
+  border: 0;
+  border-radius: 14px;
+  min-height: 48px;
+  padding: 11px 18px;
+  background: #e8ede5;
+  color: #234f43;
+  font-weight: 600;
+}
+button:disabled {
+  opacity: 0.5;
+}
+button.primary {
+  background: #234f43;
+  color: white;
+}
+button.danger {
+  color: #ac3a2d;
+}
+input,
+textarea,
+select {
+  border: 1px solid #cbd1c5;
+  border-radius: 12px;
+  padding: 12px;
+  background: white;
+  color: #203d34;
+  max-width: 100%;
+}
+textarea {
+  width: 100%;
+  min-height: 120px;
+}
+header,
+main,
+nav {
+  max-width: 650px;
+  margin: auto;
+}
+header {
+  padding: calc(22px + env(safe-area-inset-top)) 22px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header strong {
+  font-size: 20px;
+}
+main {
+  padding: 12px 22px calc(110px + env(safe-area-inset-bottom));
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 8px;
+  background: #f6f5eff5;
+  border-top: 1px solid #dfe2d6;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  z-index: 3;
+}
+nav button {
+  flex: 1;
+  background: transparent;
+}
+nav button.active {
+  background: #234f43;
+  color: white;
+}
+h1 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 12px 0;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  margin: 18px 0 4px;
+}
+p {
+  margin: 8px 0 16px;
+}
+.muted,
+small {
+  color: #6e7b70;
+}
+.hero,
+.card,
+.panel {
+  background: #fffefa;
+  border: 1px solid #e2e5da;
+  border-radius: 24px;
+  padding: 24px;
+  margin: 12px 0 20px;
+}
+.hero {
+  background: #e8eee2;
+}
+.number {
+  font-size: 72px;
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -4px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.spread {
+  justify-content: space-between;
+}
+.full {
+  width: 100%;
+}
+.word {
+  font-size: 40px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+.candidate {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 10px 0;
+}
+.candidate input[type="text"] {
+  width: 100%;
+  min-width: 0;
+}
+.candidate input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+.candidate button {
+  padding: 8px 12px;
+}
+.listword {
+  width: 100%;
+  text-align: left;
+  background: white;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.notice {
+  background: #fff1d7;
+  padding: 12px;
+  border-radius: 12px;
+  color: #725422;
+}
+.answers {
+  position: sticky;
+  bottom: 90px;
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  background: #f6f5eff5;
+}
+.answers button {
+  flex: 1;
+}
+ol {
+  padding-left: 23px;
+}
+a {
+  color: #235f4c;
+}
+details {
+  margin: 14px 0;
+}
+summary {
+  cursor: pointer;
+}
+#message {
+  position: fixed;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 92%;
+  width: max-content;
+  padding: 12px 20px;
+  background: #203d34;
+  color: white;
+  border-radius: 14px;
+  z-index: 10;
+}
+progress {
+  width: 100%;
+}
+.search {
+  width: 100%;
+}
+.badge {
+  font-size: 12px;
+  background: #e8eee2;
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #b09249;
+  outline-offset: 2px;
+}
+@media (max-width: 370px) {
+  main {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .card {
+    padding: 18px;
+  }
+  .word {
+    font-size: 34px;
+  }
+}
+.dashboard {
+  background: #fffefa;
+  border: 1px solid #dce3d9;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 4px 0 16px;
+}
+.dashboard h1 {
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.stats > div {
+  background: #edf2e9;
+  border-radius: 12px;
+  padding: 12px 3px;
+  text-align: center;
+  min-width: 0;
+}
+.stats strong {
+  display: block;
+  font-size: 30px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+.stats span {
+  font-size: 14px;
+  color: #5b6e60;
+}
+.dashboard > p {
+  font-size: 13px;
+  margin: 10px 0 14px;
+}
+.quick-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.quick-links button {
+  padding: 10px 8px;
+}
+.share-receipt {
+  background: #e8eee2;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.share-receipt p {
+  margin: 8px 0;
+}
+.share-receipt button {
+  width: 100%;
+  background: white;
+}
+.share-receipt small {
+  display: block;
+  margin-top: 10px;
+}
+.shared-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 180px;
+  overflow: auto;
+}
+.file {
+  display: inline-flex;
+  align-items: center;
+}
+.file:focus-within {
+  outline: 3px solid #b09249;
+}
+code {
+  overflow-wrap: anywhere;
+}
+header {
+  gap: 8px;
+}
+header > .muted {
+  font-size: 12px;
+  text-align: right;
+}
+.file-hint {
+  font-size: 13px;
+  margin: 10px 0;
+}
+@media (max-width: 370px) {
+  header {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  header strong {
+    font-size: 18px;
+  }
+  header > .muted {
+    max-width: 100px;
+  }
+  .dashboard {
+    padding: 16px;
+  }
+  .stats strong {
+    font-size: 27px;
+  }
+  .stats span {
+    font-size: 13px;
+  }
+  nav {
+    gap: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  nav button {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+  }
+}
+.external-collect{background:#e8eee2;border:1px solid #d3dfcc;border-radius:16px;padding:16px;margin:14px 0 20px}.external-collect h2{font-size:19px;margin:0 0 6px}.external-collect p{font-size:14px;margin:6px 0 12px}.external-collect a.file{text-decoration:none;background:white}.external-collect button{background:white;font-size:14px}.external-collect details{font-size:13px;margin-bottom:0}.external-collect summary{min-height:44px;padding-top:10px}

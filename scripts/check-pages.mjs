@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {readFile,access} from 'node:fs/promises';
+const out=process.env.BUILD_OUT_DIR||'dist';
+const html=await readFile(out+'/index.html','utf8');
+assert.match(html,/\/wordbook-fresh\/assets\//);
+assert.match(html,/\/wordbook-fresh\/manifest.webmanifest/);
+const manifest=JSON.parse(await readFile(out+'/manifest.webmanifest','utf8'));
+assert.equal(manifest.start_url,'./');assert.equal(manifest.scope,'./');
+const sw=await readFile(out+'/sw.js','utf8');
+assert.ok(!sw.includes('__WB_'));assert.ok(sw.includes('/wordbook-fresh/assets/'));
+const guide=await readFile(out+'/iphone-guide.html','utf8');
+assert.ok(guide.includes('https://houzero1001-hash.github.io/wordbook-fresh/#collect?text='));
+assert.ok(!guide.includes('127.0.0.1'));
+for(const p of ['dict/st.json','dict/LICENSE.txt','ocr/worker.min.js','ocr/lang/eng.traineddata.gz','.nojekyll'])await access(out+'/'+p);
+console.log('GitHub Pages paths, offline shell, public assets and Shortcut URL: PASS');

@@ -1,0 +1,25 @@
+{
+  "name": "my-english-wordbook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.js",
+    "preview": "vite preview --host 127.0.0.1 --port 5188",
+    "pretest": "node scripts/prepare-assets.mjs",
+    "prebuild": "node scripts/prepare-assets.mjs",
+    "test:pages": "node scripts/check-pages.mjs"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "idb": "^8.0.3",
+    "pdfjs-dist": "^4.10.38",
+    "saxes": "^6.0.0",
+    "tesseract.js": "^6.0.1",
+    "vite": "^6.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
+}
