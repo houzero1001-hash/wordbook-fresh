@@ -190,7 +190,7 @@ export function parseTatoeba(data, word, card = {}) {
       license: s.license,
       translationLicense: t.license,
       pos: "",
-      sense: "语料用法，具体词义请核对",
+      sense: "",
       status: "corpus",
       translationStatus: "direct-linked",
       manual: false,
