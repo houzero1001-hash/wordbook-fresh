@@ -72,6 +72,7 @@ const $ = (s) => document.querySelector(s),
         })[c],
     );
 let actionPending = false;
+let learningPaused = false;
 let words = [],
   page = "today",
   candidates = [],
@@ -189,7 +190,7 @@ function card(w) {
 }
 function render() {
   if (page === "today") {
-    if (session && !session.finished) {
+    if (session && !learningPaused && !session.finished) {
       const w = words.find((x) => x.word === session.current);
       if (!w) {
         session = null;
@@ -200,7 +201,7 @@ function render() {
       shell(
         `<p class="muted">${session.mode === "learn" ? "新词学习" : "到期复习"} · 本轮 ${session.items.filter((i) => i.done).length} / ${session.items.length}</p>${answered ? card(w) : `<div class="card"><p>先独立判断，再核对释义</p><div class="word">${esc(w.word)}</div>${btn("▶ 发音", "speak:" + w.word)}<div class="answers">${btn("不认识", "judge:no")}${btn("认识", "judge:yes", "primary")}${btn("不再出现", "judge:master")}</div></div>`}${answered ? `${btn("下一个", "next", "primary full")}` : ""}${btn("暂时退出（保留进度）", "leave")}`,
       );
-    } else if (session) {
+    } else if (session && !learningPaused) {
       const passed = session.items.filter((i) => i.result === "passed").length,
         known = session.items.filter((i) => i.result === "mastered").length;
       shell(
@@ -528,6 +529,7 @@ document.addEventListener("click", async (e) => {
       render();
     }
     if (action === "start") {
+      learningPaused = false;
       if (session) {
         page = "today";
         render();
@@ -586,9 +588,10 @@ document.addEventListener("click", async (e) => {
       render();
     }
     if (action === "leave") {
-      page = "library";
+      learningPaused = true;
+      detailWord = null;
+      page = "today";
       render();
-      toast("进度已保留，返回首页继续");
     }
     if (action === "finish") {
       await learningMutation((current) => ({ words: current, round: null }));
