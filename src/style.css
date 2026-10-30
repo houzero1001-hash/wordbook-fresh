@@ -398,3 +398,24 @@ header > .muted {
   font-size: 15px;
   padding: 10px 4px;
 }
+.bulk-word {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.bulk-word .listword {
+  flex: 1;
+  min-width: 0;
+}
+.bulk-word > input {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.bulk-actions {
+  background: #fff1d7;
+  border-radius: 14px;
+  padding: 12px;
+  margin: 10px 0;
+}

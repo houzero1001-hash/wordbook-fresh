@@ -38,6 +38,13 @@ import {
 import { speakEnglish } from "./speech.js";
 import { receiveShare } from "./share.js";
 import { makeBackup, restoreBackup } from "./backup.js";
+import {
+  libraryWords,
+  removeCandidates,
+  removeSavedWords,
+} from "./bulk-delete.js";
+let bulkMode = false;
+const bulkSelected = new Set();
 let hydrationStop = false,
   hydrationRunning = false,
   hydrationProgress = "";
@@ -217,24 +224,17 @@ function render() {
     }
   } else if (page === "collect") {
     shell(
-      `<h1>收藏遇见的生词</h1><p class="muted">输入、拍照或导入文件，检查后再收藏。</p>${hasSharedReceipt ? `<p class="notice">收到分享，请检查候选后确认，不会自动入库。</p>` : ""}<textarea id="input" placeholder="输入一个或多个英文单词，用空格或换行分隔">${esc(sharedText)}</textarea><div class="row">${btn("检查单词", "parse", "primary")}<label class="file">照片 / 截图<input id="image" type="file" accept="image/*" hidden></label><label class="file">拍照<input id="camera" type="file" accept="image/*" capture="environment" hidden></label><label class="file">上传文件<input id="document" type="file" accept=".pdf,.docx,.txt,.md,.rtf,.doc,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown,application/rtf,application/msword" hidden></label></div><p class="muted file-hint">PDF、DOCX、TXT、Markdown、RTF · 最大30MB。旧DOC仅支持RTF内容；二进制DOC请另存为DOCX。</p><p id="progress" role="status">${esc(fileStatus)}</p>${importError ? `<p class="notice" role="alert">${esc(importError)}</p>` : ""}${busy ? btn("停止处理，保留已提取候选", "cancel") : ""}<div id="candidates">${candidateHTML()}</div><details><summary>从其他App收藏（可选）</summary><p>也可以直接复制粘贴或截图OCR。</p><a href="${assetURL("iphone-guide.html")}" target="_blank" rel="noopener">查看iPhone快捷指令教程</a></details>`,
+      `<h1>收藏遇见的生词</h1><p class="muted">输入、拍照或导入文件，检查后再收藏。</p>${hasSharedReceipt ? `<p class="notice">收到分享，请检查候选后确认，不会自动入库。</p>` : ""}<textarea id="input" placeholder="输入一个或多个英文单词，用空格或换行分隔">${esc(sharedText)}</textarea><div class="row">${btn("检查单词", "parse", "primary")}<label class="file">照片 / 截图<input id="image" type="file" accept="image/*" hidden></label><label class="file">拍照<input id="camera" type="file" accept="image/*" capture="environment" hidden></label><label class="file">上传文件<input id="document" type="file" accept=".pdf,.docx,.txt,.md,.rtf,.doc,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown,application/rtf,application/msword" hidden></label></div><p class="muted file-hint">PDF、DOCX、TXT、Markdown、RTF · 最大30MB。旧DOC仅支持RTF内容；二进制DOC请另存为DOCX。</p><p id="progress" role="status">${esc(fileStatus)}</p>${importError ? `<p class="notice" role="alert">${esc(importError)}</p>` : ""}${busy ? btn("停止处理，保留已提取候选", "cancel") : ""}<div id="candidates">${candidateHTML()}</div>${btn("批量删除已收藏单词", "bulk-library")}<details><summary>从其他App收藏（可选）</summary><p>也可以直接复制粘贴或截图OCR。</p><a href="${assetURL("iphone-guide.html")}" target="_blank" rel="noopener">查看iPhone快捷指令教程</a></details>`,
     );
   } else {
-    const list = words.filter(
-      (w) =>
-        (filter === "all" ||
-          (filter === "due"
-            ? dueWords([w]).length > 0
-            : w.status === filter)) &&
-        w.word.includes(search),
-    );
+    const list = libraryWords(words, filter, search);
     shell(
-      `${session ? btn("继续未完成的轮次", "nav:today", "primary") : ""}<div class="row spread"><h1>我的单词本</h1>${btn("备份与帮助", "help")}</div><details><summary>补充缺失例句</summary><p>只补缺少例句/翻译的词，不覆盖手动内容。免费语料需联网。</p>${btn("开始补充", "fill-missing")}${btn("失败重试", "retry-missing")}${btn("停止", "stop-examples")}<p id="batch-progress" role="status">${esc(batchProgress)}</p></details>${hydrationRunning ? `<p id="hydrate-progress" role="status">${esc(hydrationProgress)}</p>${btn("暂停词典补全", "stop-hydration")}` : ""}<input id="search" class="search" value="${esc(search)}" placeholder="搜索收藏的单词"><p><select id="filter"><option value="all">全部单词</option><option value="new" ${filter === "new" ? "selected" : ""}>待学习</option><option value="due" ${filter === "due" ? "selected" : ""}>到期待复习</option><option value="learning" ${filter === "learning" ? "selected" : ""}>学习中</option><option value="known" ${filter === "known" ? "selected" : ""}>已掌握</option></select> 共 ${list.length} 个</p>${
+      `${session ? btn("继续未完成的轮次", "nav:today", "primary") : ""}<div class="row spread"><h1>我的单词本</h1>${btn("备份与帮助", "help")}${btn(bulkMode ? "取消批量删除" : "批量删除", "bulk-toggle")}</div><details><summary>补充缺失例句</summary><p>只补缺少例句/翻译的词，不覆盖手动内容。免费语料需联网。</p>${btn("开始补充", "fill-missing")}${btn("失败重试", "retry-missing")}${btn("停止", "stop-examples")}<p id="batch-progress" role="status">${esc(batchProgress)}</p></details>${hydrationRunning ? `<p id="hydrate-progress" role="status">${esc(hydrationProgress)}</p>${btn("暂停词典补全", "stop-hydration")}` : ""}<input id="search" class="search" value="${esc(search)}" placeholder="搜索收藏的单词"><p><select id="filter"><option value="all">全部单词</option><option value="new" ${filter === "new" ? "selected" : ""}>待学习</option><option value="due" ${filter === "due" ? "selected" : ""}>到期待复习</option><option value="learning" ${filter === "learning" ? "selected" : ""}>学习中</option><option value="known" ${filter === "known" ? "selected" : ""}>已掌握</option></select> 共 ${list.length} 个</p>${bulkMode ? `<div class="bulk-actions"><p>勾选要删除的单词，已选 ${bulkSelected.size} 个</p><div class="row">${btn("全选当前显示", "bulk-all")}${btn("取消全选", "bulk-none")}${btn("删除选中（" + bulkSelected.size + "）", "bulk-delete", "danger")}${btn("先导出备份", "export")}</div><small>全选仅包含当前显示的最多300个单词；切换分类或搜索会取消选择。</small></div>` : ""}${
         list
           .slice(0, 300)
           .map(
             (w) =>
-              `<button class="listword" data-act="open:${w.word}"><span>${esc(w.word)}</span><small>${w.status === "known" ? "已掌握" : w.status === "new" ? "待学习" : "学习中"} →</small></button>`,
+              `<div class="bulk-word">${bulkMode ? `<input type="checkbox" aria-label="选择删除 ${esc(w.word)}" data-bulk="${esc(w.word)}" ${bulkSelected.has(w.word) ? "checked" : ""}>` : ""}<button class="listword" data-act="open:${w.word}"><span>${esc(w.word)}</span><small>${w.status === "known" ? "已掌握" : w.status === "new" ? "待学习" : "学习中"} →</small></button></div>`,
           )
           .join("") ||
         `<p class="muted">${words.length ? "当前分类或搜索没有匹配单词，可切换分类。" : "还没有单词，去收藏第一个吧。"}</p>`
@@ -244,7 +244,7 @@ function render() {
 }
 function candidateHTML() {
   return candidates.length
-    ? `<h2>检查候选词 <small>${candidates.length} 个</small></h2><p class="muted">已掌握的词默认不勾选；重复收藏不改变学习状态。</p>${btn("全选新词", "select-new")} ${btn("全部取消", "select-none")} ${candidates
+    ? `<h2>检查候选词 <small>${candidates.length} 个</small></h2><p class="muted">已掌握的词默认不勾选；重复收藏不改变学习状态。</p>${btn("全选候选", "select-all")} ${btn("全部取消", "select-none")} ${btn("删除选中候选（" + candidates.filter((c) => c.selected).length + "）", "delete-candidates", "danger")} ${candidates
         .slice(0, candidateLimit)
         .map(
           (c, i) =>
@@ -286,6 +286,7 @@ document.addEventListener("input", (e) => {
     candidates[+e.target.dataset.edit].word = e.target.value;
   if (e.target.id === "search") {
     search = e.target.value;
+    bulkSelected.clear();
     const pos = e.target.selectionStart;
     render();
     $("#search").focus();
@@ -294,8 +295,18 @@ document.addEventListener("input", (e) => {
 });
 document.addEventListener("change", async (e) => {
   try {
-    if (e.target.dataset.check !== undefined)
+    if (e.target.dataset.bulk !== undefined) {
+      if (e.target.checked) bulkSelected.add(e.target.dataset.bulk);
+      else bulkSelected.delete(e.target.dataset.bulk);
+      render();
+    }
+    if (e.target.dataset.check !== undefined) {
       candidates[+e.target.dataset.check].selected = e.target.checked;
+      const button = document.querySelector('[data-act="delete-candidates"]');
+      if (button)
+        button.textContent =
+          "删除选中候选（" + candidates.filter((c) => c.selected).length + "）";
+    }
     if (e.target.id === "daily") {
       settings = { ...settings, daily: Number(e.target.value) };
       await writeSettings(settings);
@@ -303,6 +314,7 @@ document.addEventListener("change", async (e) => {
     }
     if (e.target.id === "filter") {
       filter = e.target.value;
+      bulkSelected.clear();
       render();
     }
     if (e.target.id === "backup") {
@@ -373,6 +385,7 @@ document.addEventListener("click", async (e) => {
     "finish",
     "save",
     "delete",
+    "bulk-delete",
     "clear",
     "restart",
   ].includes(action);
@@ -385,6 +398,8 @@ document.addEventListener("click", async (e) => {
         return;
       }
       detailWord = null;
+      bulkMode = false;
+      bulkSelected.clear();
       if (busy) {
         toast("请先停止文件处理");
         return;
@@ -405,11 +420,72 @@ document.addEventListener("click", async (e) => {
       candidates.splice(+arg, 1);
       render();
     }
-    if (action === "select-new" || action === "select-none") {
+    if (action === "delete-candidates") {
+      if (busy) throw Error("请先停止文件处理，再批量删除候选");
+      const before = candidates.length;
+      candidates = removeCandidates(candidates);
+      render();
+      toast("已移除 " + (before - candidates.length) + " 个候选，未改动词库");
+    }
+    if (action === "bulk-library") {
+      page = "library";
+      filter = "all";
+      search = "";
+      detailWord = null;
+      bulkMode = true;
+      bulkSelected.clear();
+      render();
+    }
+    if (action === "bulk-toggle") {
+      bulkMode = !bulkMode;
+      bulkSelected.clear();
+      render();
+    }
+    if (action === "bulk-all") {
+      bulkSelected.clear();
+      libraryWords(words, filter, search)
+        .slice(0, 300)
+        .forEach((w) => bulkSelected.add(w.word));
+      render();
+    }
+    if (action === "bulk-none") {
+      bulkSelected.clear();
+      render();
+    }
+    if (action === "bulk-delete") {
+      const selected = words.filter((w) => bulkSelected.has(w.word));
+      if (!selected.length) throw Error("请先勾选要删除的单词");
+      const known = selected.filter((w) => w.status === "known").length;
+      if (
+        !confirm(
+          `确定删除这 ${selected.length} 个单词吗？${known ? "其中包含 " + known + " 个已掌握词。" : ""}\n${selected
+            .slice(0, 6)
+            .map((w) => w.word)
+            .join(
+              "、",
+            )}${selected.length > 6 ? " 等" : ""}\n这些词及其学习记录将被删除，无法直接撤销。建议先导出备份。`,
+        )
+      )
+        return;
+      const ids = selected.map((w) => w.word);
+      await learningMutation((current, round) =>
+        removeSavedWords(current, ids, round),
+      );
+      bulkSelected.clear();
+      detailWord = null;
+      render();
+      toast("已删除 " + selected.length + " 个单词");
+    }
+    if (
+      action === "select-new" ||
+      action === "select-none" ||
+      action === "select-all"
+    ) {
       candidates.forEach(
         (c) =>
           (c.selected =
-            action === "select-new" && !words.some((w) => w.word === c.word)),
+            action === "select-all" ||
+            (action === "select-new" && !words.some((w) => w.word === c.word))),
       );
       render();
     }
