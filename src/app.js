@@ -13,7 +13,6 @@ import {
 import { read, write } from "./storage.js";
 import { lookup } from "./dictionary.js";
 import { extract } from "./extract.js";
-import { receiveShare, shareURL, PUBLIC_SITE } from "./share.js";
 import { supplements } from "./supplement.js";
 const $ = (s) => document.querySelector(s),
   esc = (s) =>
@@ -40,7 +39,6 @@ let words = [],
   candidateLimit = 80,
   busy = false,
   cancelled = false,
-  shared = null,
   fileStatus = "",
   importError = "";
 function toast(s) {
@@ -148,7 +146,7 @@ function render() {
     }
   } else if (page === "collect") {
     shell(
-      `<h1>收藏遇见的生词</h1><p class="muted">输入、拍照或导入文件，检查后再收藏。</p><section class="external-collect" aria-label="从其他App收藏"><h2>从其他App收藏</h2><p>选中英文 → 系统分享 → 收藏到英语单词本 → 确认保存</p><div class="row"><a class="file" href="${assetURL("iphone-guide.html")}" target="_blank" rel="noopener">设置 iPhone 快捷指令 ↗</a>${btn("复制正式收藏地址", "copy-collection-prefix")}</div><details><summary>App不能分享文字？</summary><p>复制文字，在下方粘贴并检查；无法复制时，使用「照片 / 截图」OCR。收到网址时不会自动导入单词。</p></details></section>${shared ? `<section class="share-receipt" role="status"><strong>收到分享 · 请确认后收藏</strong><p>${esc(shared.error || "单词和短语会拆分成独立单词；不会自动保存。")}</p>${shared.text ? `<details><summary>查看收到的文字</summary><p class="shared-text">${esc(shared.text)}</p></details>${btn("复制文字，转到主屏幕单词本粘贴", "copy-share")}` : ""}<small>快捷指令可能打开Safari，与主屏幕PWA的本地数据独立；请在常用入口确认收藏。</small></section>` : ""}<textarea id="input" placeholder="输入一个或多个英文单词，用空格或换行分隔">${esc(shared?.text || "")}</textarea><div class="row">${btn("检查单词", "parse", "primary")}<label class="file">照片 / 截图<input id="image" type="file" accept="image/*" hidden></label><label class="file">拍照<input id="camera" type="file" accept="image/*" capture="environment" hidden></label><label class="file">上传文件<input id="document" type="file" accept=".pdf,.docx,.txt,.md,.rtf,.doc,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown,application/rtf,application/msword" hidden></label></div><p class="muted file-hint">PDF、DOCX、TXT、Markdown、RTF · 最大30MB。旧DOC仅支持RTF内容；二进制DOC请另存为DOCX。</p><p id="progress" role="status">${esc(fileStatus)}</p>${importError ? `<p class="notice" role="alert">${esc(importError)}</p>` : ""}${busy ? btn("停止处理，保留已提取候选", "cancel") : ""}<div id="candidates">${candidateHTML()}</div>`,
+      `<h1>收藏遇见的生词</h1><p class="muted">输入、拍照或导入文件，检查后再收藏。</p><textarea id="input" placeholder="输入一个或多个英文单词，用空格或换行分隔"></textarea><div class="row">${btn("检查单词", "parse", "primary")}<label class="file">照片 / 截图<input id="image" type="file" accept="image/*" hidden></label><label class="file">拍照<input id="camera" type="file" accept="image/*" capture="environment" hidden></label><label class="file">上传文件<input id="document" type="file" accept=".pdf,.docx,.txt,.md,.rtf,.doc,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown,application/rtf,application/msword" hidden></label></div><p class="muted file-hint">PDF、DOCX、TXT、Markdown、RTF · 最大30MB。旧DOC仅支持RTF内容；二进制DOC请另存为DOCX。</p><p id="progress" role="status">${esc(fileStatus)}</p>${importError ? `<p class="notice" role="alert">${esc(importError)}</p>` : ""}${busy ? btn("停止处理，保留已提取候选", "cancel") : ""}<div id="candidates">${candidateHTML()}</div>`,
     );
   } else {
     const list = words.filter(
@@ -182,7 +180,7 @@ function candidateHTML() {
     : "";
 }
 function help() {
-  return `<div class="panel"><h3>数据只保存在这台设备</h3><p>清除网站数据、更换手机、删除主屏幕应用可能造成数据丢失。请定期导出备份。不同域名的数据不互通。</p><div class="row">${btn("导出 JSON", "export")}<label class="file">恢复 JSON<input type="file" id="backup" accept="application/json,.json" hidden></label>${btn("清空数据", "clear", "danger")}</div><h3>添加到 iPhone 主屏幕</h3><p>在 Safari 打开正式 HTTPS 地址 → 分享 → 添加到主屏幕。已打开过的卡片可离线查看；OCR 首次需要联网从本站加载模型，系统发音取决于设备语音。</p><h3>Safari 与其他App收藏</h3><p><a href="${assetURL("iphone-guide.html")}" target="_blank" rel="noopener">打开完整中文快捷指令教程 ↗</a></p><p>分享所选文本 → 快捷指令「获取输入中的文本」→「URL编码」→「URL」：<code>${esc(shareURL(new URL(assetURL(), location.origin).href, ""))}</code>后紧接编码变量 →「打开URL」。只有链接时本程序不会导入任何单词；短语按单词拆分，必须人工确认。</p><p>Safari与主屏幕PWA的数据可能独立。建议统一在Safari使用；若原词库在主屏幕PWA，接收页复制文字后到PWA粘贴确认。程序不能强行打开指定PWA或读取其他App内容。</p><h3>简单复习安排</h3><p>「还没记住」依次安排在1、2、4、7、14天后，之后每14天复习。「已经记住」立即退出自动复习；可在单词卡手动重新学习。</p><p><a href="https://github.com/skywind3000/ECDICT" target="_blank" rel="noopener">ECDICT 词典来源</a> · <a href="${assetURL("dict/LICENSE.txt")}">MIT 授权</a>。免费社区词库不是付费权威词典，部分释义古旧、次序不理想、IPA为旧式记法。仅五个验收词提供核对过的原创双语例句与搭配，其他词明确显示缺失。</p><p>OCR：Tesseract.js（Apache-2.0）；PDF：Mozilla PDF.js（Apache-2.0）。文件在浏览器处理，最大30MB；DOCX/TXT/MD/RTF在后台线程解析，PDF逐页处理，可停止。二进制DOC请先另存为DOCX。OCR模型随本站部署，首次需联网加载；设备内存不足、离线缓存不全时可能失败。</p></div>`;
+  return `<div class="panel"><h3>数据只保存在这台设备</h3><p>清除网站数据、更换手机、删除主屏幕应用可能造成数据丢失。请定期导出备份。不同域名的数据不互通。</p><div class="row">${btn("导出 JSON", "export")}<label class="file">恢复 JSON<input type="file" id="backup" accept="application/json,.json" hidden></label>${btn("清空数据", "clear", "danger")}</div><h3>添加到 iPhone 主屏幕</h3><p>在 Safari 打开正式 HTTPS 地址 → 分享 → 添加到主屏幕。已打开过的卡片可离线查看；OCR 首次需要联网从本站加载模型，系统发音取决于设备语音。</p><h3>简单复习安排</h3><p>「还没记住」依次安排在1、2、4、7、14天后，之后每14天复习。「已经记住」立即退出自动复习；可在单词卡手动重新学习。</p><p><a href="https://github.com/skywind3000/ECDICT" target="_blank" rel="noopener">ECDICT 词典来源</a> · <a href="${assetURL("dict/LICENSE.txt")}">MIT 授权</a>。免费社区词库不是付费权威词典，部分释义古旧、次序不理想、IPA为旧式记法。仅五个验收词提供核对过的原创双语例句与搭配，其他词明确显示缺失。</p><p>OCR：Tesseract.js（Apache-2.0）；PDF：Mozilla PDF.js（Apache-2.0）。文件在浏览器处理，最大30MB；DOCX/TXT/MD/RTF在后台线程解析，PDF逐页处理，可停止。二进制DOC请先另存为DOCX。OCR模型随本站部署，首次需联网加载；设备内存不足、离线缓存不全时可能失败。</p></div>`;
 }
 async function loadCard(word) {
   try {
@@ -231,7 +229,6 @@ document.addEventListener("change", async (e) => {
       if (!f || busy) return;
       busy = true;
       ((cancelled = false),
-        (shared = null),
         (fileStatus = ""),
         (importError = ""));
       const seen = new Set(candidates.map((c) => c.word));
@@ -301,26 +298,8 @@ document.addEventListener("click", async (e) => {
       page = arg;
       render();
     }
-    if (action === "copy-collection-prefix") {
-      const prefix = shareURL(PUBLIC_SITE, "");
-      try {
-        await navigator.clipboard.writeText(prefix);
-        toast("已复制正式地址；在快捷指令中追加URL编码后的文字变量。");
-      } catch {
-        prompt("请复制正式收藏地址，在等号后插入编码后的文字变量：", prefix);
-      }
-    }
-    if (action === "copy-share") {
-      try {
-        await navigator.clipboard.writeText(shared.text);
-        toast("已复制。打开主屏幕单词本，在收藏页粘贴并确认。");
-      } catch {
-        toast("无法自动复制，请展开收到的文字，长按选择并复制。");
-      }
-    }
     if (action === "parse") {
       const typed = $("#input").value;
-      shared = null;
       prepare(typed);
       if (!candidates.length)
         toast("没有可收藏的英文文字；网址不会作为单词导入。");
@@ -474,34 +453,9 @@ document.addEventListener("click", async (e) => {
   }
 });
 
-async function acceptSharedLocation() {
-  const receipt = receiveShare(location.href);
-  if (!receipt) return;
-  if (busy) cancelled = true;
-  while (busy || actionPending)
-    await new Promise((resolve) => setTimeout(resolve, 100));
-  await persistence;
-  shared = receipt;
-  page = "collect";
-  session = null;
-  queue = [];
-  prepare(receipt.error ? "" : receipt.text);
-  history.replaceState(null, "", location.pathname);
-  render();
-}
-window.addEventListener("hashchange", () =>
-  acceptSharedLocation().catch((e) => toast(e.message)),
-);
-
 async function init() {
   try {
     words = await read();
-    shared = receiveShare(location.href);
-    if (shared) {
-      page = "collect";
-      prepare(shared.error ? "" : shared.text);
-      history.replaceState(null, "", location.pathname);
-    }
     render();
     navigator.storage?.persist?.().catch(() => {});
     if (import.meta.env.PROD && "serviceWorker" in navigator)

@@ -288,29 +288,6 @@ textarea:focus-visible {
 .quick-links button {
   padding: 10px 8px;
 }
-.share-receipt {
-  background: #e8eee2;
-  border-radius: 16px;
-  padding: 16px;
-  margin-bottom: 14px;
-}
-.share-receipt p {
-  margin: 8px 0;
-}
-.share-receipt button {
-  width: 100%;
-  background: white;
-}
-.share-receipt small {
-  display: block;
-  margin-top: 10px;
-}
-.shared-text {
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-  max-height: 180px;
-  overflow: auto;
-}
 .file {
   display: inline-flex;
   align-items: center;
@@ -363,4 +340,3 @@ header > .muted {
     font-size: 14px;
   }
 }
-.external-collect{background:#e8eee2;border:1px solid #d3dfcc;border-radius:16px;padding:16px;margin:14px 0 20px}.external-collect h2{font-size:19px;margin:0 0 6px}.external-collect p{font-size:14px;margin:6px 0 12px}.external-collect a.file{text-decoration:none;background:white}.external-collect button{background:white;font-size:14px}.external-collect details{font-size:13px;margin-bottom:0}.external-collect summary{min-height:44px;padding-top:10px}

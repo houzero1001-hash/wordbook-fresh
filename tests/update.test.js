@@ -8,7 +8,6 @@ import {
   docxText,
   decodeText,
 } from "../src/document-text.js";
-import { shareURL, receiveShare, SHARE_LIMIT } from "../src/share.js";
 import {
   tokens,
   statistics,
@@ -87,88 +86,12 @@ test("UTF16与损坏编码", () => {
   );
   assert.throws(() => decodeText(new Uint8Array([0xff, 0xff, 0xff])), /编码/);
 });
-for (const text of [
-  "study",
-  "study book run",
-  "study hard",
-  "study & book\nright #mean",
-  "don’t study",
-])
-  test("分享编码往返：" + text, () => {
-    const url = shareURL("https://wordbook.example", text);
-    assert.equal(new URL(url).search, "");
-    assert.equal(receiveShare(url).text, text);
-    assert.deepEqual(receiveShare(url).words, tokens(text));
-  });
-for (const value of [
-  "https://example.com/study?word=book",
-  "www.example.com/book",
-  "example.org/path",
-  "mailto:study@example.org",
-])
-  test("只有网址或邮件不生成候选：" + value, () =>
-    assert.deepEqual(
-      receiveShare(shareURL("https://wordbook.example", value)).words,
-      [],
-    ),
-  );
-test("url/title上下文不冒充选中文字", () => {
-  for (const q of [
-    "?url=https://example.org/study",
-    "?title=English%20Article&url=https://example.org",
-    "?text=&title=Study",
-  ])
-    assert.deepEqual(receiveShare("https://wordbook.example/" + q).words, []);
-});
-test("混合文字仅保留选中词，过滤网址", () =>
-  assert.deepEqual(
-    receiveShare(
-      shareURL(
-        "https://wordbook.example",
-        "study https://example.org/book run",
-      ),
-    ).words,
-    ["study", "run"],
-  ));
-test("兼容旧?text但不把%二次解码", () => {
-  assert.deepEqual(
-    receiveShare("https://wordbook.example/?text=study%20book").words,
-    ["study", "book"],
-  );
-  assert.equal(
-    receiveShare("https://wordbook.example/?text=study%2520book").text,
-    "study%20book",
-  );
-});
-test("分享超长拒绝，不静默截断", () => {
-  assert.throws(
-    () => shareURL("https://wordbook.example", "x".repeat(SHARE_LIMIT + 1)),
-    /过长/,
-  );
-  assert.match(
-    receiveShare(
-      "https://wordbook.example/?text=" + "x".repeat(SHARE_LIMIT + 1),
-    ).error,
-    /超过/,
-  );
-});
-test("分享只接收，不保存；确认后去重且保护掌握状态和复习记录", () => {
-  let w = grade(addWords([], ["study"], 100)[0], true, 200);
-  const before = JSON.stringify(w);
-  const receipt = receiveShare(
-    shareURL("https://wordbook.example", "study book study"),
-  );
-  assert.equal(JSON.stringify(w), before);
-  const out = addWords([w], receipt.words, 300);
+test("再次手动添加保留掌握状态和复习记录", () => {
+  const w = grade(addWords([], ["study"], 100)[0], true, 200);
+  const out = addWords([w], tokens("study book study"), 300);
   assert.equal(out.length, 2);
   assert.deepEqual(out[0], w);
-  assert.equal(
-    mergeBackup(
-      out,
-      JSON.parse(JSON.stringify({ format: "wordbook-1", words: out })),
-    )[0].lastReview,
-    200,
-  );
+  assert.equal(mergeBackup(out, {format:"wordbook-1", words:out})[0].lastReview, 200);
 });
 test("输入短语按词处理，弯引号归一，网址排除", () =>
   assert.deepEqual(tokens("study hard; don’t https://example.org/study"), [
