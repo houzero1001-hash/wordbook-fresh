@@ -1,5 +1,7 @@
 import { assetURL } from "./paths.js";
 import "./style.css";
+import { installTouchGuard } from "./touch.js";
+installTouchGuard(document);
 import {
   tokens,
   addWords,
